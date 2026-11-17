@@ -1,0 +1,12 @@
+{
+  "name": "my-hoval-focus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source and handoff for a Microsoft 365 personal dashboard prototype",
+  "scripts": {
+    "test": "node --test tests/extractor.test.cjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
