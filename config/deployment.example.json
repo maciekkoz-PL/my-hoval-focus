@@ -1,0 +1,14 @@
+{
+  "siteUrl": "https://YOUR-TENANT-my.sharepoint.com/personal/YOUR-SITE",
+  "sourcesListTitle": "MyHovalFocus-Sources",
+  "projectTasksListTitle": "MyHovalFocus-ProjectTasks",
+  "sourcesListId": "RETRIEVE_FROM_EXISTING_TENANT",
+  "projectTasksListId": "RETRIEVE_FROM_EXISTING_TENANT",
+  "sourceId": 1,
+  "workbookUrl": "READ_SOURCE_RECORD_1_SOURCELOCATION",
+  "worksheet": "Tabelle1",
+  "scriptName": "MyHovalFocus_ReadProject",
+  "webHosting": "UNVERIFIED",
+  "appCatalogDeploymentRights": "UNVERIFIED",
+  "entraAppRegistration": "NOT_CONFIGURED"
+}
