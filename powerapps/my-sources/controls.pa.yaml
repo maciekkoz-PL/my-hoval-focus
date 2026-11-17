@@ -1,0 +1,867 @@
+- mhfBackground:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =0
+      Y: =0
+      Width: =Parent.Width
+      Height: =Parent.Height
+      Fill: =RGBA(245, 247, 250, 1)
+      BorderThickness: =0
+- mhfSidebar:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =0
+      Y: =0
+      Width: =200
+      Height: =Parent.Height
+      Fill: =RGBA(29, 39, 53, 1)
+      BorderThickness: =0
+- mhfBrand:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="MY HOVAL"
+      X: =24
+      Y: =28
+      Width: =165
+      Height: =30
+      Size: =18
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhfBrandFocus:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="FOCUS"
+      X: =24
+      Y: =57
+      Width: =165
+      Height: =28
+      Size: =18
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhfWorkspace:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="PERSONAL WORKSPACE"
+      X: =24
+      Y: =118
+      Width: =165
+      Height: =24
+      Size: =9
+      Color: =RGBA(173, 185, 201, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+- mhfNavSelection:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =12
+      Y: =160
+      Width: =176
+      Height: =48
+      Fill: =RGBA(49, 62, 79, 1)
+      BorderThickness: =0
+- mhfNavAccent:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =12
+      Y: =160
+      Width: =3
+      Height: =48
+      Fill: =RGBA(214, 0, 28, 1)
+      BorderThickness: =0
+- mhfNavSources:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="My Sources"
+      X: =30
+      Y: =168
+      Width: =150
+      Height: =32
+      Size: =13
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhfSideNote:
+    Control: Label@2.5.1
+    Properties:
+      Text: '="Your priorities.
+
+        Your next steps.
+
+        One place."'
+      X: =24
+      Y: =Parent.Height - 130
+      Width: =158
+      Height: =86
+      Size: =12
+      Color: =RGBA(173, 185, 201, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+- mhfPageTitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="My Sources"
+      X: =232
+      Y: =24
+      Width: =Parent.Width - 460
+      Height: =44
+      Size: =28
+      Color: =RGBA(29, 39, 53, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhfPageSubtitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Choose the information that supports your working day."
+      X: =232
+      Y: =72
+      Width: =Parent.Width - 280
+      Height: =30
+      Size: =13
+      Color: =RGBA(100, 112, 128, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+- mhfNewSource:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="+ New source"
+      X: =Parent.Width - 180
+      Y: =28
+      Width: =148
+      Height: =42
+      OnSelect: =ResetForm(mhffrmSource); Set(mhfSelectedSource, Defaults('MyHovalFocus-Sources')); NewForm(mhffrmSource)
+      Fill: =RGBA(214, 0, 28, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      BorderColor: =RGBA(214, 0, 28, 1)
+      BorderThickness: =1
+      HoverFill: =RGBA(174, 0, 23, 1)
+      HoverColor: =RGBA(255, 255, 255, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =12
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+- mhfNotice:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =232
+      Y: =118
+      Width: =Parent.Width - 264
+      Height: =60
+      Fill: =RGBA(255, 244, 225, 1)
+      BorderThickness: =0
+- mhfNoticeText:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Configuration only. Saving or enabling a source does not start synchronization."
+      X: =248
+      Y: =126
+      Width: =Parent.Width - 296
+      Height: =44
+      Size: =12
+      Color: =RGBA(116, 80, 21, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+- mhfListPanel:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =232
+      Y: =198
+      Width: =348
+      Height: =Parent.Height - 226
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =0
+- mhfEditPanel:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =600
+      Y: =198
+      Width: =Parent.Width - 632
+      Height: =Parent.Height - 226
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =0
+- mhfListHeading:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Your sources"
+      X: =252
+      Y: =216
+      Width: =180
+      Height: =32
+      Size: =16
+      Color: =RGBA(29, 39, 53, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhfRefresh:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Refresh"
+      X: =466
+      Y: =212
+      Width: =94
+      Height: =42
+      OnSelect: =Refresh('MyHovalFocus-Sources')
+      Fill: =RGBA(255, 255, 255, 1)
+      Color: =RGBA(29, 39, 53, 1)
+      BorderColor: =RGBA(225, 230, 236, 1)
+      BorderThickness: =1
+      HoverFill: =RGBA(237, 241, 246, 1)
+      HoverColor: =RGBA(29, 39, 53, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =12
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+- mhfgalSources:
+    Control: Gallery@2.15.0
+    Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+    Properties:
+      BorderColor: =RGBA(245, 245, 245, 1)
+      Height: =Parent.Height - 306
+      Items: ='MyHovalFocus-Sources'
+      Width: =324
+      X: =244
+      Y: =262
+      TemplateSize: =100
+      TemplatePadding: =4
+      TemplateFill: =If(ThisItem.IsSelected, RGBA(255, 241, 243, 1), RGBA(248, 250, 252, 1))
+      OnSelect: =If(mhffrmSource.Unsaved, Notify("Save or cancel your changes before selecting another source.", NotificationType.Warning), Set(mhfSelectedSource, ThisItem); EditForm(mhffrmSource))
+      Default: =mhfSelectedSource
+    Children:
+    - mhfTitle2:
+        Control: Label@2.5.1
+        Properties:
+          BorderColor: =RGBA(0, 0, 0, 1)
+          Color: =RGBA(50, 49, 48, 1)
+          DisabledColor: =RGBA(161, 159, 157, 1)
+          Font: =Font.'Segoe UI'
+          FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+          Height: =32
+          OnSelect: =Select(Parent)
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =13
+          Text: =ThisItem.Titel
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.TemplateWidth - 32
+          X: =16
+          Y: =12
+    - mhfSubtitle2:
+        Control: Label@2.5.1
+        Properties:
+          BorderColor: =RGBA(0, 0, 0, 1)
+          Color: =RGBA(100, 112, 128, 1)
+          DisabledColor: =RGBA(161, 159, 157, 1)
+          Font: =Font.'Segoe UI'
+          FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+          Height: =32
+          OnSelect: =Select(Parent)
+          PaddingBottom: =0
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          Size: =11
+          Text: =ThisItem.System.Value & "  /  " & If(ThisItem.Enabled, "Enabled", "Disabled")
+          VerticalAlign: =VerticalAlign.Top
+          Width: =Parent.TemplateWidth - 32
+          X: =16
+          Y: =48
+- mhfEmpty:
+    Control: Label@2.5.1
+    Properties:
+      Text: '="No sources yet.
+
+        Select New source to add one."'
+      X: =264
+      Y: =300
+      Width: =284
+      Height: =80
+      Size: =13
+      Color: =RGBA(100, 112, 128, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      Visible: =IsEmpty(mhfgalSources.AllItems)
+- mhfEditHeading:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(mhffrmSource.Mode = FormMode.New, "New source", "Source details")
+      X: =624
+      Y: =216
+      Width: =Parent.Width - 680
+      Height: =32
+      Size: =18
+      Color: =RGBA(29, 39, 53, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+- mhffrmSource:
+    Control: Form@2.4.4
+    Variant: Classic
+    Layout: Vertical
+    Properties:
+      BorderColor: =RGBA(245, 245, 245, 1)
+      DataSource: ='MyHovalFocus-Sources'
+      Height: =Parent.Height - 392
+      Item: =Coalesce(mhfSelectedSource, mhfgalSources.Selected)
+      NumberOfColumns: =1
+      Width: =Parent.Width - 648
+      X: =608
+      Y: =260
+      OnSuccess: =Set(mhfSelectedSource, mhffrmSource.LastSubmit); Refresh('MyHovalFocus-Sources'); Notify("Source saved.", NotificationType.Success)
+      OnFailure: =Notify("Could not save the source. " & mhffrmSource.Error, NotificationType.Error)
+    Children:
+    - mhfTitel_DataCard2:
+        Control: TypedDataCard@1.0.7
+        Variant: ClassicTextualEdit
+        IsLocked: false
+        Properties:
+          BorderColor: =RGBA(245, 245, 245, 1)
+          DataField: ="Title"
+          Default: =ThisItem.Titel
+          DisplayName: ="Source name"
+          MaxLength: =DataSourceInfo([@'MyHovalFocus-Sources'], DataSourceInfo.MaxLength, Title)
+          Required: =true
+          Update: =mhfDataCardValue3.Text
+          Width: =Parent.Width
+          X: =0
+          Y: =0
+          Height: =100
+        Children:
+        - mhfDataCardKey3:
+            Control: Label@2.5.1
+            MetadataKey: FieldName
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(100, 112, 128, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =34
+              PaddingLeft: =0
+              Text: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              Wrap: =false
+              X: =30
+              Y: =10
+              Size: =11
+        - mhfDataCardValue3:
+            Control: Classic/TextInput@2.3.2
+            MetadataKey: FieldValue
+            Properties:
+              BorderColor: =If(IsBlank(Parent.Error), RGBA(225, 230, 236, 1), Color.Red)
+              Color: =RGBA(50, 49, 48, 1)
+              Default: =Parent.Default
+              DelayOutput: =true
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              DisabledFill: =RGBA(242, 242, 241, 0)
+              DisplayMode: =Parent.DisplayMode
+              Font: =Font.'Segoe UI'
+              HoverBorderColor: =RGBA(16, 110, 190, 1)
+              HoverColor: =RGBA(50, 49, 48, 1)
+              HoverFill: =RGBA(255, 255, 255, 1)
+              MaxLength: =Parent.MaxLength
+              PaddingLeft: =12
+              PressedBorderColor: =RGBA(214, 0, 28, 1)
+              PressedColor: =RGBA(50, 49, 48, 1)
+              PressedFill: =RGBA(255, 255, 255, 1)
+              RadiusBottomLeft: =6
+              RadiusBottomRight: =6
+              RadiusTopLeft: =6
+              RadiusTopRight: =6
+              Tooltip: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardKey3.Y + mhfDataCardKey3.Height + 5
+              Height: =40
+              Fill: =RGBA(245, 247, 250, 1)
+              Size: =12
+        - mhfErrorMessage3:
+            Control: Label@2.5.1
+            MetadataKey: ErrorMessage
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(168, 0, 0, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(168, 0, 0, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =10
+              Live: =Live.Assertive
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Text: =Parent.Error
+              Visible: =Parent.DisplayMode=DisplayMode.Edit
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardValue3.Y + mhfDataCardValue3.Height
+        - mhfStarVisible3:
+            Control: Label@2.5.1
+            MetadataKey: FieldRequired
+            Properties:
+              Align: =Align.Center
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(50, 49, 48, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =mhfDataCardKey3.Height
+              PaddingLeft: =0
+              Text: ="*"
+              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+              Width: =30
+              Wrap: =false
+              Y: =mhfDataCardKey3.Y
+    - mhfSystem_DataCard1:
+        Control: TypedDataCard@1.0.7
+        Variant: ClassicComboBoxEdit
+        IsLocked: false
+        Properties:
+          BorderColor: =RGBA(245, 245, 245, 1)
+          DataField: ="System"
+          Default: =ThisItem.System
+          DisplayName: ="System"
+          Required: =true
+          Update: =mhfDataCardValue4.Selected
+          Width: =Parent.Width
+          X: =0
+          Y: =1
+          Height: =100
+        Children:
+        - mhfDataCardKey4:
+            Control: Label@2.5.1
+            MetadataKey: FieldName
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(100, 112, 128, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =34
+              PaddingLeft: =0
+              Text: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              Wrap: =false
+              X: =30
+              Y: =10
+              Size: =11
+        - mhfDataCardValue4:
+            Control: Classic/ComboBox@2.4.0
+            MetadataKey: FieldValue
+            Properties:
+              BorderColor: =If(IsBlank(Parent.Error), RGBA(225, 230, 236, 1), Color.Red)
+              ChevronBackground: =RGBA(245, 247, 250, 1)
+              ChevronDisabledBackground: =RGBA(242, 242, 241, 0)
+              ChevronDisabledFill: =RGBA(161, 159, 157, 1)
+              ChevronFill: =RGBA(50, 49, 48, 1)
+              ChevronHoverBackground: =RGBA(245, 245, 245, 1)
+              ChevronHoverFill: =RGBA(50, 49, 48, 1)
+              Color: =RGBA(50, 49, 48, 1)
+              DefaultSelectedItems: =Parent.Default
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              DisabledFill: =RGBA(242, 242, 241, 0)
+              DisplayFields: =["Value"]
+              DisplayMode: =Parent.DisplayMode
+              Fill: =RGBA(245, 245, 245, 1)
+              Font: =Font.'Segoe UI'
+              HoverBorderColor: =RGBA(16, 110, 190, 1)
+              HoverColor: =RGBA(50, 49, 48, 1)
+              HoverFill: =RGBA(245, 245, 245, 1)
+              Items: =Choices([@'MyHovalFocus-Sources'].System)
+              PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+              PressedBorderColor: =RGBA(214, 0, 28, 1)
+              PressedColor: =RGBA(255, 255, 255, 1)
+              PressedFill: =RGBA(0, 120, 212, 1)
+              SearchFields: =["Value"]
+              SelectMultiple: =false
+              SelectionColor: =RGBA(255, 255, 255, 1)
+              SelectionFill: =RGBA(214, 0, 28, 1)
+              Tooltip: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardKey4.Y + mhfDataCardKey4.Height + 5
+              Height: =40
+              Size: =12
+        - mhfErrorMessage4:
+            Control: Label@2.5.1
+            MetadataKey: ErrorMessage
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(168, 0, 0, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(168, 0, 0, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =10
+              Live: =Live.Assertive
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Text: =Parent.Error
+              Visible: =Parent.DisplayMode=DisplayMode.Edit
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardValue4.Y + mhfDataCardValue4.Height
+        - mhfStarVisible4:
+            Control: Label@2.5.1
+            MetadataKey: FieldRequired
+            Properties:
+              Align: =Align.Center
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(50, 49, 48, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =mhfDataCardKey4.Height
+              PaddingLeft: =0
+              Text: ="*"
+              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+              Width: =30
+              Wrap: =false
+              Y: =mhfDataCardKey4.Y
+    - mhfSourceLocation_DataCard1:
+        Control: TypedDataCard@1.0.7
+        Variant: ClassicTextualEdit
+        IsLocked: false
+        Properties:
+          BorderColor: =RGBA(245, 245, 245, 1)
+          DataField: ="SourceLocation"
+          Default: =ThisItem.SourceLocation
+          DisplayName: ="Source location"
+          MaxLength: =DataSourceInfo([@'MyHovalFocus-Sources'], DataSourceInfo.MaxLength, SourceLocation)
+          Required: =false
+          Update: =mhfDataCardValue5.Text
+          Width: =Parent.Width
+          X: =0
+          Y: =2
+          Height: =100
+        Children:
+        - mhfDataCardKey5:
+            Control: Label@2.5.1
+            MetadataKey: FieldName
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(100, 112, 128, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =34
+              PaddingLeft: =0
+              Text: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              Wrap: =false
+              X: =30
+              Y: =10
+              Size: =11
+        - mhfDataCardValue5:
+            Control: Classic/TextInput@2.3.2
+            MetadataKey: FieldValue
+            Properties:
+              BorderColor: =If(IsBlank(Parent.Error), RGBA(225, 230, 236, 1), Color.Red)
+              Color: =RGBA(50, 49, 48, 1)
+              Default: =Parent.Default
+              DelayOutput: =true
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              DisabledFill: =RGBA(242, 242, 241, 0)
+              DisplayMode: =Parent.DisplayMode
+              Font: =Font.'Segoe UI'
+              HoverBorderColor: =RGBA(16, 110, 190, 1)
+              HoverColor: =RGBA(50, 49, 48, 1)
+              HoverFill: =RGBA(255, 255, 255, 1)
+              MaxLength: =Parent.MaxLength
+              PaddingLeft: =12
+              PressedBorderColor: =RGBA(214, 0, 28, 1)
+              PressedColor: =RGBA(50, 49, 48, 1)
+              PressedFill: =RGBA(255, 255, 255, 1)
+              RadiusBottomLeft: =6
+              RadiusBottomRight: =6
+              RadiusTopLeft: =6
+              RadiusTopRight: =6
+              Tooltip: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardKey5.Y + mhfDataCardKey5.Height + 5
+              Height: =40
+              Fill: =RGBA(245, 247, 250, 1)
+              Size: =12
+        - mhfErrorMessage5:
+            Control: Label@2.5.1
+            MetadataKey: ErrorMessage
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(168, 0, 0, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(168, 0, 0, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =10
+              Live: =Live.Assertive
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Text: =Parent.Error
+              Visible: =Parent.DisplayMode=DisplayMode.Edit
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardValue5.Y + mhfDataCardValue5.Height
+        - mhfStarVisible5:
+            Control: Label@2.5.1
+            MetadataKey: FieldRequired
+            Properties:
+              Align: =Align.Center
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(50, 49, 48, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =mhfDataCardKey5.Height
+              PaddingLeft: =0
+              Text: ="*"
+              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+              Width: =30
+              Wrap: =false
+              Y: =mhfDataCardKey5.Y
+    - mhfEnabled_DataCard1:
+        Control: TypedDataCard@1.0.7
+        Variant: ClassicToggleEdit
+        IsLocked: false
+        Properties:
+          BorderColor: =RGBA(245, 245, 245, 1)
+          DataField: ="Enabled"
+          Default: =ThisItem.Enabled
+          DisplayName: ="Enabled"
+          Required: =false
+          Update: =mhfDataCardValue6.Value
+          Width: =Parent.Width
+          X: =0
+          Y: =3
+          Height: =100
+        Children:
+        - mhfDataCardKey6:
+            Control: Label@2.5.1
+            MetadataKey: FieldName
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(100, 112, 128, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =34
+              PaddingLeft: =0
+              Text: =Parent.DisplayName
+              Width: =Parent.Width - 60
+              Wrap: =false
+              X: =30
+              Y: =10
+              Size: =11
+        - mhfDataCardValue6:
+            Control: Classic/Toggle@2.1.0
+            MetadataKey: FieldValue
+            Properties:
+              BorderColor: =If(IsBlank(Parent.Error), RGBA(225, 230, 236, 1), Color.Red)
+              BorderStyle: =BorderStyle.None
+              Color: =RGBA(50, 49, 48, 1)
+              Default: =Parent.Default
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisplayMode: =Parent.DisplayMode
+              FalseFill: =RGBA(96, 94, 92, 1)
+              FalseHoverFill: =RGBA(50, 49, 48, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              HoverBorderColor: =RGBA(0, 0, 0, 0)
+              PressedBorderColor: =RGBA(214, 0, 28, 1)
+              Tooltip: =Parent.DisplayName
+              TrueFill: =RGBA(214, 0, 28, 1)
+              TrueHoverFill: =RGBA(16, 110, 190, 1)
+              Width: =152
+              X: =30
+              Y: =mhfDataCardKey6.Y + mhfDataCardKey6.Height + 5
+              TrueText: ="Enabled"
+              FalseText: ="Disabled"
+              Size: =11
+        - mhfErrorMessage6:
+            Control: Label@2.5.1
+            MetadataKey: ErrorMessage
+            Properties:
+              AutoHeight: =true
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(168, 0, 0, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(168, 0, 0, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =10
+              Live: =Live.Assertive
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Text: =Parent.Error
+              Visible: =Parent.DisplayMode=DisplayMode.Edit
+              Width: =Parent.Width - 60
+              X: =30
+              Y: =mhfDataCardValue6.Y + mhfDataCardValue6.Height
+        - mhfStarVisible6:
+            Control: Label@2.5.1
+            MetadataKey: FieldRequired
+            Properties:
+              Align: =Align.Center
+              BorderColor: =RGBA(0, 0, 0, 0)
+              BorderStyle: =BorderStyle.None
+              BorderThickness: =2
+              Color: =RGBA(50, 49, 48, 1)
+              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+              DisabledColor: =RGBA(161, 159, 157, 1)
+              FocusedBorderThickness: =4
+              Font: =Font.'Segoe UI'
+              FontWeight: =FontWeight.Semibold
+              Height: =mhfDataCardKey6.Height
+              PaddingLeft: =0
+              Text: ="*"
+              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+              Width: =30
+              Wrap: =false
+              Y: =mhfDataCardKey6.Y
+- mhfSave:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Save changes"
+      X: =632
+      Y: =Parent.Height - 104
+      Width: =144
+      Height: =42
+      OnSelect: =SubmitForm(mhffrmSource)
+      Fill: =RGBA(214, 0, 28, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      BorderColor: =RGBA(214, 0, 28, 1)
+      BorderThickness: =1
+      HoverFill: =RGBA(174, 0, 23, 1)
+      HoverColor: =RGBA(255, 255, 255, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =12
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      DisplayMode: =If(mhffrmSource.Valid, DisplayMode.Edit, DisplayMode.Disabled)
+- mhfCancel:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Cancel"
+      X: =788
+      Y: =Parent.Height - 104
+      Width: =90
+      Height: =42
+      OnSelect: =ResetForm(mhffrmSource); Set(mhfSelectedSource, mhfgalSources.Selected); EditForm(mhffrmSource)
+      Fill: =RGBA(255, 255, 255, 1)
+      Color: =RGBA(29, 39, 53, 1)
+      BorderColor: =RGBA(225, 230, 236, 1)
+      BorderThickness: =1
+      HoverFill: =RGBA(237, 241, 246, 1)
+      HoverColor: =RGBA(29, 39, 53, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =12
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+- mhfOpen:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Open source"
+      X: =890
+      Y: =Parent.Height - 104
+      Width: =126
+      Height: =42
+      OnSelect: =Launch(Coalesce(mhfSelectedSource, mhfgalSources.Selected).SourceLocation)
+      Fill: =RGBA(255, 255, 255, 1)
+      Color: =RGBA(29, 39, 53, 1)
+      BorderColor: =RGBA(225, 230, 236, 1)
+      BorderThickness: =1
+      HoverFill: =RGBA(237, 241, 246, 1)
+      HoverColor: =RGBA(29, 39, 53, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =12
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      DisplayMode: =If(mhffrmSource.Mode = FormMode.New || IsBlank(Coalesce(mhfSelectedSource, mhfgalSources.Selected).SourceLocation) || !StartsWith(Lower(Coalesce(mhfSelectedSource, mhfgalSources.Selected).SourceLocation), "https://"), DisplayMode.Disabled, DisplayMode.Edit)
