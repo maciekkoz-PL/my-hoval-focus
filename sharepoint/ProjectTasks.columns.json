@@ -1,0 +1,81 @@
+{
+  "listTitle": "MyHovalFocus-ProjectTasks",
+  "builtInTitle": true,
+  "columns": [
+    {
+      "name": "SourceKey",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='SourceKey' Name='SourceKey' StaticName='SourceKey' Indexed='TRUE' EnforceUniqueValues='TRUE' />"
+    },
+    {
+      "name": "SourceId",
+      "type": "Number",
+      "schemaXml": "<Field Type='Number' DisplayName='SourceId' Name='SourceId' StaticName='SourceId' Decimals='0' Indexed='TRUE' />"
+    },
+    {
+      "name": "SourceRow",
+      "type": "Number",
+      "schemaXml": "<Field Type='Number' DisplayName='SourceRow' Name='SourceRow' StaticName='SourceRow' Decimals='0' />"
+    },
+    {
+      "name": "ProjectName",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='ProjectName' Name='ProjectName' StaticName='ProjectName' />"
+    },
+    {
+      "name": "Section",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='Section' Name='Section' StaticName='Section' />"
+    },
+    {
+      "name": "Step",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='Step' Name='Step' StaticName='Step' />"
+    },
+    {
+      "name": "TaskDescription",
+      "type": "Note",
+      "schemaXml": "<Field Type='Note' DisplayName='TaskDescription' Name='TaskDescription' StaticName='TaskDescription' RichText='FALSE' NumLines='6' />"
+    },
+    {
+      "name": "SystemsAffected",
+      "type": "Note",
+      "schemaXml": "<Field Type='Note' DisplayName='SystemsAffected' Name='SystemsAffected' StaticName='SystemsAffected' RichText='FALSE' NumLines='3' />"
+    },
+    {
+      "name": "TaskOwner",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='TaskOwner' Name='TaskOwner' StaticName='TaskOwner' />"
+    },
+    {
+      "name": "StatusText",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='StatusText' Name='StatusText' StaticName='StatusText' />"
+    },
+    {
+      "name": "DueDateText",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='DueDateText' Name='DueDateText' StaticName='DueDateText' />"
+    },
+    {
+      "name": "Dependencies",
+      "type": "Note",
+      "schemaXml": "<Field Type='Note' DisplayName='Dependencies' Name='Dependencies' StaticName='Dependencies' RichText='FALSE' NumLines='3' />"
+    },
+    {
+      "name": "Comments",
+      "type": "Note",
+      "schemaXml": "<Field Type='Note' DisplayName='Comments' Name='Comments' StaticName='Comments' RichText='FALSE' NumLines='6' />"
+    },
+    {
+      "name": "SyncedAt",
+      "type": "DateTime",
+      "schemaXml": "<Field Type='DateTime' DisplayName='SyncedAt' Name='SyncedAt' StaticName='SyncedAt' Format='DateTime' />"
+    },
+    {
+      "name": "SyncRunId",
+      "type": "Text",
+      "schemaXml": "<Field Type='Text' DisplayName='SyncRunId' Name='SyncRunId' StaticName='SyncRunId' />"
+    }
+  ]
+}
