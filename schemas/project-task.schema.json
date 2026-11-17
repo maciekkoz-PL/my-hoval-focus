@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Office Script project task",
+  "type": "object",
+  "required": [
+    "section",
+    "step",
+    "description",
+    "systemsAffected",
+    "owner",
+    "statusText",
+    "dueDateText",
+    "dependencies",
+    "comments",
+    "sourceRow"
+  ],
+  "properties": {
+    "section": {
+      "type": "string"
+    },
+    "step": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "systemsAffected": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "statusText": {
+      "type": "string"
+    },
+    "dueDateText": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
+    },
+    "sourceRow": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}
