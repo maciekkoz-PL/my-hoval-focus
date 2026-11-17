@@ -1,0 +1,104 @@
+{
+  "kind": "MANUAL_RECONSTRUCTION_NOT_IMPORTABLE",
+  "name": "My Hoval Focus — Sync Project Tasks",
+  "trigger": "Manually trigger a flow",
+  "status": "User verified create then update; no schedule or Enabled gate",
+  "steps": [
+    {
+      "name": "ReadProject",
+      "connector": "Excel Online (Business)",
+      "action": "Run script",
+      "workbook": "CONFIG.workbookUrl (selected in designer)",
+      "script": "MyHovalFocus_ReadProject"
+    },
+    {
+      "name": "ProjectData",
+      "action": "Compose",
+      "expression": "json(body('ReadProject')?['result'])"
+    },
+    {
+      "name": "GetSource",
+      "connector": "SharePoint",
+      "action": "Get items",
+      "site": "CONFIG.siteUrl",
+      "list": "MyHovalFocus-Sources",
+      "filter": "ID eq 1"
+    },
+    {
+      "name": "ForEachTask",
+      "action": "Apply to each",
+      "expression": "outputs('ProjectData')?['tasks']",
+      "steps": [
+        {
+          "name": "TaskKey",
+          "action": "Compose",
+          "expression": "concat(string(first(body('GetSource')?['value'])?['ID']), '|', string(items('ForEachTask')?['step']))"
+        },
+        {
+          "name": "FindTask",
+          "connector": "SharePoint",
+          "action": "Get items",
+          "site": "CONFIG.siteUrl",
+          "list": "MyHovalFocus-ProjectTasks",
+          "filterExpression": "concat('SourceKey eq ''', outputs('TaskKey'), '''')"
+        },
+        {
+          "name": "TaskExists",
+          "action": "Condition",
+          "leftExpression": "length(body('FindTask')?['value'])",
+          "operator": "greater than",
+          "right": 0,
+          "true": {
+            "name": "UpdateTask",
+            "connector": "SharePoint",
+            "action": "Update item",
+            "list": "MyHovalFocus-ProjectTasks",
+            "idExpression": "first(body('FindTask')?['value'])?['ID']",
+            "fieldExpressions": {
+              "Title": "take(items('ForEachTask')?['description'], 255)",
+              "SourceKey": "outputs('TaskKey')",
+              "SourceId": "first(body('GetSource')?['value'])?['ID']",
+              "ProjectName": "first(body('GetSource')?['value'])?['Title']",
+              "SyncedAt": "utcNow()",
+              "SyncRunId": "workflow()?['run']?['name']",
+              "SourceRow": "items('ForEachTask')?['sourceRow']",
+              "Section": "items('ForEachTask')?['section']",
+              "Step": "items('ForEachTask')?['step']",
+              "TaskDescription": "items('ForEachTask')?['description']",
+              "SystemsAffected": "items('ForEachTask')?['systemsAffected']",
+              "TaskOwner": "items('ForEachTask')?['owner']",
+              "StatusText": "items('ForEachTask')?['statusText']",
+              "DueDateText": "items('ForEachTask')?['dueDateText']",
+              "Dependencies": "items('ForEachTask')?['dependencies']",
+              "Comments": "items('ForEachTask')?['comments']"
+            }
+          },
+          "false": {
+            "name": "CreateTask",
+            "connector": "SharePoint",
+            "action": "Create item",
+            "list": "MyHovalFocus-ProjectTasks",
+            "fieldExpressions": {
+              "Title": "take(items('ForEachTask')?['description'], 255)",
+              "SourceKey": "outputs('TaskKey')",
+              "SourceId": "first(body('GetSource')?['value'])?['ID']",
+              "ProjectName": "first(body('GetSource')?['value'])?['Title']",
+              "SyncedAt": "utcNow()",
+              "SyncRunId": "workflow()?['run']?['name']",
+              "SourceRow": "items('ForEachTask')?['sourceRow']",
+              "Section": "items('ForEachTask')?['section']",
+              "Step": "items('ForEachTask')?['step']",
+              "TaskDescription": "items('ForEachTask')?['description']",
+              "SystemsAffected": "items('ForEachTask')?['systemsAffected']",
+              "TaskOwner": "items('ForEachTask')?['owner']",
+              "StatusText": "items('ForEachTask')?['statusText']",
+              "DueDateText": "items('ForEachTask')?['dueDateText']",
+              "Dependencies": "items('ForEachTask')?['dependencies']",
+              "Comments": "items('ForEachTask')?['comments']"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
