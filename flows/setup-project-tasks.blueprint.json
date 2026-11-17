@@ -1,0 +1,64 @@
+{
+  "kind": "MANUAL_RECONSTRUCTION_NOT_IMPORTABLE",
+  "name": "My Hoval Focus — Setup Projects",
+  "trigger": "Manually trigger a flow",
+  "warning": "Not idempotent. Existing list/fields already provisioned.",
+  "steps": [
+    {
+      "name": "ResolveList",
+      "connector": "SharePoint",
+      "method": "GET",
+      "uri": "_api/web/lists/GetByTitle('MyHovalFocus-ProjectTasks')?$select=Id,Title",
+      "headers": {
+        "Accept": "application/json;odata=nometadata"
+      }
+    },
+    {
+      "name": "ProjectColumns",
+      "action": "Initialize variable",
+      "type": "Array",
+      "value": [
+        "<Field Type='Text' DisplayName='SourceKey' Name='SourceKey' StaticName='SourceKey' Indexed='TRUE' EnforceUniqueValues='TRUE' />",
+        "<Field Type='Number' DisplayName='SourceId' Name='SourceId' StaticName='SourceId' Decimals='0' Indexed='TRUE' />",
+        "<Field Type='Number' DisplayName='SourceRow' Name='SourceRow' StaticName='SourceRow' Decimals='0' />",
+        "<Field Type='Text' DisplayName='ProjectName' Name='ProjectName' StaticName='ProjectName' />",
+        "<Field Type='Text' DisplayName='Section' Name='Section' StaticName='Section' />",
+        "<Field Type='Text' DisplayName='Step' Name='Step' StaticName='Step' />",
+        "<Field Type='Note' DisplayName='TaskDescription' Name='TaskDescription' StaticName='TaskDescription' RichText='FALSE' NumLines='6' />",
+        "<Field Type='Note' DisplayName='SystemsAffected' Name='SystemsAffected' StaticName='SystemsAffected' RichText='FALSE' NumLines='3' />",
+        "<Field Type='Text' DisplayName='TaskOwner' Name='TaskOwner' StaticName='TaskOwner' />",
+        "<Field Type='Text' DisplayName='StatusText' Name='StatusText' StaticName='StatusText' />",
+        "<Field Type='Text' DisplayName='DueDateText' Name='DueDateText' StaticName='DueDateText' />",
+        "<Field Type='Note' DisplayName='Dependencies' Name='Dependencies' StaticName='Dependencies' RichText='FALSE' NumLines='3' />",
+        "<Field Type='Note' DisplayName='Comments' Name='Comments' StaticName='Comments' RichText='FALSE' NumLines='6' />",
+        "<Field Type='DateTime' DisplayName='SyncedAt' Name='SyncedAt' StaticName='SyncedAt' Format='DateTime' />",
+        "<Field Type='Text' DisplayName='SyncRunId' Name='SyncRunId' StaticName='SyncRunId' />"
+      ]
+    },
+    {
+      "name": "ForEachColumn",
+      "action": "Apply to each",
+      "input": "@variables('ProjectColumns')",
+      "child": {
+        "connector": "SharePoint",
+        "action": "Send an HTTP request to SharePoint",
+        "site": "CONFIG.siteUrl",
+        "method": "POST",
+        "uri": "_api/web/lists(guid'CONFIG.projectTasksListId')/fields/createfieldasxml",
+        "headers": {
+          "Accept": "application/json;odata=verbose",
+          "Content-Type": "application/json;odata=verbose"
+        },
+        "body": {
+          "parameters": {
+            "__metadata": {
+              "type": "SP.XmlSchemaFieldCreationInformation"
+            },
+            "SchemaXml": "@{item()}",
+            "Options": 8
+          }
+        }
+      }
+    }
+  ]
+}
