@@ -1,0 +1,612 @@
+{
+  "schemaVersion": "1.0",
+  "extractedAtUtc": "2030-01-01T00:00:00Z",
+  "summary": {
+    "worksheet": "Tabelle1",
+    "usedRange": "Tabelle1!A1:H49",
+    "headerRow": 2,
+    "scannedRowCount": 49,
+    "taskCount": 41,
+    "sectionCount": 6,
+    "reviewRowCount": 0,
+    "blankRowCount": 0,
+    "repeatedHeaderCount": 0
+  },
+  "tasks": [
+    {
+      "sourceRow": 4,
+      "section": "Preparation",
+      "step": "1",
+      "description": "Synthetic task 1: validate the example project deliverable.",
+      "systemsAffected": "Example environment",
+      "owner": "Example Team 1",
+      "statusText": "Done",
+      "dueDateText": "31.12.2030",
+      "dependencies": "-",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 5,
+      "section": "Preparation",
+      "step": "2",
+      "description": "Synthetic task 2: validate the example project deliverable.",
+      "systemsAffected": "Example environment",
+      "owner": "Example Team 2",
+      "statusText": "Partially complete",
+      "dueDateText": "31.12.2030",
+      "dependencies": "1",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 6,
+      "section": "Preparation",
+      "step": "3",
+      "description": "Synthetic task 3: validate the example project deliverable.",
+      "systemsAffected": "Example environment",
+      "owner": "Example Team 3",
+      "statusText": "Done",
+      "dueDateText": "31.12.2030",
+      "dependencies": "2",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 7,
+      "section": "Preparation",
+      "step": "4",
+      "description": "Synthetic task 4: validate the example project deliverable.",
+      "systemsAffected": "Example environment",
+      "owner": "Example Team 1",
+      "statusText": "In Progress",
+      "dueDateText": "31.12.2030",
+      "dependencies": "3",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 8,
+      "section": "Preparation",
+      "step": "5",
+      "description": "Synthetic task 5: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "4",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 9,
+      "section": "Preparation",
+      "step": "6",
+      "description": "Synthetic task 6: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "5",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 10,
+      "section": "Preparation",
+      "step": "7",
+      "description": "Synthetic task 7: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "6",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 12,
+      "section": "Infrastructure",
+      "step": "8",
+      "description": "Synthetic task 8: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "7",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 13,
+      "section": "Infrastructure",
+      "step": "9",
+      "description": "Synthetic task 9: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "8",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 14,
+      "section": "Infrastructure",
+      "step": "10",
+      "description": "Synthetic task 10: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "9",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 15,
+      "section": "Infrastructure",
+      "step": "11",
+      "description": "Synthetic task 11: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "10",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 16,
+      "section": "Infrastructure",
+      "step": "12",
+      "description": "Synthetic task 12: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "11",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 17,
+      "section": "Infrastructure",
+      "step": "13",
+      "description": "Synthetic task 13: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "12",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 18,
+      "section": "Infrastructure",
+      "step": "14",
+      "description": "Synthetic task 14: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "13",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 20,
+      "section": "Client rollout",
+      "step": "15",
+      "description": "Synthetic task 15: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "14",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 21,
+      "section": "Client rollout",
+      "step": "16",
+      "description": "Synthetic task 16: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "15",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 22,
+      "section": "Client rollout",
+      "step": "17",
+      "description": "Synthetic task 17: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "16",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 23,
+      "section": "Client rollout",
+      "step": "18",
+      "description": "Synthetic task 18: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "17",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 24,
+      "section": "Client rollout",
+      "step": "19",
+      "description": "Synthetic task 19: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "18",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 25,
+      "section": "Client rollout",
+      "step": "20",
+      "description": "Synthetic task 20: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "19",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 26,
+      "section": "Client rollout",
+      "step": "21",
+      "description": "Synthetic task 21: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "20",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 28,
+      "section": "Integrations",
+      "step": "22",
+      "description": "Synthetic task 22: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "21",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 29,
+      "section": "Integrations",
+      "step": "23",
+      "description": "Synthetic task 23: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "22",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 30,
+      "section": "Integrations",
+      "step": "24",
+      "description": "Synthetic task 24: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "23",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 31,
+      "section": "Integrations",
+      "step": "25",
+      "description": "Synthetic task 25: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "24",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 32,
+      "section": "Integrations",
+      "step": "26",
+      "description": "Synthetic task 26: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "25",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 33,
+      "section": "Integrations",
+      "step": "27",
+      "description": "Synthetic task 27: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "26",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 34,
+      "section": "Integrations",
+      "step": "28",
+      "description": "Synthetic task 28: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "27",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 36,
+      "section": "Testing",
+      "step": "29",
+      "description": "Synthetic task 29: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "28",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 37,
+      "section": "Testing",
+      "step": "30",
+      "description": "Synthetic task 30: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "29",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 38,
+      "section": "Testing",
+      "step": "31",
+      "description": "Synthetic task 31: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "30",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 39,
+      "section": "Testing",
+      "step": "32",
+      "description": "Synthetic task 32: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "31",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 40,
+      "section": "Testing",
+      "step": "33",
+      "description": "Synthetic task 33: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "32",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 41,
+      "section": "Testing",
+      "step": "34",
+      "description": "Synthetic task 34: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "33",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 42,
+      "section": "Testing",
+      "step": "35",
+      "description": "Synthetic task 35: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "34",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 44,
+      "section": "Handover",
+      "step": "36",
+      "description": "Synthetic task 36: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "35",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 45,
+      "section": "Handover",
+      "step": "37",
+      "description": "Synthetic task 37: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "36",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 46,
+      "section": "Handover",
+      "step": "38",
+      "description": "Synthetic task 38: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "37",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 47,
+      "section": "Handover",
+      "step": "39",
+      "description": "Synthetic task 39: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 3",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "38",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 48,
+      "section": "Handover",
+      "step": "40",
+      "description": "Synthetic task 40: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 1",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "39",
+      "comments": "Synthetic fixture only. No company data."
+    },
+    {
+      "sourceRow": 49,
+      "section": "Handover",
+      "step": "41",
+      "description": "Synthetic task 41: validate the example project deliverable.",
+      "systemsAffected": "",
+      "owner": "Example Team 2",
+      "statusText": "",
+      "dueDateText": "",
+      "dependencies": "40",
+      "comments": "Synthetic fixture only. No company data."
+    }
+  ],
+  "sections": [
+    {
+      "sourceRow": 3,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Preparation",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Infrastructure",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Client rollout",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Integrations",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Testing",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "reason": "Section candidate: verify once against the workbook",
+      "cells": [
+        "Handover",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "reviewRows": [],
+  "preamble": [
+    {
+      "sourceRow": 1,
+      "reason": "Before project header",
+      "cells": [
+        "SYNTHETIC PROJECT PLAN",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+}
