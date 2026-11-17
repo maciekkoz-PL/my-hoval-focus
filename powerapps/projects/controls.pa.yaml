@@ -1,0 +1,974 @@
+- mhpBackground:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =0
+      Y: =0
+      Width: =Parent.Width
+      Height: =Parent.Height
+      Fill: =RGBA(245, 247, 250, 1)
+      BorderThickness: =0
+- mhpSidebar:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =0
+      Y: =0
+      Width: =184
+      Height: =Parent.Height
+      Fill: =RGBA(25, 35, 49, 1)
+      BorderThickness: =0
+- mhpBrandMark:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =24
+      Y: =31
+      Width: =4
+      Height: =42
+      Fill: =RGBA(214, 0, 28, 1)
+      BorderThickness: =0
+- mhpBrand:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="MY HOVAL"
+      X: =40
+      Y: =30
+      Width: =132
+      Height: =24
+      Size: =16
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpFocus:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="FOCUS"
+      X: =40
+      Y: =54
+      Width: =132
+      Height: =24
+      Size: =16
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpWorkspace:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="PERSONAL WORKSPACE"
+      X: =24
+      Y: =119
+      Width: =150
+      Height: =20
+      Size: =8
+      Color: =RGBA(148, 163, 184, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpNavProjects:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Projects"
+      X: =12
+      Y: =156
+      Width: =160
+      Height: =42
+      OnSelect: =false
+      Fill: =RGBA(46, 59, 76, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+      Align: =Align.Left
+      PaddingLeft: =22
+- mhpNavAccent:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =12
+      Y: =164
+      Width: =3
+      Height: =26
+      Fill: =RGBA(214, 0, 28, 1)
+      BorderThickness: =0
+- mhpNavSources:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="My Sources"
+      X: =12
+      Y: =207
+      Width: =160
+      Height: =42
+      OnSelect: =Navigate(scrMySourcesV2, ScreenTransition.None)
+      Fill: =RGBA(25, 35, 49, 1)
+      Color: =RGBA(179, 191, 207, 1)
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+      Align: =Align.Left
+      PaddingLeft: =22
+- mhpSideRule:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =24
+      Y: =Parent.Height - 116
+      Width: =136
+      Height: =1
+      Fill: =RGBA(55, 67, 84, 1)
+      BorderThickness: =0
+- mhpSideFooter:
+    Control: Label@2.5.1
+    Properties:
+      Text: '="Your priorities.
+
+        Your next steps.
+
+        One place."'
+      X: =24
+      Y: =Parent.Height - 97
+      Width: =140
+      Height: =65
+      Size: =11
+      Color: =RGBA(151, 166, 186, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpEyebrow:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="WORKSPACE  /  PROJECTS"
+      X: =216
+      Y: =15
+      Width: =400
+      Height: =20
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpHeading:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Projects"
+      X: =216
+      Y: =37
+      Width: =450
+      Height: =39
+      Size: =28
+      Color: =RGBA(25, 35, 49, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpSubtitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="See the plan. Know what needs your attention."
+      X: =216
+      Y: =91
+      Width: =600
+      Height: =22
+      Size: =11
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Visible: =false
+- mhpRefresh:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Refresh data"
+      X: =Parent.Width - 300
+      Y: =46
+      Width: =122
+      Height: =36
+      OnSelect: =IfError(Refresh('MyHovalFocus-ProjectTasks'); ClearCollect(mhpTasks, Filter('MyHovalFocus-ProjectTasks', SourceId = 1)); Refresh('MyHovalFocus-Sources'); Set(mhpSource, LookUp('MyHovalFocus-Sources', ID = 1)); Set(mhpLoadError, false), Set(mhpLoadError, true); Notify("Could not refresh project data. Please try again.", NotificationType.Error))
+      Fill: =RGBA(255, 255, 255, 1)
+      Color: =RGBA(25, 35, 49, 1)
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+- mhpOpen:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Open workbook"
+      X: =Parent.Width - 166
+      Y: =46
+      Width: =134
+      Height: =36
+      OnSelect: =Launch(mhpSource.SourceLocation)
+      Fill: =RGBA(214, 0, 28, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+      DisplayMode: =If(IsBlank(mhpSource.SourceLocation) || !StartsWith(Lower(mhpSource.SourceLocation), "https://"), DisplayMode.Disabled, DisplayMode.Edit)
+      Tooltip: ="Open the original Excel workbook. Changes are made there."
+- mhpHero:
+    Control: Image@2.2.3
+    Properties:
+      X: =216
+      Y: =96
+      Width: =Parent.Width - 248
+      Height: =104
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#192331"" stroke=""#192331"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpProjectEyebrow:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="EXCEL PROJECT  •  CUTOVER & MIGRATION"
+      X: =240
+      Y: =109
+      Width: =560
+      Height: =20
+      Size: =9
+      Color: =RGBA(166, 182, 202, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProjectName:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Coalesce(mhpSource.Titel, "SAP B1 Upgrade Plan")
+      X: =240
+      Y: =132
+      Width: =Parent.Width - 624
+      Height: =32
+      Size: =21
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProjectNote:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="One view of the plan, owners and next steps."
+      X: =240
+      Y: =168
+      Width: =Parent.Width - 624
+      Height: =24
+      Size: =11
+      Color: =RGBA(183, 197, 215, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProgressCaption:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="RECORDED COMPLETION"
+      X: =Parent.Width - 340
+      Y: =107
+      Width: =280
+      Height: =22
+      Size: =9
+      Color: =RGBA(166, 182, 202, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProgressNumber:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(CountRows(mhpTasks) = 0, "—", Text(Round(100 * (CountIf(mhpTasks, Lower(Trim(StatusText)) = "done")) / Max(1, CountRows(mhpTasks)), 0), "0") & "%")
+      X: =Parent.Width - 340
+      Y: =130
+      Width: =100
+      Height: =40
+      Size: =30
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProgressDetail:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountIf(mhpTasks, Lower(Trim(StatusText)) = "done")) & " of " & Text(CountRows(mhpTasks)) & " marked Done"
+      X: =Parent.Width - 235
+      Y: =143
+      Width: =190
+      Height: =26
+      Size: =10
+      Color: =RGBA(183, 197, 215, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpProgressTrack:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =Parent.Width - 340
+      Y: =178
+      Width: =280
+      Height: =5
+      Fill: =RGBA(59, 73, 92, 1)
+      BorderThickness: =0
+- mhpProgressFill:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =Parent.Width - 340
+      Y: =178
+      Width: =280 * (CountIf(mhpTasks, Lower(Trim(StatusText)) = "done")) / Max(1, CountRows(mhpTasks))
+      Height: =5
+      Fill: =RGBA(238, 71, 88, 1)
+      BorderThickness: =0
+- mhpMetricTotal:
+    Control: Image@2.2.3
+    Properties:
+      X: =216 + 0 * ((Parent.Width - 280) / 3 + 16)
+      Y: =212
+      Width: =(Parent.Width - 280) / 3
+      Height: =64
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#FFFFFF"" stroke=""#E3E8EE"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpMetricCaptionTotal:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="LOADED TASKS"
+      X: =216 + 0 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =220
+      Width: =(Parent.Width - 280) / 3 - 36
+      Height: =18
+      Size: =8
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricValueTotal:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(mhpTasks))
+      X: =216 + 0 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =239
+      Width: =70
+      Height: =29
+      Size: =22
+      Color: =RGBA(25, 35, 49, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricFootTotal:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="From the latest imported project data"
+      X: =216 + 0 * ((Parent.Width - 280) / 3 + 16) + 94
+      Y: =235
+      Width: =(Parent.Width - 280) / 3 - 112
+      Height: =33
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricDone:
+    Control: Image@2.2.3
+    Properties:
+      X: =216 + 1 * ((Parent.Width - 280) / 3 + 16)
+      Y: =212
+      Width: =(Parent.Width - 280) / 3
+      Height: =64
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#FFFFFF"" stroke=""#E3E8EE"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpMetricCaptionDone:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="COMPLETED"
+      X: =216 + 1 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =220
+      Width: =(Parent.Width - 280) / 3 - 36
+      Height: =18
+      Size: =8
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricValueDone:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountIf(mhpTasks, Lower(Trim(StatusText)) = "done"))
+      X: =216 + 1 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =239
+      Width: =70
+      Height: =29
+      Size: =22
+      Color: =RGBA(30, 118, 91, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricFootDone:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Tasks explicitly marked Done in Excel"
+      X: =216 + 1 * ((Parent.Width - 280) / 3 + 16) + 94
+      Y: =235
+      Width: =(Parent.Width - 280) / 3 - 112
+      Height: =33
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricMissing:
+    Control: Image@2.2.3
+    Properties:
+      X: =216 + 2 * ((Parent.Width - 280) / 3 + 16)
+      Y: =212
+      Width: =(Parent.Width - 280) / 3
+      Height: =64
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#FFFFFF"" stroke=""#E3E8EE"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpMetricCaptionMissing:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="STATUS NOT RECORDED"
+      X: =216 + 2 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =220
+      Width: =(Parent.Width - 280) / 3 - 36
+      Height: =18
+      Size: =8
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricValueMissing:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountIf(mhpTasks, IsBlank(Trim(StatusText))))
+      X: =216 + 2 * ((Parent.Width - 280) / 3 + 16) + 18
+      Y: =239
+      Width: =70
+      Height: =29
+      Size: =22
+      Color: =RGBA(145, 98, 24, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpMetricFootMissing:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Blank in the source — review in Excel"
+      X: =216 + 2 * ((Parent.Width - 280) / 3 + 16) + 94
+      Y: =235
+      Width: =(Parent.Width - 280) / 3 - 112
+      Height: =33
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpPlanTitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Project plan"
+      X: =216
+      Y: =290
+      Width: =240
+      Height: =30
+      Size: =17
+      Color: =RGBA(25, 35, 49, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpPlanHint:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Select a task to see the full context."
+      X: =216
+      Y: =437
+      Width: =420
+      Height: =22
+      Size: =10
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Visible: =false
+- mhpListCard:
+    Control: Image@2.2.3
+    Properties:
+      X: =216
+      Y: =328
+      Width: =Parent.Width - 664
+      Height: =Max(200, Parent.Height - 360)
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#FFFFFF"" stroke=""#E3E8EE"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpSearch:
+    Control: Classic/TextInput@2.3.2
+    Properties:
+      X: =232
+      Y: =340
+      Width: =Parent.Width - 696
+      Height: =36
+      Default: =""
+      HintText: ="Search tasks, owners or sections…"
+      AccessibleLabel: ="Search project tasks"
+      DelayOutput: =true
+      Font: =Font.'Segoe UI'
+      Size: =11
+      Color: =RGBA(25, 35, 49, 1)
+      Fill: =RGBA(245, 247, 250, 1)
+      BorderThickness: =0
+      PaddingLeft: =12
+      RadiusTopLeft: =6
+      RadiusTopRight: =6
+      RadiusBottomLeft: =6
+      RadiusBottomRight: =6
+      OnChange: =Reset(mhpTaskList)
+- mhpFilterAll:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="All tasks"
+      X: =232 + 0 * 105
+      Y: =385
+      Width: =99
+      Height: =28
+      OnSelect: =Set(mhpFilter, "All"); Reset(mhpTaskList)
+      Fill: =If(Coalesce(mhpFilter, "All") = "All", RGBA(25, 35, 49, 1), RGBA(245, 247, 250, 1))
+      Color: =If(Coalesce(mhpFilter, "All") = "All", RGBA(255, 255, 255, 1), RGBA(103, 117, 135, 1))
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+- mhpFilterDone:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Done"
+      X: =232 + 1 * 105
+      Y: =385
+      Width: =99
+      Height: =28
+      OnSelect: =Set(mhpFilter, "Done"); Reset(mhpTaskList)
+      Fill: =If(Coalesce(mhpFilter, "All") = "Done", RGBA(25, 35, 49, 1), RGBA(245, 247, 250, 1))
+      Color: =If(Coalesce(mhpFilter, "All") = "Done", RGBA(255, 255, 255, 1), RGBA(103, 117, 135, 1))
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+- mhpFilterRecorded:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Other status"
+      X: =232 + 2 * 105
+      Y: =385
+      Width: =99
+      Height: =28
+      OnSelect: =Set(mhpFilter, "Recorded"); Reset(mhpTaskList)
+      Fill: =If(Coalesce(mhpFilter, "All") = "Recorded", RGBA(25, 35, 49, 1), RGBA(245, 247, 250, 1))
+      Color: =If(Coalesce(mhpFilter, "All") = "Recorded", RGBA(255, 255, 255, 1), RGBA(103, 117, 135, 1))
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+- mhpFilterMissing:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="No status"
+      X: =232 + 3 * 105
+      Y: =385
+      Width: =99
+      Height: =28
+      OnSelect: =Set(mhpFilter, "Missing"); Reset(mhpTaskList)
+      Fill: =If(Coalesce(mhpFilter, "All") = "Missing", RGBA(25, 35, 49, 1), RGBA(245, 247, 250, 1))
+      Color: =If(Coalesce(mhpFilter, "All") = "Missing", RGBA(255, 255, 255, 1), RGBA(103, 117, 135, 1))
+      BorderThickness: =0
+      HoverFill: =RGBA(233, 237, 242, 1)
+      HoverColor: =RGBA(25, 35, 49, 1)
+      PressedFill: =RGBA(214, 0, 28, 1)
+      PressedColor: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Segoe UI'
+      Size: =11
+      FontWeight: =FontWeight.Semibold
+      RadiusTopLeft: =7
+      RadiusTopRight: =7
+      RadiusBottomLeft: =7
+      RadiusBottomRight: =7
+- mhpTaskList:
+    Control: Gallery@2.15.0
+    Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+    Properties:
+      X: =224
+      Y: =423
+      Width: =Parent.Width - 680
+      Height: =Max(90, Parent.Height - 465)
+      Items: =SortByColumns(Filter(mhpTasks, (IsBlank(mhpSearch.Text) || mhpSearch.Text in TaskDescription || mhpSearch.Text in TaskOwner || mhpSearch.Text in Section || mhpSearch.Text = Step) && Switch(Coalesce(mhpFilter, "All"), "Done", Lower(Trim(StatusText)) = "done", "Missing", IsBlank(Trim(StatusText)), "Recorded", !IsBlank(Trim(StatusText)) && Lower(Trim(StatusText)) <> "done", true)), "SourceRow", SortOrder.Ascending)
+      TemplateSize: =92
+      TemplatePadding: =4
+      TemplateFill: =If(ThisItem.IsSelected, RGBA(255, 243, 245, 1), RGBA(255, 255, 255, 1))
+      OnSelect: =false
+      AccessibleLabel: ="Project task list"
+      ShowScrollbar: =true
+    Children:
+    - mhpRowAccent:
+        Control: Rectangle@2.3.0
+        Properties:
+          X: =0
+          Y: =8
+          Width: =3
+          Height: =76
+          Fill: =If(ThisItem.IsSelected, RGBA(214, 0, 28, 1), RGBA(0, 0, 0, 0))
+          BorderThickness: =0
+    - mhpRowStep:
+        Control: Label@2.5.1
+        Properties:
+          Text: =ThisItem.Step
+          X: =14
+          Y: =12
+          Width: =36
+          Height: =25
+          Size: =12
+          Color: =RGBA(103, 117, 135, 1)
+          Font: =Font.'Segoe UI'
+          FontWeight: =FontWeight.Semibold
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          PaddingBottom: =0
+          OnSelect: =Select(Parent)
+    - mhpRowTitle:
+        Control: Label@2.5.1
+        Properties:
+          Text: =Left(Substitute(Substitute(ThisItem.TaskDescription, Char(13), " "), Char(10), " "), 110) & If(Len(ThisItem.TaskDescription) > 110, "…", "")
+          X: =58
+          Y: =8
+          Width: =Parent.TemplateWidth - 76
+          Height: =42
+          Size: =12
+          Color: =RGBA(25, 35, 49, 1)
+          Font: =Font.'Segoe UI'
+          FontWeight: =FontWeight.Semibold
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          PaddingBottom: =0
+          OnSelect: =Select(Parent)
+          VerticalAlign: =VerticalAlign.Top
+    - mhpRowOwner:
+        Control: Label@2.5.1
+        Properties:
+          Text: =Coalesce(ThisItem.TaskOwner, "Owner not recorded") & "  ·  " & ThisItem.Section
+          X: =58
+          Y: =52
+          Width: =Parent.TemplateWidth - 76
+          Height: =21
+          Size: =9
+          Color: =RGBA(103, 117, 135, 1)
+          Font: =Font.'Segoe UI'
+          FontWeight: =FontWeight.Normal
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          PaddingBottom: =0
+          OnSelect: =Select(Parent)
+    - mhpRowStatus:
+        Control: Label@2.5.1
+        Properties:
+          Text: =Coalesce(ThisItem.StatusText, "Status not recorded")
+          X: =58
+          Y: =72
+          Width: =Parent.TemplateWidth - 76
+          Height: =18
+          Size: =9
+          Color: =If(Lower(Trim(ThisItem.StatusText)) = "done", RGBA(30, 118, 91, 1), If(IsBlank(Trim(ThisItem.StatusText)), RGBA(145, 98, 24, 1), RGBA(103, 117, 135, 1)))
+          Font: =Font.'Segoe UI'
+          FontWeight: =FontWeight.Normal
+          PaddingLeft: =0
+          PaddingRight: =0
+          PaddingTop: =0
+          PaddingBottom: =0
+          OnSelect: =Select(Parent)
+- mhpNoResults:
+    Control: Label@2.5.1
+    Properties:
+      Text: '=If(mhpLoadError, "Unable to load data. Select Refresh data to retry.", "No tasks match this view.
+
+        Try another search or filter.")'
+      X: =248
+      Y: =456
+      Width: =Parent.Width - 728
+      Height: =76
+      Size: =12
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Visible: =IsEmpty(mhpTaskList.AllItems)
+- mhpCount:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(SortByColumns(Filter(mhpTasks, (IsBlank(mhpSearch.Text) || mhpSearch.Text in TaskDescription || mhpSearch.Text in TaskOwner || mhpSearch.Text in Section || mhpSearch.Text = Step) && Switch(Coalesce(mhpFilter, "All"), "Done", Lower(Trim(StatusText)) = "done", "Missing", IsBlank(Trim(StatusText)), "Recorded", !IsBlank(Trim(StatusText)) && Lower(Trim(StatusText)) <> "done", true)), "SourceRow", SortOrder.Ascending))) & " tasks in this view"
+      X: =232
+      Y: =Parent.Height - 35
+      Width: =350
+      Height: =20
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpDetailsCard:
+    Control: Image@2.2.3
+    Properties:
+      X: =Parent.Width - 432
+      Y: =290
+      Width: =400
+      Height: =Max(267, Parent.Height - 322)
+      Image: ="data:image/svg+xml;utf8," & EncodeUrl("<svg xmlns=""http://www.w3.org/2000/svg"" width=""1000"" height=""300"" viewBox=""0 0 1000 300"" preserveAspectRatio=""none""><rect x=""1"" y=""1"" width=""998"" height=""298"" rx=""14"" fill=""#FFFFFF"" stroke=""#E3E8EE"" stroke-width=""1""/></svg>")
+      ImagePosition: =ImagePosition.Stretch
+      AccessibleLabel: =""
+      TabIndex: =-1
+- mhpDetailsEyebrow:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(IsBlank(mhpTaskList.Selected.ID), "TASK DETAILS", "TASK " & mhpTaskList.Selected.Step & "  /  DETAILS")
+      X: =Parent.Width - 408
+      Y: =310
+      Width: =352
+      Height: =22
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpDetailsStatus:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Coalesce(mhpTaskList.Selected.StatusText, "Status not recorded")
+      X: =Parent.Width - 408
+      Y: =340
+      Width: =352
+      Height: =44
+      Size: =16
+      Color: =If(Lower(Trim(mhpTaskList.Selected.StatusText)) = "done", RGBA(30, 118, 91, 1), RGBA(25, 35, 49, 1))
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Semibold
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpDetailsRule:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =Parent.Width - 408
+      Y: =393
+      Width: =352
+      Height: =1
+      Fill: =RGBA(227, 232, 238, 1)
+      BorderThickness: =0
+- mhpDetailsBody:
+    Control: HtmlViewer@2.1.0
+    Properties:
+      X: =Parent.Width - 408
+      Y: =411
+      Width: =352
+      Height: =Max(110, Parent.Height - 496)
+      HtmlText: ="<div style='font-family:Segoe UI,sans-serif;height:" & Text(Max(90, Self.Height - 12), "0", "en-US") & "px;overflow-y:auto;padding-right:14px'>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>TASK</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.TaskDescription, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>OWNER</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.TaskOwner, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>SECTION</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.Section, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>DUE DATE · AS RECORDED</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.DueDateText, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>SYSTEMS AFFECTED</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.SystemsAffected,
+        "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>DEPENDENCIES</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.Dependencies, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "<div style='margin-bottom:22px'><div style='font-size:10px;font-weight:600;letter-spacing:1px;color:#677587;margin-bottom:7px'>COMMENTS</div><div style='white-space:pre-wrap;font-size:13px;line-height:1.65;color:#192331;overflow-wrap:anywhere'>" & Substitute(Substitute(Substitute(Coalesce(mhpTaskList.Selected.Comments, "—"), "&", "&amp;"), "<", "&lt;"), ">", "&gt;") & "</div></div>" & "</div>"
+      AutoHeight: =false
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Visible: =!IsBlank(mhpTaskList.Selected.ID)
+- mhpDetailsEmpty:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Select a task from the project plan."
+      X: =Parent.Width - 408
+      Y: =430
+      Width: =352
+      Height: =80
+      Size: =12
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Visible: =IsBlank(mhpTaskList.Selected.ID)
+- mhpDetailsFootRule:
+    Control: Rectangle@2.3.0
+    Properties:
+      X: =Parent.Width - 408
+      Y: =Parent.Height - 80
+      Width: =352
+      Height: =1
+      Fill: =RGBA(227, 232, 238, 1)
+      BorderThickness: =0
+- mhpDetailsFoot:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Read-only view · Make changes in the workbook"
+      X: =Parent.Width - 408
+      Y: =Parent.Height - 68
+      Width: =352
+      Height: =24
+      Size: =9
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+- mhpSync:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(IsEmpty(mhpTasks), "No imported data loaded", "Last imported " & Text(First(SortByColumns(mhpTasks, "SyncedAt", SortOrder.Descending)).SyncedAt, "[$-en-US]dd mmm yyyy, hh:mm"))
+      X: =Parent.Width - 432
+      Y: =Parent.Height - 26
+      Width: =400
+      Height: =18
+      Size: =8
+      Color: =RGBA(103, 117, 135, 1)
+      Font: =Font.'Segoe UI'
+      FontWeight: =FontWeight.Normal
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
