@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+config/deployment.local.json
+private/
+exports/
+*.msapp
+*.zip
+*.xlsx
+*.har
+coverage/
+dist/
