@@ -1,0 +1,1 @@
+Set(mhpFilter; "All");; IfError(Refresh('MyHovalFocus-ProjectTasks');; ClearCollect(mhpTasks; Filter('MyHovalFocus-ProjectTasks'; SourceId = 1));; Refresh('MyHovalFocus-Sources');; Set(mhpSource; LookUp('MyHovalFocus-Sources'; ID = 1));; Set(mhpLoadError; false); Set(mhpLoadError; true);; Notify("Could not refresh project data. Please try again."; NotificationType.Error))
