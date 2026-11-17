@@ -1,0 +1,33 @@
+{
+  "listTitle": "MyHovalFocus-Sources",
+  "provenance": "Logical schema observed in flow responses/app code; not a live exported field collection.",
+  "columns": [
+    {
+      "name": "Title",
+      "type": "Text",
+      "builtIn": true,
+      "powerFxDisplayNameInOwnerTenant": "Titel"
+    },
+    {
+      "name": "System",
+      "type": "Choice",
+      "choices": [
+        "Outlook",
+        "Teams",
+        "Excel",
+        "Xurrent"
+      ],
+      "multiple": false
+    },
+    {
+      "name": "SourceLocation",
+      "type": "Text"
+    },
+    {
+      "name": "Enabled",
+      "type": "Boolean",
+      "default": false,
+      "executionEffect": "none yet"
+    }
+  ]
+}
