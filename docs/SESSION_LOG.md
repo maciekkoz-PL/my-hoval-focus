@@ -10,3 +10,8 @@
 - Next: check a supported internal web deployment + authenticated read path.
 
 Validation: five Node extractor regression tests passed; 35 text files passed JSON/YAML/XML, fixture consistency and targeted sensitive-data checks. These are local checks, not tenant deployment tests.
+
+## 2026-11-20 — Web preparation
+- Wrote the [web brief](WEB-BRIEF.md) with pilot scope, real-data checks, responsive interaction and acceptance criteria.
+- Verified the general SharePoint Framework access and deployment model against Microsoft Learn. Hoval-specific deployment and list access are pending.
+- Changes in this session are documentation only. The owner will signal when implementation may start.
