@@ -40,3 +40,7 @@ Podstawy danych: puste statusy oznacz jako “Status not recorded”. Zachowaj p
 ## Polecenie po przełączeniu modelu
 
 > Możesz zaczynać My Hoval Focus WWW. Przeczytaj AGENTS.md, docs/STATE.md, docs/NEXT_STEPS.md oraz docs/WEB-BRIEF.md. Zacznij od potwierdzenia wdrożenia i odczytu z SharePoint. Potem zaprojektuj i zbuduj sprawdzalny ekran Projects, z angielskim UI i działającą ścieżką od wyszukania zadania do źródła. Zachowaj obecny import; jeśli konkretna decyzja zależy ode mnie albo od IT, podaj dokładnie którą. Zapisuj postępy w prywatnym repozytorium.
+
+## Ticket Review — ustalenia z burzy mózgów
+
+Główny ekran ma dwa działania: Refresh tickets pobiera aktualny stan z Xurrent i zachowuje lokalne decyzje, a Review tickets otwiera rozmowę AI o jednym zgłoszeniu naraz. Wzorem jest dotychczasowy Ticket Asystent. Proponowany przebieg: ostatnie istotne notatki, status, next target i ostatnia decyzja, rozmowa po polsku, zapis szkicu albo pominięcie, następny ticket, jedno podsumowanie i zatwierdzenie wybranych zmian. Oddziel osobiste przypomnienia w Focus od zapisów i wiadomości w Xurrent. Zachowaj niewysłane decyzje między sesjami. Przy wysyłce sprawdź zmiany w Xurrent i wyniki poszczególnych operacji, aby ponowienie nie powielało notatek. Integracja z firmowym Copilotem lub innym zatwierdzonym dostawcą wymaga sprawdzenia dostępu w środowisku Hoval. Funkcja jest na etapie koncepcji.
