@@ -1,5 +1,7 @@
 # Next steps, in order
 
+**2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
+
 The [web brief](WEB-BRIEF.md) records the proposed first release and acceptance criteria. The owner will signal when to begin implementation after switching models.
 
 ## 1. Confirm a deployable web route — current priority
