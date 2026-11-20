@@ -1,10 +1,10 @@
 # Current state — 2026-11-20
 
 ## Latest checkpoint
-The owner requested a complete repository handoff before doing more. New work in this checkpoint is documentation only. Read [PRODUCT-SPEC.md](PRODUCT-SPEC.md) for the latest complete requirements. Web building remains paused pending the owner's signal after his requested model switch.
+The owner authorized the visual prototype. Open [My-Hoval-Focus.html](../prototype/My-Hoval-Focus.html) directly from disk. Today, Tickets and Sources use local state. The sample inbox, alpine illustration and sample tickets ship inside the HTML. The imported workspace is separate. The compatibility test on the managed company laptop is outstanding.
 
 ## Current direction
-Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. No local app has been built or verified. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
+Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. The first local prototype has passed logic tests with synthetic tickets. Browser rendering and managed-device policy still need a real-device check. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
 
 Today should help select My top 3, explain priorities and collect Needs your action from messages. Review tickets should support one-at-a-time AI discussion, durable drafts and explicit external-write approval. Coarse Toggl allocation is now a confirmed requirement, using ticket reference/title and Support hours or Change hours, approximately eight hours for a full day. First generate entries for copying; API sending is later.
 
