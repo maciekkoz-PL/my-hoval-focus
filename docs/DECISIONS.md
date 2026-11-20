@@ -17,3 +17,15 @@ Owner reports Projects displays but UI/scaling is unsatisfactory. Acknowledge co
 
 ## 2026-11-17 — Separate private GitHub continuity repository
 Owner requested all recoverable project work in a separate repository so other AI tools can continue when credits run out. Create my-hoval-focus separately from tickety-ai. Store code, schema, sanitized fixtures, reconstructed flow blueprints, status and clear next steps. Exclude raw company data and credentials. Do not claim complete tenant backup.
+
+## 2026-11-20 — Xurrent-first portable direction
+The owner's main source is Xurrent. Power Pages shows environment blockers; the owner prefers avoiding IT dependencies. Prepare a portable local web route with initial file import from the existing Xurrent PowerShell process, preserving the Microsoft 365 pilot. Exact packaging and live integration are unverified. Building awaits the owner's requested start/model-switch signal.
+
+## 2026-11-20 — Daily workflow
+Owner accepted app-assisted top 3 and favors actionable work that unblocks colleagues over a low-consequence date-only priority. Stakeholder importance should be configurable. Owner welcomed Teams/Outlook Needs your action proposals. Preserve review drafts and personal reminders independently of Xurrent writes. Full requirement details and confidence levels are in PRODUCT-SPEC.md.
+
+## 2026-11-20 — Toggl
+Owner requested time-report preparation and eventual Toggl sending. Descriptions use ticket reference - title, with C prefix and Change hours for changes, numeric reference and Support hours for ordinary tickets. Coarse blocks totaling approximately eight hours for a full day are acceptable. Prepare editable copy-ready estimates early; verified API writing can follow. Required minute-level tracking was not requested.
+
+## 2026-11-20 — Public repository observation
+GitHub metadata returned public, despite prior private intent. This documentation update includes role-based stakeholder hierarchy and sanitized conventions. Exact names, corporate contents, screenshot and endpoints were omitted. Visibility was not changed.

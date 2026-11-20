@@ -1,12 +1,15 @@
 # Instructions for any agent working on this repository
 
 ## Read before acting
-Read README.md, docs/STATE.md, docs/NEXT_STEPS.md, docs/KNOWN_ISSUES.md and docs/DECISIONS.md. State is a dated snapshot, not live tenant telemetry. Read repository files; do not rely only on the previous chat.
+Read README.md, docs/STATE.md, docs/PRODUCT-SPEC.md, docs/NEXT_STEPS.md, docs/KNOWN_ISSUES.md and docs/DECISIONS.md. State is a dated snapshot, not live tenant telemetry. Read repository files; do not rely only on the previous chat.
 
 ## Scope and preferences
 - Project: My Hoval Focus, a personal workplace dashboard. App UI must be English. Speak Polish to the owner, Maciek.
 - The owner wants premium visual quality and real responsiveness, minimal manual clicking, and precise short steps when his UI actions are necessary.
-- Latest direction: preserve Power Automate + SharePoint; evaluate web/SPFx UI. Do not continue cosmetic Power Apps work without rechecking the objective.
+- Latest direction: Xurrent-first portable local web app with initial file import. Preserve Power Automate + SharePoint. SPFx/Power Pages are not prerequisites for the local pilot. Follow docs/PRODUCT-SPEC.md.
+- Build remains paused until the owner gives his start signal. Documentation handoff was the latest authorized action.
+- Toggl uses coarse owner-approved allocations, about eight hours for a full day; a timer is optional. Preserve exact ticket reference/title and support/change category.
+- GitHub metadata last reported public despite the private-repository intent. Keep stakeholder identity mappings, corporate payloads and credentials outside Git.
 - Corporate laptop cannot freely install software. No corporate policy, browser authentication, license or network bypasses.
 - Do not touch the separate tickety-ai repo, Sites app or existing cloud data unless explicitly requested.
 

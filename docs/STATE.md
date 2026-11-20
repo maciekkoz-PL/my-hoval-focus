@@ -1,16 +1,20 @@
-# Current state — 2026-11-17
+# Current state — 2026-11-20
 
-**2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
+## Latest checkpoint
+The owner requested a complete repository handoff before doing more. New work in this checkpoint is documentation only. Read [PRODUCT-SPEC.md](PRODUCT-SPEC.md) for the latest complete requirements. Web building remains paused pending the owner's signal after his requested model switch.
 
-## Product goal
-My Hoval Focus is a personal dashboard for project tasks, support tickets and actionable Outlook/Teams information. Planned surfaces: Overview, Projects, Inbox, My Sources. English product UI. The owner wants a professional result worth showing to colleagues and management; do not substitute visual mockups for working integrations.
+## Current direction
+Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. No local app has been built or verified. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
 
-## Latest direction
-The owner reports the imported Projects screen displays. He has not yet supplied the detailed visual feedback or a fresh error-checker screenshot. He considers the UI dated and scaling poor, and asks whether an internal website is preferable. We acknowledged our largely coordinate-based layout contributes to the problem. Decision: evaluate web hosting/authentication first and retain the data pipeline. No SPFx or new web app has been built or deployed.
+Today should help select My top 3, explain priorities and collect Needs your action from messages. Review tickets should support one-at-a-time AI discussion, durable drafts and explicit external-write approval. Coarse Toggl allocation is now a confirmed requirement, using ticket reference/title and Support hours or Change hours, approximately eight hours for a full day. First generate entries for copying; API sending is later.
 
-## 2026-11-20 — Web preparation
-The [web brief](WEB-BRIEF.md) proposes a read-only Projects pilot with English copy, responsive layouts and reuse of the existing import. The owner asked to switch models before implementation begins. Wait for the owner's start message. Hoval deployment permissions and a live web read are still pending.
+Power Pages screenshots show a missing database in the personal environment and creation/access restrictions in the default environment. SPFx rights and independent corporate hosting remain unknown. The former SPFx-first plan is superseded for the local import pilot.
 
+## Repository visibility
+GitHub get_repo returned visibility=public during this checkpoint, contrary to earlier private-repository wording. No visibility change was made. Named stakeholder preferences are recorded as roles in the public specification; exact identities and the manager-name discrepancy require private configuration. Screenshots, company ticket examples and personal endpoints were not added.
+
+## Existing evidence and resources
+The following ledger and resource inventory preserve earlier implementation knowledge.
 ## Evidence ledger
 | Component | Evidence / status |
 |---|---|
@@ -23,7 +27,7 @@ The [web brief](WEB-BRIEF.md) proposes a read-only Projects pilot with English c
 | Projects screen | User reports it displays; appearance/scaling unsatisfactory; detailed live formula/interactivity QA outstanding |
 | Outlook | Manual Get emails (V3) returned a real notification; production ingestion absent |
 | Teams | Manual 1:1 chat discovery/member lookup/message tests succeeded; production ingestion absent |
-| Xurrent direct HTTP | Generic Power Automate HTTP execution blocked by Premium requirement; API connectivity not established by that test |
+| Xurrent | Power Automate generic HTTP blocked by Premium; owner has an existing local PowerShell workflow, but its export/code and end-to-end Focus connection are unverified here |
 | Background sync | NOT configured: trigger remains manual |
 | Sources Enabled toggle | Configuration only; does NOT gate or trigger the current importer |
 | New web/SPFx UI | Proposal only; deployment rights, host and auth/read path unverified |

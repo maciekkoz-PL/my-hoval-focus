@@ -17,3 +17,12 @@ Validation: five Node extractor regression tests passed; 35 text files passed JS
 - Wrote the [web brief](WEB-BRIEF.md) with pilot scope, real-data checks, responsive interaction and acceptance criteria.
 - Verified the general SharePoint Framework access and deployment model against Microsoft Learn. Hoval-specific deployment and list access are pending.
 - Changes in this session are documentation only. The owner will signal when implementation may start.
+
+## 2026-11-20 — Complete conversation continuation checkpoint
+- Read current remote main at 42030572a119a81422ea08791aba522b5285f2ae and existing handoff/source documentation.
+- Added PRODUCT-SPEC.md covering local direction, Today/top 3, role-based stakeholder weighting, ticket review, Teams/Outlook requests, end-of-day workflow, Toggl coarse allocation, conceptual persistence, acceptance checks and unresolved integrations.
+- Updated README, AGENTS, STATE, NEXT_STEPS, START-HERE-PL, architecture, decision/issue logs and marked the older WEB-BRIEF as historical.
+- GitHub reports public. Exact named preferences and real screenshot/ticket payloads remain outside this checkpoint.
+- Documentation only. No app build, tenant mutation, source pipeline change, integration test, credential upload or separate tickety-ai change.
+- Validation completed before publication: reviewed documentation scope, resolved all relative Markdown links in the 12 changed files against known repository paths, and checked changed text for GUIDs, personal endpoints and actual conversation identities/ticket examples. No application/tenant tests apply to this documentation-only change.
+- Commit identity is available in Git history for this entry. Next action is the owner's design discussion or explicit build signal.

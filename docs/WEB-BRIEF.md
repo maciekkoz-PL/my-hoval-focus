@@ -1,3 +1,7 @@
+# Historical web brief — superseded product priorities
+
+**2026-11-20 continuation update.** Read [PRODUCT-SPEC.md](PRODUCT-SPEC.md), STATE.md and NEXT_STEPS.md for the current local Xurrent-first direction. The earlier SPFx-first/Projects-first proposal and start prompt below are historical context. They must not override the current owner instruction. Build remains paused pending his signal.
+
 # My Hoval Focus — brief wersji WWW
 
 **Aktualizacja priorytetu, 20 listopada.** Maciej potwierdził, że głównym źródłem zadań jest Xurrent. Ekran Projects i 41 zadań z Excela to próba odczytu danych. O wyborze narzędzia decyduje obsługa rzeczywistej kolejki Xurrent. Najpierw porównaj My Inbox oraz Planner / My Day z potrzebami Macieja. Sprawdź istniejący odczyt Xurrent i możliwość odświeżania. Projekt widoków poniżej jest wcześniejszą propozycją. Budowa czeka na sygnał właściciela.

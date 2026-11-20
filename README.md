@@ -3,18 +3,18 @@
 Personal work dashboard for projects, tasks and selected information sources.
 Application copy is English; collaboration with the owner is in Polish.
 
-**Status: working Power Apps / SharePoint prototype. Web migration is being evaluated, not implemented.**
+**Status as of 2026-11-20 — working Power Apps / SharePoint prototype; portable local web app planned, implementation paused pending the owner's signal.**
 
 The Excel importer created 41 tasks and a second run updated them without confirmed duplicates. The owner reports that the Projects screen renders, but dislikes its visual quality and scaling. Further Power Apps screen work is paused while we assess an internal web front end.
 
 ## Start here — for any AI or developer
 
-1. Read [AGENTS.md](AGENTS.md).
+1. Read [AGENTS.md](AGENTS.md) and the latest [product specification](docs/PRODUCT-SPEC.md).
 2. Read [current state](docs/STATE.md), [next steps](docs/NEXT_STEPS.md) and [known issues](docs/KNOWN_ISSUES.md).
 3. Read [architecture](docs/ARCHITECTURE.md) and [handoff procedure](docs/HANDOFF.md).
 4. Inspect the code before changing anything. Do not restart the project or assume the website already exists.
 
-**Immediate next task:** establish a supported deployment and authenticated SharePoint-read path for an internal web app. SPFx is the leading candidate, but catalog permissions and a suitable corporate site are unverified. Keep the existing data pipeline.
+**Current checkpoint:** documentation handoff before further work. Xurrent is the primary source. The proposed first web release is a portable local app with ticket-file import, Today, AI-assisted priority/review workflows and copy-ready Toggl allocation. Live integrations remain unverified. Read [next steps](docs/NEXT_STEPS.md) before acting.
 
 ## Contents
 
@@ -53,8 +53,8 @@ The earlier Sites/Next.js prototype is at [maciekkoz-PL/tickety-ai](https://gith
 
 ## Privacy and deployment
 
-Keep this repository private. Only neutral synthetic task fixtures are committed. No actual email/chat exports, workbook rows, screenshots with company data, tenant/user GUIDs, tokens or connection credentials are included. `config/deployment.local.json`, raw exports and private data are ignored.
+**GitHub metadata checked on 2026-11-20 reports this repository as public.** The original intent was private; reconcile that setting before adding private deployment details. Documentation in this checkpoint is sanitized. This task did not change repository visibility. Only neutral synthetic task fixtures are committed. No actual email/chat exports, workbook rows, screenshots with company data, tenant/user GUIDs, tokens or connection credentials should be committed. `config/deployment.local.json`, raw exports and private data are ignored.
 
-No license is granted by this repository; corporate reuse/ownership needs to be settled by the owner and employer. Do not make it public or grant additional access without instruction.
+No license is granted by this repository; corporate reuse/ownership needs to be settled by the owner and employer. Do not grant additional access or publish corporate data without instruction.
 
 **Owner-facing continuation prompt:** [START-HERE-PL.md](START-HERE-PL.md).

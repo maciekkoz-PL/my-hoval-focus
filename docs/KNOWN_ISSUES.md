@@ -16,3 +16,8 @@
 14. **Recovery:** no tenant `.msapp` or exported flow/solution package available. Files here are partial source recovery + comprehensive handoff.
 15. **Sharing:** prototype lists and connections are personal; no multi-user data isolation/ownership model implemented.
 16. **Hosting:** no verified SPFx catalog rights, independent corporate hosting or Entra registration. No new WWW app exists.
+
+17. **Portable local web app:** not built; packaging, persistence, backup and Xurrent export compatibility remain unverified.
+18. **AI and messages:** Copilot/other AI API, continuous Outlook/Teams collection, classification and local notifications are proposals. Existing connection tests are not production ingestion.
+19. **Toggl:** API creation exists, but no integration has been tested. Approximate daily allocations need owner confirmation; repeated sends must not duplicate entries.
+20. **Visibility:** get_repo reported public on 2026-11-20. Earlier docs calling the repository private are historical intent, not proof of current access settings.

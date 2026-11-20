@@ -1,31 +1,24 @@
-# Next steps, in order
+# Next steps — 2026-11-20 continuation checkpoint
 
-**2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
+Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
-The [web brief](WEB-BRIEF.md) records the proposed first release and acceptance criteria. The owner will signal when to begin implementation after switching models.
+## Current authorized work
+The owner asked to save all project knowledge to GitHub before doing more. Documentation is the current deliverable. Build work remains paused until the owner's explicit signal; he previously asked to switch models first.
 
-## 1. Confirm a deployable web route — current priority
-- Inspect, using authorized corporate access or short user-guided steps, whether a suitable SharePoint site and an existing tenant/site app catalog are available and whether the owner may deploy an SPFx solution.
-- Distinguish permission to read a catalog, upload a package, approve/deploy a solution and add a web part. A visible menu alone is not proof of all permissions.
-- If blocked, explain the exact missing right and smallest IT dependency; do not keep designing a full UI or promise that a local HTML file bypasses authentication/CORS.
-- Clarify employees-only vs network/VPN-only access.
-- If feasible, make a minimal authenticated **read-only** test that reads source 1 tasks from the existing list. Handle errors and pagination; confirm real records while preserving permissions. No writes or broad new permissions needed for the proof.
-- Only after a successful data access + deployment proof choose the final web stack and build the premium responsive UI.
+## Next session
+1. Read README.md, AGENTS.md, docs/STATE.md, docs/PRODUCT-SPEC.md and docs/KNOWN_ISSUES.md.
+2. Continue the owner's design discussion if requested. Do not repeat settled questions about Xurrent priority, top 3 assistance, language or coarse Toggl allocation.
+3. When building is authorized, inspect the existing permitted Xurrent export/script and package constraints. Use a sanitized fixture to establish a portable local app import and persistence/recovery proof.
+4. Build the Today / Tickets core around stable ticket IDs and personal state. Plan premium responsive visuals together with actual import/review interactions. Preserve decisions across refreshes.
+5. Include copy-ready coarse Toggl allocation early. Live Xurrent updates, AI, mailbox/chat ingestion and Toggl sending require separate verified integration paths.
+6. Retain the working Excel → Office Script → manual Power Automate → SharePoint pipeline. Connecting it to the local app is unresolved.
+7. Keep documentation current and report real validation, not mock success as tenant proof.
 
-## 2. Obtain recoverable tenant exports
-- Save/export the current Power Apps app and flow packages/solution through supported tenant tooling. Keep originals in approved private storage, not blindly in Git (they may include identifiers or sensitive payloads).
-- Compare sanitized source with this repo and record exact dates/versions. Current repository has reconstructed flow blueprints, not full backups.
+## Existing technical backlog
+Obtain recoverable Power Apps/flow exports when practical. Harden source-count/schema/Step validation, concurrency, stable project-task identity, stale-row handling and completed-run publication before scheduling the Excel importer. Sources.Enabled remains configuration only. Source deletion is deferred.
 
-## 3. Harden ingestion before scheduling
-- Guard GetSource count=1; validate returned tasks/schema/reviewRows and uniqueness of Step/SourceKey before writes.
-- Prevent concurrent runs from racing; decide on per-source sync state and error reporting.
-- Define stable task identity. SourceId|Step currently assumes steps are never renumbered/reused. Row numbers are not stable IDs either.
-- Choose explicit handling of removed/renumbered rows. Do not mass-delete or hide old rows on a partial failed import.
-- Use a completed-run marker for snapshot publication; SyncRunId is currently stamped on individual rows only.
-- Wire Enabled and scheduler deliberately; avoid double/overlapping flow copies.
+## Hosting alternatives
+Power Pages has observed blockers in the visible environments. SPFx catalog rights and independent corporate hosting/Entra remain unverified. These are alternatives if the owner later chooses managed hosting, not prerequisites for the local import pilot. A local app does not bypass authentication, CORS or corporate controls.
 
-## 4. Expand the product
-Overview from real data; project/source navigation; proper date normalization; source delete behavior; Outlook and Teams ingestion with privacy/deduplication; Xurrent access through an approved licensed route. No automatic sending of emails/chat/ticket notes without the owner's explicit instruction.
-
-## If the owner chooses to stay with Power Apps
-Rebuild layout using responsive containers and supported modern controls where appropriate. Do not just stretch the current coordinate-based layout or claim it is fully responsive. First request the owner's concrete feedback or current screen export; preserve working data bindings. Fix source navigation and verify App.StartScreen/published state.
+## Visibility
+GitHub metadata observed during this checkpoint reports public. Keep content sanitized. Exact stakeholder names/mappings, personal endpoints, raw company data and credentials belong in private deployment configuration. Do not assert privacy based only on an old README.
