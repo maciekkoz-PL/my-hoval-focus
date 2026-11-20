@@ -6,6 +6,9 @@ My Hoval Focus is a personal dashboard for project tasks, support tickets and ac
 ## Latest direction
 The owner reports the imported Projects screen displays. He has not yet supplied the detailed visual feedback or a fresh error-checker screenshot. He considers the UI dated and scaling poor, and asks whether an internal website is preferable. We acknowledged our largely coordinate-based layout contributes to the problem. Decision: evaluate web hosting/authentication first and retain the data pipeline. No SPFx or new web app has been built or deployed.
 
+## 2026-11-20 — Web preparation
+The [web brief](WEB-BRIEF.md) proposes a read-only Projects pilot with English copy, responsive layouts and reuse of the existing import. The owner asked to switch models before implementation begins. Wait for the owner's start message. Hoval deployment permissions and a live web read are still pending.
+
 ## Evidence ledger
 | Component | Evidence / status |
 |---|---|
