@@ -22,3 +22,6 @@ Power Pages has observed blockers in the visible environments. SPFx catalog righ
 
 ## Visibility
 GitHub metadata observed during this checkpoint reports public. Keep content sanitized. Exact stakeholder names/mappings, personal endpoints, raw company data and credentials belong in private deployment configuration. Do not assert privacy based only on an old README.
+
+## Exporter discovery update
+Read [XURRENT-EXISTING-TOOLS.md](XURRENT-EXISTING-TOOLS.md) before requesting scripts. Base archive and 1.5 overlay were located and inspected. Reuse their export contract; verify local UI execution/data exchange after build authorization. Exact raw scripts, real packages and snapshots stay outside public Git.

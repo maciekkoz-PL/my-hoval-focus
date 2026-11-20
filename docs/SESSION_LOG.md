@@ -26,3 +26,10 @@ Validation: five Node extractor regression tests passed; 35 text files passed JS
 - Documentation only. No app build, tenant mutation, source pipeline change, integration test, credential upload or separate tickety-ai change.
 - Validation completed before publication: reviewed documentation scope, resolved all relative Markdown links in the 12 changed files against known repository paths, and checked changed text for GUIDs, personal endpoints and actual conversation identities/ticket examples. No application/tenant tests apply to this documentation-only change.
 - Commit identity is available in Git history for this entry. Next action is the owner's design discussion or explicit build signal.
+
+## 2026-11-20 — GitHub and Ticket Asystent inspection
+- Inspected both repository main trees and tickety-ai README/model/state API/UI. The current web app has local state/export features and no connected Xurrent fetch.
+- Used the owner's clarification screenshot to identify the ChatGPT project TICKETY w Xurrent; retrieved relevant prior conversation context.
+- Located and inspected the saved standalone exporter, base assistant ZIP and 1.5 update. Recorded provenance, JSON export contract, token-storage design, updater behavior and evidence limits in XURRENT-EXISTING-TOOLS.md.
+- Raw company snapshots, packages, personal identifiers and token material were not added to Git. No scripts or external writes executed.
+- Documentation-only validation checks all four changed paths and relative links. No application test was applicable. Next is the owner's build signal and permitted browser-to-local-export proof.

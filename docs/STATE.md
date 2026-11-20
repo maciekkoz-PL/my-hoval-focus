@@ -55,3 +55,6 @@ The following ledger and resource inventory preserve earlier implementation know
 
 ## Unfinished requirements
 Real ingestion for Outlook/Teams, Xurrent integration, scheduler/Enabled wiring, import failure handling, stable IDs and deleted-row reconciliation, Overview, Inbox, source deletion, shared-use access model and internal web hosting all remain unfinished.
+
+## 2026-11-20 — Existing Xurrent tools located
+Inspected base Xurrent Asystent ZIP and the 1.5 update from the owner's saved ChatGPT project files. The exporter and approved-package updater exist outside GitHub. See [XURRENT-EXISTING-TOOLS.md](XURRENT-EXISTING-TOOLS.md). A new user upload is unnecessary. Current live connectivity and the browser-to-script bridge remain untested.
