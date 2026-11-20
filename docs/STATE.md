@@ -1,5 +1,7 @@
 # Current state — 2026-11-17
 
+**2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
+
 ## Product goal
 My Hoval Focus is a personal dashboard for project tasks, support tickets and actionable Outlook/Teams information. Planned surfaces: Overview, Projects, Inbox, My Sources. English product UI. The owner wants a professional result worth showing to colleagues and management; do not substitute visual mockups for working integrations.
 
