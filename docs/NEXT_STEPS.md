@@ -1,5 +1,7 @@
 # Next steps, in order
 
+The [web brief](WEB-BRIEF.md) records the proposed first release and acceptance criteria. The owner will signal when to begin implementation after switching models.
+
 ## 1. Confirm a deployable web route — current priority
 - Inspect, using authorized corporate access or short user-guided steps, whether a suitable SharePoint site and an existing tenant/site app catalog are available and whether the owner may deploy an SPFx solution.
 - Distinguish permission to read a catalog, upload a package, approve/deploy a solution and add a web part. A visible menu alone is not proof of all permissions.
