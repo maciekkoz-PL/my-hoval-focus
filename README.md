@@ -3,7 +3,7 @@
 Personal work dashboard for projects, tasks and selected information sources.
 Application copy is English; collaboration with the owner is in Polish.
 
-**Status as of 2026-11-20 — working Power Apps / SharePoint prototype; portable local web app planned, implementation paused pending the owner's signal.**
+**2026-11-20 · Portable Today prototype.** Download [My-Hoval-Focus.html](prototype/My-Hoval-Focus.html) and open it locally. All styles, sample data and interactions are included.
 
 The Excel importer created 41 tasks and a second run updated them without confirmed duplicates. The owner reports that the Projects screen renders, but dislikes its visual quality and scaling. Further Power Apps screen work is paused while we assess an internal web front end.
 
@@ -12,9 +12,9 @@ The Excel importer created 41 tasks and a second run updated them without confir
 1. Read [AGENTS.md](AGENTS.md) and the latest [product specification](docs/PRODUCT-SPEC.md).
 2. Read [current state](docs/STATE.md), [next steps](docs/NEXT_STEPS.md) and [known issues](docs/KNOWN_ISSUES.md).
 3. Read [architecture](docs/ARCHITECTURE.md) and [handoff procedure](docs/HANDOFF.md).
-4. Inspect the code before changing anything. Do not restart the project or assume the website already exists.
+4. Run `node tests/today-offline.cjs` to check the local prototype's logic.
 
-**Current checkpoint:** documentation handoff before further work. Xurrent is the primary source. The proposed first web release is a portable local app with ticket-file import, Today, AI-assisted priority/review workflows and copy-ready Toggl allocation. Live integrations remain unverified. Read [next steps](docs/NEXT_STEPS.md) before acting.
+**Current checkpoint.** The first visual prototype is ready for a managed Edge acceptance test. The Sources screen supports manual Xurrent file import. Live integrations and AI remain future work.
 
 ## Contents
 
