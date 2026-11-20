@@ -36,3 +36,6 @@ Validation: five Node extractor regression tests passed; 35 text files passed JS
 
 ## 2026-11-20 — Offline Today prototype
 The owner gave the explicit visual build signal. Branch `prototype/today-offline-v1`, first HTML commit `883922d`, logic checks `7fdf618`. The artifact is standalone and contains only synthetic examples. It implements a sample morning plan, priority replacement, local ticket review and notes, duplicate and partial import handling, message triage, coarse copy-ready time allocations, and JSON backups. No network connectors are enabled. Local logic regression checks passed. This environment could not run the graphical browser test for a local file. Visual inspection, OS file-picker and persistence checks on managed Edge remain open.
+
+## 2026-11-20 — Second Today design
+The owner confirmed the first prototype opens and requested a stronger visual direction. HTML commit `ab6f907` updates the navigation, typography, featured ticket, plan and inbox. The self-contained JPEG was generated for this project and contains no corporate data. Existing workspace schema, persistence key, import and review flow are retained. Run `node tests/today-offline.cjs` and `node tests/today-spotlight.cjs`. Both logic checks passed locally, and the embedded image decoded. The revised layout awaits visual review on the managed laptop.
