@@ -1,5 +1,7 @@
 # My Hoval Focus — brief wersji WWW
 
+**Aktualizacja priorytetu, 20 listopada.** Maciej potwierdził, że głównym źródłem zadań jest Xurrent. Ekran Projects i 41 zadań z Excela to próba odczytu danych. O wyborze narzędzia decyduje obsługa rzeczywistej kolejki Xurrent. Najpierw porównaj My Inbox oraz Planner / My Day z potrzebami Macieja. Sprawdź istniejący odczyt Xurrent i możliwość odświeżania. Projekt widoków poniżej jest wcześniejszą propozycją. Budowa czeka na sygnał właściciela.
+
 20 listopada 2026. Zaakceptowana prośba dotyczy przygotowania do budowy. **Rozpoczęcie implementacji czeka na sygnał Macieja po przełączeniu modelu.** Po sygnale zacznij od próby dostępu i wdrożenia opisanej poniżej. Układ i zakres ekranów są propozycją do dopracowania przez kolejny model.
 
 ## Co użytkownik ma móc zrobić
