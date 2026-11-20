@@ -33,3 +33,6 @@ Validation: five Node extractor regression tests passed; 35 text files passed JS
 - Located and inspected the saved standalone exporter, base assistant ZIP and 1.5 update. Recorded provenance, JSON export contract, token-storage design, updater behavior and evidence limits in XURRENT-EXISTING-TOOLS.md.
 - Raw company snapshots, packages, personal identifiers and token material were not added to Git. No scripts or external writes executed.
 - Documentation-only validation checks all four changed paths and relative links. No application test was applicable. Next is the owner's build signal and permitted browser-to-local-export proof.
+
+## 2026-11-20 — Offline Today prototype
+The owner gave the explicit visual build signal. Branch `prototype/today-offline-v1`, first HTML commit `883922d`, logic checks `7fdf618`. The artifact is standalone and contains only synthetic examples. It implements a sample morning plan, priority replacement, local ticket review and notes, duplicate and partial import handling, message triage, coarse copy-ready time allocations, and JSON backups. No network connectors are enabled. Local logic regression checks passed. This environment could not run the graphical browser test for a local file. Visual inspection, OS file-picker and persistence checks on managed Edge remain open.
