@@ -1,5 +1,7 @@
 # Session log
 
+**2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
+
 ## 2026-11-17 — Repository bootstrap
 - Created a separate private repository at the owner's request.
 - Preserved delivered Office Script and Projects source; reconstructed My Sources' three confirmed formula fixes.
