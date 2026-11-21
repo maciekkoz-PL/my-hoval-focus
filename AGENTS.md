@@ -29,4 +29,4 @@ Read README.md, docs/STATE.md, docs/PRODUCT-SPEC.md, docs/NEXT_STEPS.md, docs/KN
 - Read current HEAD and dirty state before edits; preserve others' work. Stop to resolve overlapping work rather than overwriting it.
 - Only run checks meaningful for the change. Do not claim tenant validation from local mock tests.
 - End each work session with docs/STATE.md and docs/NEXT_STEPS.md updated, dated handoff notes in docs/SESSION_LOG.md, tests and commit information. Push the work when authorized and access is available; otherwise state the blocker.
-- Never put an access token into prompts, README, browser JavaScript, app frontend or commits.
+- Never embed credentials in code, prompts, docs, exports or commits. The owner authorized entering a token at runtime into the downloaded local HTML and remembering it there. Keep the encrypted record outside workspace backups, with a nonextractable browser-generated key, an explicit Forget action, and an exact Xurrent API destination.
