@@ -3,7 +3,7 @@
 Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
 ## Next session
-1. Review edition three on managed Edge. Check all three priorities at 100% zoom, a long imported title and an empty plan. On a narrow screen the ordered cards stack. Confirm the user can tell what to do first and how to open its next action. Collect visual feedback on the actual app.
+1. Review the dark dashboard on managed Edge at 100% zoom. Check the alpine first priority, the two adjacent tickets, keyboard focus and long imported subjects. Compare the snapshot breakdown with the Tickets page. Test both an empty plan and a saved personal action.
 2. Select Edit under My top 3, replace one ticket and save. Close and reopen the same file from the same folder. Confirm the revised plan persists. If local storage is unavailable, try the JSON backup and restore controls.
 3. In Sources, download the synthetic example, import it, save a next action, and reimport it. Verify the personal action survives. Test a real export locally only after the sample works. Keep real data outside Git.
 4. Collect feedback on the Today layout before extending Projects, AI, ticket ingestion or scheduling. Run `node tests/today-offline.cjs` after changes. The Node test exercises app logic with in-memory browser objects. It does not test layout, file-picker permissions or tenant connectivity.
