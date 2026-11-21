@@ -1,7 +1,7 @@
 # Current state — 2026-11-20
 
 ## Latest checkpoint
-The owner authorized the visual prototype. Open [My-Hoval-Focus.html](../prototype/My-Hoval-Focus.html) directly from disk. Today, Tickets and Sources use local state. The sample inbox, alpine illustration and sample tickets ship inside the HTML. The imported workspace is separate. The owner reported the first HTML worked on the company laptop and rejected its visual design. The revised Today layout features a selected ticket, an embedded synthetic alpine panorama, quick priority selection and a compact message inbox. Visual acceptance of this second design is pending.
+The owner confirmed the local prototype works and rejected two visual iterations. The third, [The daily brief](../prototype/My-Hoval-Focus.html), displays each planned ticket once. The cover now contains the date and the review action. Three ranked cards keep reasons and saved next steps in place, with messages, waiting tickets outside the plan, and Toggl draft hours below. Existing JSON state and import contracts are compatible. Tests pass with synthetic data. The owner has yet to evaluate this version on managed Edge.
 
 ## Current direction
 Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. The first local prototype has passed logic tests with synthetic tickets. Browser rendering and managed-device policy still need a real-device check. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
