@@ -3,7 +3,7 @@
 Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
 ## Next session
-The owner has no internal host. Verify the Sources > Check connection result in managed Edge from the local HTML. Then establish an authorized authentication mechanism for the single-laptop experience. Network reachability alone is not authorization; do not assume the corporate token may enter the frontend.
+The owner has no internal host. The owner reported the expected anonymous 401 in managed Edge. Establish an authorized authentication mechanism for the single-laptop experience. Network reachability alone is not authorization; do not assume the corporate token may enter the frontend.
 1. Review the dark dashboard on managed Edge at 100% zoom. Check the alpine first priority, the two adjacent tickets, keyboard focus and long imported subjects. Compare the snapshot breakdown with the Tickets page. Test both an empty plan and a saved personal action.
 2. Select Edit under My top 3, replace one ticket and save. Close and reopen the same file from the same folder. Confirm the revised plan persists. If local storage is unavailable, try the JSON backup and restore controls.
 3. In Sources, download the synthetic example, import it, save a next action, and reimport it. Verify the personal action survives. Test a real export locally only after the sample works. Keep real data outside Git.
