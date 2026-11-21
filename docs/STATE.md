@@ -1,6 +1,9 @@
 # Current state — 2026-11-20
 
-## Laptop-only checkpoint · 2026-11-21
+## Remembered Xurrent connection · 2026-11-21
+The owner authorized local token persistence. The downloaded HTML reads the identity and open tickets assigned to it. Sources and Tickets offer refresh on demand. An AES-GCM key and encrypted token are stored in IndexedDB for this file path. The nonextractable key is stored in the same browser profile. Backups omit credentials. No automatic refresh or direct authenticated writes. Synthetic two-session tests use real Web Crypto with a structured-clone database double. Actual storage across managed Edge restarts and authenticated tenant reads await owner verification.
+
+## Earlier laptop-only checkpoint · 2026-11-21
 The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. The owner ran the probe in managed Edge and reported the expected 401. Authenticated read and write remain untested. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
 
 ## Current workflow requirement · 2026-11-21
