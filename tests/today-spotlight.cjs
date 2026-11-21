@@ -68,3 +68,17 @@ run("changeDue('8200101','2026-12-02');testTicket.desired='2026-11-24T15:00:00Z'
 assert.match(run("syncIssue('8200101',work().dates['8200101'])"),/changed/);
 assert(run("plannerData().milestones.length===0"));
 console.log('PASS: calendar boundaries, leap year, date moves, draft coalescing, persistence validation, undo and conflicting source dates.');
+
+run("state=fresh();state.mode='local';work().account='synthetic';work().tickets=demo().tickets;changeDue('8200101','2027-02-01')");
+const pkg=JSON.parse(run('JSON.stringify(packageForAssistant(Object.entries(plannerData().dates)))'));
+assert.equal(pkg.version,1);
+assert.equal(pkg.account,'synthetic');
+const change=pkg.changes[0];
+assert.deepEqual(Object.keys(change).sort(),['id','subject','complete','desired_completion_at','internal_note'].sort());
+assert.equal(change.complete,false);
+assert.equal(change.id,8200101);
+assert.match(change.desired_completion_at,/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ$/);
+assert(change.internal_note.includes(change.desired_completion_at));
+assert.throws(()=>run('packageForAssistant([])'));
+assert.throws(()=>run("state.mode='sample';packageForAssistant([['8200101',{to:'2027-02-01T12:00:00Z'}]])"));
+console.log('PASS: Ticket Asystent v1.5 package has expected fields, UTC seconds, one internal note, numeric ID and no status change.');
