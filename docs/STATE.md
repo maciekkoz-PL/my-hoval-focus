@@ -1,7 +1,9 @@
 # Current state — 2026-11-20
 
-## Latest checkpoint
-The owner confirmed the local prototype works and rejected two visual iterations. The third, [The daily brief](../prototype/My-Hoval-Focus.html), displays each planned ticket once. The cover now contains the date and the review action. Three ranked cards keep reasons and saved next steps in place, with messages, waiting tickets outside the plan, and Toggl draft hours below. Existing JSON state and import contracts are compatible. Tests pass with synthetic data. The owner has yet to evaluate this version on managed Edge.
+## Latest checkpoint · 2026-11-21
+[The portable Today dashboard](../prototype/My-Hoval-Focus.html) now has a dark workspace with embedded official Hoval branding. The first priority occupies the alpine card. The other two appear alongside it. A read-only local week strip, message inbox, support/change queue breakdown, Toggl draft and outstanding waits provide context. Queue counts come from the current snapshot. The offline contract and saved state key remain compatible. App commit `11b5eae`.
+
+The offline regression and layout-structure tests passed on synthetic data. Browser preview at desktop and phone widths verified the Today layout, ticket navigation and detail dialog. Direct acceptance on the managed Hoval laptop remains with the owner.
 
 ## Current direction
 Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. The first local prototype has passed logic tests with synthetic tickets. Browser rendering and managed-device policy still need a real-device check. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
