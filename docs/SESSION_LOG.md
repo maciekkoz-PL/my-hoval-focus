@@ -60,3 +60,6 @@ The owner rejected starting any additional program or moving JSON files. The dai
 ## Laptop-only checkpoint · 2026-11-21
 The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. Browser policy on the actual device and appropriate authorized authentication remain open. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
 
+
+## 2026-11-21 — Managed Edge reachability confirmed by owner
+The owner reported the expected anonymous HTTP 401 on the laptop. The next decision concerns session-only personal-token handling in the local page under the existing frontend credential rule. No credential was requested or used and no authenticated read or write has been demonstrated.
