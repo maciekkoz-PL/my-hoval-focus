@@ -25,7 +25,7 @@ assert.throws(()=>run("importFile({...f,account:'other'})"));assert.throws(()=>r
 assert(run('valid(JSON.parse(JSON.stringify(state)))'));
 const replay={...context};assert(runInNewContext(code+";state.local.notes['9100001']==='Keep' && plan().accepted",replay));
 await click('sample');await click('wrap');context.document.querySelectorAll=()=>['8200104','C8200102','8200103'].map((id,i)=>({dataset:{hour:id},value:[2,3,3][i],validity:{valid:true}}));await click('prepare');assert.match(el('#modal').innerHTML,/8 h/);assert.match(el('#copytext').value,/C8200102 - Validate the SAP test cutover\nChange hours · 3 h/);
-assert(!html.match(/(?:src|href)\s*=\s*["']https?:/i));assert(html.includes("connect-src https://api.xurrent.com/v1/me;"));
+assert(!html.match(/(?:src|href)\s*=\s*["']https?:/i));assert(html.includes("connect-src https://api.xurrent.com/v1/me https://api.xurrent.com/v1/requests/open;"));
 context.AbortController=AbortController;
 for (const [status,requestId,expected] of [[401,'mock','API reachable'],[403,'','HTTP 403'],[200,'','HTTP 200']]){
   context.fetch=async (url,options)=>{assert.equal(url,'https://api.xurrent.com/v1/me');assert.equal(options.credentials,'omit');assert.equal(options.headers.Authorization,'');return {status,headers:{get:()=>requestId}};};
