@@ -3,7 +3,7 @@
 Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
 ## Next session
-First validate one owner-approved numeric request on managed Windows. Open the current HTML and import a fresh export. Verify the displayed old/new desired completion and timezone, then run the companion in the existing Ticket Asystent folder. Check the result in Xurrent before trying a larger batch. Project milestones are entered locally. See prototype/START-HERE.txt.
+Validate one agreed request with option 2 of the existing Ticket Asystent 1.5 and a Focus change package, then reimport a fresh snapshot. The managed laptop refused to start the unsigned companion.
 1. Review the dark dashboard on managed Edge at 100% zoom. Check the alpine first priority, the two adjacent tickets, keyboard focus and long imported subjects. Compare the snapshot breakdown with the Tickets page. Test both an empty plan and a saved personal action.
 2. Select Edit under My top 3, replace one ticket and save. Close and reopen the same file from the same folder. Confirm the revised plan persists. If local storage is unavailable, try the JSON backup and restore controls.
 3. In Sources, download the synthetic example, import it, save a next action, and reimport it. Verify the personal action survives. Test a real export locally only after the sample works. Keep real data outside Git.
