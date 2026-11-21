@@ -33,50 +33,18 @@ h1,h2,h3,p{margin:0}h1,h2,h3,strong{overflow-wrap:anywhere}h1,h2,h3{line-height:
 .mast-right{justify-self:end;gap:13px}.avatar{width:31px;height:31px;border-radius:50%;background:#272833;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:650}
 .mode{font-size:12px;color:#626978;white-space:nowrap;display:flex;align-items:center;gap:7px}.mode:before{content:"";width:6px;height:6px;border-radius:50%;background:#8b88a2}
 .workspace{padding-bottom:40px}
-.day-heading,.pagehead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:28px 0 21px}
+.pagehead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:28px 0 21px}
 .day-date{gap:8px;font-size:12px;font-weight:610;color:#5b6170}.day-date .ico{width:16px;height:16px;color:var(--signal)}
-.day-heading h1,.pagehead h1{font-size:clamp(38px,4.1vw,61px);letter-spacing:-.067em;line-height:1.02;font-weight:650;margin-top:5px}
-.day-heading h1 span{color:var(--signal)}.btn,.hero-btn{gap:8px;justify-content:center;padding:9px 14px;border-radius:9px;border:1px solid #d6d8e1;background:white;font-size:13px;font-weight:645;line-height:1.4}
+.pagehead h1{font-size:clamp(38px,4.1vw,61px);letter-spacing:-.067em;line-height:1.02;font-weight:650;margin-top:5px}
+.btn{gap:8px;justify-content:center;padding:9px 14px;border-radius:9px;border:1px solid #d6d8e1;background:white;font-size:13px;font-weight:645;line-height:1.4}
 .btn:hover{background:#f2f2f6}.btn .ico,.hero-btn .ico{width:16px;height:16px}.review-btn{margin-bottom:2px}
-.dashboard{display:grid;grid-template-columns:minmax(0,1fr) minmax(288px,.45fr);gap:clamp(18px,2vw,32px);align-items:start}
-.focus-column,.activity{display:grid;min-width:0;gap:20px}.activity{gap:16px}
-.spotlight{position:relative;isolation:isolate;overflow:hidden;border-radius:18px;background:#1c2136;color:white;display:flex;flex-direction:column;justify-content:space-between;min-height:clamp(274px,23vw,355px);padding:clamp(22px,2.35vw,36px);box-shadow:0 7px 20px #1e1e3c13}
-.spotlight:before,.spotlight:after{content:"";position:absolute;inset:0;z-index:-1}
-.spotlight:before{background-image:var(--alpine);background-size:cover;background-position:62% 47%}
-.spotlight:after{background:linear-gradient(90deg,rgba(16,19,37,.94) 0%,rgba(22,23,43,.81) 37%,rgba(26,28,48,.22) 74%,rgba(20,19,40,.06)),linear-gradient(0deg,#131727ad,transparent 42%)}
-.spot-content{width:70%;max-width:665px;min-width:0}.spot-kicker{gap:9px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#ffddd5}
-.pin{width:7px;height:7px;border-radius:50%;background:#ff876e;box-shadow:0 0 0 4px #ff8d6d23}
-.spot-content h2{font-family:var(--serif);font-size:clamp(34px,3.5vw,58px);letter-spacing:-.05em;font-weight:500;line-height:1.02;margin:13px 0 10px;text-wrap:balance}
-.spot-reason{color:#f0ecf3;font-size:14px;max-width:48ch;line-height:1.45;overflow-wrap:anywhere}
-.hero-btn{margin-top:18px;color:#1b1d29;background:#fff;border-color:transparent;box-shadow:0 2px 9px #0002}.hero-btn .ico{transform:rotate(-40deg)}.hero-btn:hover{background:#ffe8df}
-.spot-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}
-.spot-meta{flex-wrap:wrap;gap:8px;font:550 11px/1.5 ui-monospace,Consolas,monospace;color:#ecedf4;overflow-wrap:anywhere}
-.spot-meta span+span:before{content:"/";color:#a6a5b3;margin-right:8px}
-.step-group{gap:1px;flex-shrink:0}.focus-step{height:28px;padding:0 3px;display:grid;align-items:center}.focus-step span{display:block;width:17px;height:3px;border-radius:3px;background:#ffffff75}.focus-step.selected span{background:#fff;width:31px}
-.plan-section,.inbox-card,.waiting-card,.panel{background:white;border:1px solid var(--line);border-radius:16px;min-width:0;box-shadow:0 2px 6px #20253703}
-.plan-section,.inbox-card,.waiting-card{padding:18px 21px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.section-head h2{font-weight:655;font-size:clamp(18px,1.55vw,24px);letter-spacing:-.05em}.headline{gap:10px}
-.state-pill,.pill,.number-badge,.quiet-count{font:640 11px/1.5 "Segoe UI",system-ui,sans-serif}
-.state-pill{color:#715136;background:#f7eddf;padding:3px 8px;border-radius:20px}.state-pill.confirmed{background:#e4f1e9;color:#315c42}
-.text-btn,.link{gap:5px;padding:5px 0;color:#574e63;font-weight:640;font-size:13px}.text-btn:hover,.link:hover{text-decoration:underline}
-.queue{margin-top:10px}.queue-row,.ticket,.inbox-item,.waiting-item{width:100%;text-align:left}
-.queue-row{display:flex;align-items:center;gap:13px;padding:11px 0;border-top:1px solid #ececf1}
-.rank-number{font:italic 24px/1 var(--serif);color:#9495a2;letter-spacing:-1px;min-width:30px}.is-featured .rank-number{color:var(--signal)}
-.queue-text,.sender{display:grid;gap:3px;min-width:0}.queue-text strong,.waiting-item strong{font-size:14px;font-weight:650;line-height:1.3}
-.row-note,.tiny,.sub,.empty,.waiting-item small,.wrap-card small{color:var(--muted);font-size:12px;overflow-wrap:anywhere}
-.sep{color:#afb2bd;margin:0 7px}.turn,.wrap-arrow{margin-left:auto;color:#818797;display:grid;place-items:center}.turn .ico{width:15px;height:15px}
-.queue-row:hover strong,.ticket:hover strong,.inbox-item:hover .message-title,.waiting-item:hover strong{text-decoration:underline;text-underline-offset:3px}
-.plan-footer{display:flex;justify-content:flex-end;border-top:1px solid var(--line);padding-top:10px}
-.accept-btn,.btn.primary{background:#b7213c;color:#fff;border-color:#b7213c}.accept-btn:hover,.btn.primary:hover{background:#9e1932}
-.number-badge,.quiet-count{display:grid;place-items:center;min-width:24px;height:23px;border-radius:7px}
-.number-badge{background:#ffeaec;color:#a92341}.quiet-count{background:#eeeef1;color:#535c6c}
-.inbox-item{display:block;padding:15px 0 13px;border-bottom:1px solid var(--line)}.inbox-item:last-child{border-bottom:0;padding-bottom:2px}
-.message-top{display:flex;align-items:center;gap:9px}.service,.wrap-icon{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex:none}
+
+.panel{background:white;border:1px solid var(--line);border-radius:14px;min-width:0}
+.ticket{width:100%;text-align:left}.ticket:hover strong{text-decoration:underline}
+.sub,.empty,.tiny{color:var(--muted);overflow-wrap:anywhere}.tiny{font-size:12px}
+.text-btn{color:#59485b;font-weight:630;font-size:13px}
+.service{width:32px;height:32px;display:grid;place-items:center;border-radius:9px;flex:none}
 .service .ico{width:17px;height:17px}.teams{color:#6653aa;background:#eeeaf9}.outlook{color:#1467a7;background:#e5f1fb}
-.sender strong{font-size:13px;font-weight:650;line-height:1.1}.sender small{font-size:11px;color:var(--muted)}
-.message-title{display:block;font-size:14px;line-height:1.35;font-weight:540;margin-top:9px;overflow-wrap:anywhere}
-.waiting-card .headline>.ico{color:#807b94;width:16px;height:16px}.waiting-item{display:grid;gap:4px;padding:12px 0 0}
-.wrap-card{display:flex;align-items:center;gap:11px;text-align:left;border-radius:14px;padding:14px 17px;background:#eceaf4;border:1px solid #dedce9;color:#363044}.wrap-card:hover{background:#e6e3ef}
-.wrap-card strong,.wrap-card small{display:block}.wrap-card strong{font-size:14px;letter-spacing:-.3px}.wrap-card small{color:#635e71}.wrap-icon{background:white;color:#6a5879}.wrap-arrow{color:#65596d}
 .pagehead{align-items:center}.pagehead p{margin-top:9px}.sub,.empty{font-size:14px}.empty{padding:12px 0}
 .box{padding:21px}.box+.box,.ticket+.ticket{border-top:1px solid var(--line)}.box h3{font-size:18px;margin-bottom:4px}
 .actiongroup{gap:8px;margin-top:12px;flex-wrap:wrap}.ticket{display:flex;align-items:center;gap:8px;padding:14px 20px}.ticket .details{flex:1;min-width:0}.ticket strong{display:block;margin-top:4px}
@@ -89,11 +57,60 @@ input:not([type=file]),textarea,select{border:1px solid #cbd0da;background:white
 .wraprow{display:grid;grid-template-columns:1fr 74px;align-items:center;gap:10px;padding:8px 0}.wraprow input{width:100%}
 .toast{position:fixed;z-index:9;bottom:17px;left:50%;transform:translateX(-50%);background:#252738;color:white;border-radius:10px;padding:10px 16px;font-size:13px;max-width:calc(100% - 30px);box-shadow:0 5px 18px #17192326}.toast:empty{display:none}
 .notice{border-left:3px solid #ac7137;background:#fbf2e5;padding:9px 13px;margin:12px 0;color:#664824;font-size:13px}
-@media(min-width:1000px) and (max-height:800px){.mast{min-height:60px}.day-heading{margin:18px 0 15px}.day-heading h1{font-size:45px}.spotlight{padding:22px 27px;min-height:250px}.spot-content h2{font-size:clamp(36px,3.3vw,48px);margin:10px 0 7px}.hero-btn{margin-top:13px}.spot-foot{margin-top:8px}.focus-column{gap:15px}.queue-row{padding:8px 0}}
-@media(max-width:950px){.mast,.workspace{padding-inline:20px}.dashboard{grid-template-columns:minmax(0,1fr) minmax(250px,.54fr);gap:16px}.plan-section,.waiting-card,.inbox-card{padding:16px}.spot-content{width:82%}.mast{gap:10px}}
-@media(max-width:760px){.dashboard{grid-template-columns:1fr}.activity{grid-template-columns:1fr 1fr;align-items:start}.wrap-card{grid-column:1/-1}.day-heading{margin:20px 0 16px}.mast{grid-template-columns:1fr auto;gap:9px;padding-block:12px}.navset{grid-row:2;grid-column:1/-1;justify-self:start}.mast-right{grid-column:2;grid-row:1}.brand-name{font-size:19px}.spotlight{min-height:250px}.spot-content{width:73%}.spot-content h2{font-size:clamp(34px,6vw,46px)}}
-@media(max-width:500px){.mast,.workspace{padding-inline:14px}.mast{padding-block:10px}.navset{width:100%}.nav{flex:1;padding:5px 8px}.mast-right{gap:7px}.avatar{display:none}.mode{font-size:11px}.activity{grid-template-columns:1fr}.wrap-card{grid-column:auto}.review-btn{font-size:12px;padding:8px 10px}.day-heading{gap:8px}.day-heading h1{font-size:39px}.spotlight{padding:20px;border-radius:15px}.spot-content{width:94%}.spotlight:after{background:linear-gradient(90deg,#111427e8,#15192dae 62%,#15192d48),linear-gradient(0deg,#15192dc9,transparent)}.spot-meta{gap:4px;font-size:10px}.spot-meta span+span:before{margin-right:4px}.spot-foot{flex-wrap:wrap}.plan-section,.waiting-card,.inbox-card{border-radius:13px}.focus-column,.activity{gap:13px}.brand-mark{width:32px;height:32px}.dialog{padding:20px}.queue-row{gap:7px}}
-@media(prefers-reduced-motion:no-preference){.inbox-item,.nav,.btn,.hero-btn,.wrap-card{transition:background-color .16s,color .16s}.spot-content{animation:reveal .28s ease-out}@keyframes reveal{from{opacity:.72;transform:translateY(3px)}to{opacity:1;transform:none}}}
+:root{--canvas:#f7f6f3;--ink:#23242a;--line:#dfdedb;--muted:#60616a;--accent:#bb233d;--serif:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+body{background:var(--canvas)}
+.shell{background:#191d28;border-bottom:1px solid #ffffff1a;color:#fff}
+.mast,.workspace{width:min(1576px,100%);padding-inline:clamp(16px,4.5vw,84px)}
+.mast{min-height:62px;display:flex;justify-content:space-between;gap:24px}
+.brand-name{color:#fff;font-size:20px}.brand-name em{font:italic 25px/.95 var(--serif);color:#fff4ec}
+.brand-mark{background:linear-gradient(145deg,#ff5d51,#c72941);border-radius:9px}
+.navset{background:none;border:0;border-radius:0;padding:0;align-self:stretch;gap:16px}
+.nav,.nav.active{position:relative;border-radius:0;border:0;background:none;box-shadow:none;color:#bfc1cd;padding:0 7px;font-size:13px}
+.nav.active,.nav:hover{background:none;color:white}.nav.active:after{content:"";position:absolute;bottom:0;left:5px;right:5px;height:3px;background:#f77c72}
+.nav em{background:#373b48;color:#e5e6ef}.mode{color:#d6d7df;font-size:11px}.mode:before{background:#c8b5af}.avatar{color:#ffe2d1;background:#49404b;border:1px solid #655361}
+.workspace{padding-bottom:28px}.workspace:has(.brief-cover){width:100%;max-width:none;padding-inline:0}
+.brief-cover{color:#fff;background-color:#202838;background-image:linear-gradient(90deg,rgba(17,22,34,.87),rgba(23,27,44,.52) 43%,transparent 74%),linear-gradient(0deg,rgba(21,22,35,.34),transparent 52%),var(--alpine);background-size:cover;background-position:50% 13%;isolation:isolate}
+.cover-inner,.priorities,.brief-lower,.workspace:has(.brief-cover)>.notice{width:min(1576px,100%);margin-inline:auto;padding-inline:clamp(16px,4.5vw,84px)}
+.cover-inner{min-height:clamp(162px,13vw,203px);padding-block:24px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.cover-date,.reference,.waiting-line small{font:600 10.5px/1.45 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}
+.cover-date{color:#ede0dc;margin-bottom:8px;display:flex;align-items:center;gap:10px}.cover-date:before{content:"";height:2px;width:25px;background:#ff8875}
+.cover-copy h1{font:500 clamp(46px,5.3vw,82px)/1 var(--serif);letter-spacing:-.055em;color:#fff}.cover-copy h1 em{color:#ffdfcd;font-weight:400}
+.cover-review{align-self:flex-end;display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:650;border-radius:9px;padding:10px 15px;background:#ffffffed;color:#22242e;box-shadow:0 2px 10px #12182622}.cover-review .ico{width:16px}.cover-review .ico:last-child{width:14px;transform:rotate(-40deg)}.cover-review:hover{background:#fff}
+.plan-bar,.heading-group,.plan-actions,.tile-top,.tile-footer,.panel-title{display:flex;align-items:center;gap:10px}.plan-bar,.tile-top,.tile-footer,.panel-title{justify-content:space-between}
+.plan-bar{padding:23px 0 14px}.heading-group{gap:12px}.plan-bar h2{font-size:27px;font-weight:660;letter-spacing:-.06em}
+.plan-state,.tally,.ticket-tag{font-size:11px;line-height:1.4;font-weight:650}.plan-state{padding:3px 9px;border-radius:20px;color:#754c2f;background:#f2e5d9}.plan-state.accepted{background:#dfebe1;color:#37593b}
+.btn{border-color:#d8d7d4}.btn.primary{background:#292b34;border-color:#292b34}.btn.primary:hover{background:#454751}.btn.subtle{background:transparent}.btn.subtle:hover{background:#eee}
+.priority-board{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.priority-tile{position:relative;display:flex;flex-direction:column;min-width:0;padding:19px 22px 13px;border-radius:14px;border:1px solid #dbdad7;background:#fff;box-shadow:0 4px 12px #28293105}
+.priority-tile.lead-tile{border-color:#853447;background:radial-gradient(ellipse at 110% -18%,#b74850 0,transparent 65%),linear-gradient(130deg,#6e2339,#872c3f 76%);color:#fff}
+.position{font:italic 36px/.98 var(--serif);letter-spacing:-.075em;color:#6f6669}.lead-tile .position{color:#ffdac8}
+.ticket-tag{color:#635660;background:#f2eef0;padding:3px 9px;border-radius:20px}.lead-tile .ticket-tag{background:#ffffff16;color:#fff2e9;border:1px solid #ffffff34}
+.tile-main{margin:17px 0 14px;flex:1;min-width:0}.reference{display:block;font-size:10px;color:#666873;letter-spacing:.09em}.lead-tile .reference{color:#ffe2d9}
+.ticket-title{display:block;text-align:left;font:inherit;letter-spacing:inherit;line-height:inherit;padding:0;color:inherit;overflow-wrap:anywhere}
+.tile-main h3{font-size:clamp(21px,1.8vw,31px);font-weight:630;line-height:1.13;letter-spacing:-.048em;margin:6px 0 8px}.ticket-title:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.17em}
+.rationale,.personal-step{font-size:13px;line-height:1.5;color:#5a5963;overflow-wrap:anywhere}.lead-tile .rationale,.lead-tile .personal-step{color:#ffebe4}
+.personal-step{margin-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.personal-step strong{font-weight:650;margin-right:.4em}
+.tile-footer{padding-top:10px;border-top:1px solid var(--line);min-height:34px}.lead-tile .tile-footer{border-color:#ffffff38}
+.ticket-state{display:flex;align-items:center;gap:8px;font-weight:570;font-size:11.5px;overflow-wrap:anywhere}.ticket-state:before{content:"";width:6px;height:6px;border-radius:50%;background:#807886;flex:none}.lead-tile .ticket-state:before{background:#ffb399}
+.open-detail{display:grid;place-items:center;border:1px solid #dedddf;color:inherit;border-radius:50%;width:29px;height:29px;flex:none}.open-detail .ico{width:14px;height:14px;transform:rotate(-40deg)}.open-detail:hover{background:#efedf0}.lead-tile .open-detail{border-color:#ffffff50}.lead-tile .open-detail:hover{background:#ffffff20}
+.brief-lower{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1.05fr) minmax(180px,.69fr);gap:16px;margin-top:21px;align-items:stretch}.brief-panel{min-width:0;padding:18px 20px;border:1px solid var(--line);border-radius:13px;background:#fff}
+.panel-title{gap:6px;justify-content:flex-start;margin-bottom:6px}.panel-title h2{font-size:19px;letter-spacing:-.045em;font-weight:640}.tally{color:#606370;padding:1px 7px;border-radius:8px;background:#efeff2}
+.signal-row,.waiting-line{width:100%;display:flex;align-items:center;gap:10px;text-align:left;padding:10px 0 8px}.signal-row+.signal-row{border-top:1px solid #eae9e7}.signal-row>.ico{margin-left:auto;width:14px;color:#767882}.signal-text,.waiting-line>span:last-child{min-width:0;display:grid;gap:2px}
+.signal-text strong,.waiting-line strong{font-size:14px;line-height:1.32;font-weight:610}.signal-text small,.wait-reason,.hours-caption{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.signal-text i{font-style:normal;margin:0 5px;color:#9b98a3}.signal-row:hover strong,.waiting-line:hover strong{text-decoration:underline;text-underline-offset:3px}
+.waiting-line{align-items:flex-start;padding-top:14px}.waiting-line small{font-size:10px;letter-spacing:.08em;color:#76737e}.wait-dot{width:8px;height:8px;border:2px solid #bd965d;border-radius:50%;flex:none;margin-top:5px}.wait-reason{margin-top:3px}
+.time-card{background:#edeaf0;border-color:#dfdbe3;display:flex;flex-direction:column}.time-card .panel-title{justify-content:space-between}.time-card .ico{color:#655f73;width:16px}.hours-value{font:italic 43px/.94 var(--serif);letter-spacing:-.07em;margin-top:7px;color:#3d3446}.hours-value span{font-size:21px;margin-left:4px}.hours-caption{margin:4px 0 10px}.time-link{display:flex;align-items:center;gap:8px;color:#45364d;align-self:flex-start;font-size:12px;font-weight:650;margin-top:auto;padding:4px 0}.time-link>.ico{order:1;width:14px}.time-link:hover{text-decoration:underline}
+.empty-plan{display:flex;align-items:center;gap:18px;padding:20px;border:1px dashed #c4c2c7;border-radius:12px}.empty-plan p{color:var(--muted)}
+@media(min-width:1100px) and (max-height:800px){.mast{min-height:54px}.cover-inner{min-height:138px;padding-block:17px}.cover-copy h1{font-size:60px}.plan-bar{padding-top:17px}.priority-tile{padding:16px 20px 12px}.tile-main{margin:12px 0}.brief-lower{margin-top:16px}.brief-panel{padding:15px 17px}}
+@media(max-width:950px){.mast,.workspace,.cover-inner,.priorities,.brief-lower{padding-inline:20px}.workspace:has(.brief-cover){padding-inline:0}.priority-board{gap:10px}.priority-tile{padding:16px}.brief-lower{grid-template-columns:1.3fr 1fr}.time-card{grid-column:1/-1;flex-direction:row;align-items:center;gap:10px}.time-card .panel-title{margin:0}.time-card .panel-title>.ico{display:none}.hours-value{margin:0 0 0 auto;font-size:25px}.hours-caption{margin:0}.time-link{align-self:center;margin:0 0 0 10px}.mast{gap:12px}.navset{gap:4px}}
+@media(max-width:720px){.mast{display:grid;grid-template-columns:1fr auto;gap:6px;min-height:auto;padding-top:12px;padding-bottom:0}.mast-right{grid-column:2;grid-row:1}.navset{grid-row:2;grid-column:1/-1;display:flex;justify-self:start}.nav{padding:9px 11px}.priority-board{grid-template-columns:1fr}.priority-tile{display:grid;grid-template-columns:42px minmax(0,1fr) 32px;gap:0 11px;padding:16px}.tile-top,.tile-main,.tile-footer{display:contents}.position{grid-column:1;grid-row:1/4;font-size:31px;align-self:start}.ticket-tag{display:none}.reference{grid-column:2;grid-row:1}.tile-main h3{grid-column:2;grid-row:2;margin:3px 0 5px;font-size:21px}.rationale,.personal-step,.ticket-state{grid-column:2}.ticket-state{margin-top:7px}.open-detail{grid-column:3;grid-row:1/4;align-self:center}.brief-lower{grid-template-columns:1fr 1fr}.cover-inner{min-height:140px}.cover-review{align-self:center}.plan-bar{padding:17px 0 12px}.heading-group{gap:7px}.plan-bar h2{font-size:23px}.plan-actions{gap:5px}}
+@media(max-width:520px){.mast,.cover-inner,.priorities,.brief-lower,.workspace{padding-inline:14px}.workspace:has(.brief-cover){padding-inline:0}.cover-inner{min-height:146px;align-items:flex-start;flex-direction:column;justify-content:center;gap:10px;padding-block:16px}.cover-review{align-self:flex-start;font-size:11px;padding:5px 9px}.cover-copy h1{font-size:43px}.cover-date{font-size:9px;margin-bottom:5px}.brief-cover{background-position:63% 35%}.plan-bar{flex-wrap:wrap}.plan-actions .btn{font-size:12px;padding:7px 9px}.priority-tile{grid-template-columns:30px minmax(0,1fr) 27px}.brief-lower{grid-template-columns:1fr;gap:10px}.time-card{flex-wrap:wrap}.time-card .panel-title{width:100%}.time-card .hours-value{margin-left:0}.time-link{margin-left:auto}.panel-title h2{font-size:18px}.navset{width:auto}.mast-right .avatar{display:none}}
+
+@media(prefers-reduced-motion:no-preference){
+  .priority-tile,.open-detail,.btn,.cover-review{transition:background-color .15s,box-shadow .15s,transform .15s}
+  .priority-tile:focus-within,.priority-tile:hover{box-shadow:0 7px 20px #28293111}
+  .open-detail:hover{transform:translate(1px,-1px)}
+}
+@media(max-width:720px){.pagehead{flex-wrap:wrap}.dialog{padding:19px}.pagehead h1{font-size:36px}}
 </style></head>
 <body><noscript>My Hoval Focus needs JavaScript to display your workspace.</noscript><header class="shell"><div class="mast">
   <div class="brand" aria-label="My Hoval Focus"><span class="brand-mark" aria-hidden="true"></span>
@@ -179,88 +196,71 @@ function category(t){
 function ticketMeta(t){
   return '<div class="meta"><span>'+esc(t.id)+'</span><span class="pill '+(t.urgent||t.tag==='High impact'?'urgent':'')+'">'+esc(t.absent?'Outside latest export':t.tag||t.status||'Unspecified')+
     '</span></div>'}
-let spotlightIndex = 0;
-
-function spotlight(ticket, rank, count) {
-  if (!ticket) {
-    return `<section class="spotlight vacant" aria-label="Your focus plan">
-      <div class="spot-content"><h2>Your plan is open.</h2>
-      <p>Choose a ticket to make it your first priority.</p>
-      ${button('Choose priorities', 'edit', 'btn hero-btn', 'flag')}</div></section>`;
-  }
-  const select = Array.from({length:count}, (_, i) => `
-    <button class="focus-step ${i === rank ? 'selected' : ''}" aria-label="Show priority ${i+1}"
-      aria-pressed="${i === rank}" data-act="spot:${i}"><span></span></button>`).join('');
-  const status = ticket.absent ? 'Outside latest export' : ticket.tag || ticket.status;
-  return `<article class="spotlight" aria-label="Selected priority">
-    <div class="spot-content">
-      <div class="spot-kicker"><span class="pin"></span>Priority ${rank+1} of ${count}</div>
-      <h2>${esc(ticket.title)}</h2>
-      <p class="spot-reason">${esc(reason(ticket))}</p>
-      <button class="hero-btn" data-act="detail:${esc(ticket.id)}">Open ticket ${icon('arrow')}</button>
+function priorityCard(ticket, index) {
+  const note = work().notes[ticket.id]?.trim();
+  const status = ticket.absent ? 'Outside latest export' : ticket.status || 'Status unknown';
+  const tag = ticket.urgent ? 'Urgent' : ticket.tag || category(ticket).replace(' hours','');
+  return `<li class="priority-tile ${index === 0 ? 'lead-tile' : ''}">
+    <div class="tile-top"><span class="position" aria-label="Priority ${index+1}">${String(index+1).padStart(2,'0')}</span>
+      <span class="ticket-tag">${esc(tag)}</span></div>
+    <div class="tile-main"><span class="reference">XURRENT &nbsp;/&nbsp; #${esc(ticket.id)}</span>
+      <h3><button class="ticket-title" data-act="detail:${esc(ticket.id)}">${esc(ticket.title)}</button></h3>
+      <p class="rationale">${esc(reason(ticket))}</p>
+      ${note ? `<p class="personal-step"><strong>Next</strong> ${esc(note)}</p>` : ''}
     </div>
-    <div class="spot-foot"><div class="spot-meta"><span>Xurrent</span><span>#${esc(ticket.id)}</span>
-      ${status ? '<span>'+esc(status)+'</span>' : ''}</div>
-      <div class="step-group" aria-label="Choose priority">${select}</div></div>
-  </article>`;
+    <div class="tile-footer"><span class="ticket-state">${esc(status)}</span>
+      <button class="open-detail" data-act="detail:${esc(ticket.id)}" aria-label="Open ticket ${esc(ticket.id)}">${icon('arrow')}</button></div>
+  </li>`;
 }
-
-function queueRow(ticket, rank, active) {
-  return `<button class="queue-row ${active?'is-featured':''}" data-act="detail:${esc(ticket.id)}">
-    <span class="rank-number">${String(rank+1).padStart(2,'0')}</span>
-    <span class="queue-text"><strong>${esc(ticket.title)}</strong>
-      <span class="row-note">#${esc(ticket.id)}<span class="sep">/</span>${esc(ticket.absent?'Outside latest export':ticket.status || 'Status unknown')}</span>
-    </span><span class="turn">${icon('chev')}</span></button>`;
+function inboxRow(m) {
+  const mail = m.src === 'Outlook';
+  return `<button class="signal-row" data-act="msg:${esc(m.id)}">
+    <span class="service ${mail?'outlook':'teams'}">${icon(mail?'mail':'chat')}</span>
+    <span class="signal-text"><strong>${esc(m.title)}</strong><small>${esc(m.who)}<i>·</i>${esc(m.src)}</small></span>
+    ${icon('chev')}</button>`;
 }
-
-function inboxCard(m) {
-  const isMail = m.src === 'Outlook';
-  return `<button class="inbox-item" data-act="msg:${esc(m.id)}">
-    <span class="message-top"><span class="service ${isMail?'outlook':'teams'}">${icon(isMail?'mail':'chat')}</span>
-      <span class="sender"><strong>${esc(m.who)}</strong><small>${esc(m.src)}</small></span>
-      <span class="turn">${icon('chev')}</span></span>
-    <span class="message-title">${esc(m.title)}</span></button>`;
-}
-
 function today() {
-  const p=plan();
-  const tickets=p.ids.map(find).filter(Boolean);
-  const pending=sample()?messages.filter(m=>!work().dismissed.includes(m.id)):[];
-  const waiting=current().filter(t=>/wait/i.test(t.status));
-  spotlightIndex=Math.min(spotlightIndex, Math.max(0,tickets.length-1));
-  const date=new Intl.DateTimeFormat('en-GB',{weekday:'long', day:'numeric',month:'long'}).format(new Date());
-  return `<header class="day-heading">
-    <div><div class="day-date">${icon('sun')}${esc(date)}</div><h1>Daily focus<span>.</span></h1></div>
-    ${button('Review tickets','review','btn review-btn','review')}
-  </header>
-  <div class="dashboard">
-    <div class="focus-column">
-      ${spotlight(tickets[spotlightIndex],spotlightIndex,tickets.length)}
-      <section class="plan-section">
-        <div class="section-head"><div class="headline"><h2>My top 3</h2>
-          <span class="state-pill ${p.accepted?'confirmed':''}">${p.accepted?'Confirmed':'Suggested'}</span></div>
-          ${button('Edit plan','edit','text-btn')}</div>
-        <div class="queue">${tickets.map((t,i)=>queueRow(t,i,i===spotlightIndex)).join('') || '<p class="empty">Your priorities will appear here.</p>'}</div>
-        ${!p.accepted&&tickets.length?'<div class="plan-footer">'+button('Accept plan','accept','btn accept-btn','check')+'</div>':''}
+  const p = plan();
+  const chosen = p.ids.map(find).filter(Boolean);
+  const inbox = sample() ? messages.filter(m => !work().dismissed.includes(m.id)) : [];
+  const waiting = current().filter(t => /wait/i.test(t.status) && !p.ids.includes(t.id));
+  const date = new Intl.DateTimeFormat('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(new Date());
+  const amount = Object.values(p.hours || {}).reduce((total,hours) => total + hours,0);
+  return `<header class="brief-cover">
+    <div class="cover-inner"><div class="cover-copy"><p class="cover-date">${esc(date)}</p>
+      <h1>The daily <em>brief.</em></h1></div>
+      <button class="cover-review" data-act="review">${icon('review')}Review tickets ${icon('arrow')}</button>
+    </div></header>
+    <section class="priorities" aria-labelledby="plan-title">
+      <div class="plan-bar"><div class="heading-group"><h2 id="plan-title">My top 3</h2>
+        <span class="plan-state ${p.accepted?'accepted':''}">${p.accepted?'Confirmed':'Suggested'}</span></div>
+        <div class="plan-actions">${button('Edit plan','edit','btn subtle')}
+          ${!p.accepted && chosen.length ? button('Accept plan','accept','btn primary','check') : ''}
+        </div></div>
+      <ol class="priority-board">${chosen.map(priorityCard).join('')}</ol>
+      ${chosen.length ? '' : '<div class="empty-plan"><p>Your plan is open.</p>'+button(current().length?'Choose priorities':'Import tickets',current().length?'edit':'import','btn')+'</div>'}
+    </section>
+    <div class="brief-lower">
+      <section class="brief-panel action-inbox">
+        <div class="panel-title"><h2>Needs your action</h2><span class="tally">${inbox.length}</span></div>
+        ${inbox.map(inboxRow).join('') || '<p class="empty">'+(sample()?'All sample messages reviewed.':'Outlook and Teams are not connected.')+'</p>'}
       </section>
-    </div>
-    <aside class="activity" aria-label="Messages and follow-up">
-      <section class="inbox-card">
-        <div class="section-head"><h2>Needs your action</h2><span class="number-badge">${pending.length}</span></div>
-        <div>${pending.map(inboxCard).join('') || '<p class="empty">'+(sample()?'All sample messages reviewed.':'Outlook and Teams are not connected.')+'</p>'}</div>
+      <section class="brief-panel waits">
+        <div class="panel-title"><h2>Waiting for</h2><span class="tally">${waiting.length}</span></div>
+        ${waiting.slice(0,2).map(t=>`<button class="waiting-line" data-act="detail:${esc(t.id)}">
+            <span class="wait-dot"></span><span><small>#${esc(t.id)}</small><strong>${esc(t.title)}</strong>
+            <span class="wait-reason">${esc(t.reason || t.status)}</span></span></button>`).join('') ||
+          '<p class="empty">No additional tickets waiting for a reply.</p>'}
+        ${waiting.length>2?button('See all','waitingoutside','text-btn'):''}
       </section>
-      <section class="waiting-card">
-        <div class="section-head"><div class="headline">${icon('clock')}<h2>Waiting for</h2></div><span class="quiet-count">${waiting.length}</span></div>
-        ${waiting.slice(0,2).map(t=>`<button class="waiting-item" data-act="detail:${esc(t.id)}"><strong>${esc(t.title)}</strong>
-          <small>${esc(t.reason||t.status)}</small></button>`).join('')||'<p class="empty">No tickets with a waiting status.</p>'}
-        ${waiting.length>2?button('See all','waiting','text-btn'):''}
+      <section class="brief-panel time-card">
+        <div class="panel-title"><h2>Day wrap-up</h2>${icon('clock')}</div>
+        <div class="hours-value">${esc(amount.toLocaleString('en-GB',{maximumFractionDigits:2}))}<span>h</span></div>
+        <p class="hours-caption">In your Toggl draft</p>
+        ${button(amount?'Review entries':'Prepare entries','wrap','time-link','arrow')}
       </section>
-      <button class="wrap-card" data-act="wrap"><span class="wrap-icon">${icon('sun')}</span>
-        <span><strong>Day wrap-up</strong><small>Prepare Toggl entries</small></span><span class="wrap-arrow">${icon('arrow')}</span></button>
-    </aside>
-  </div>`;
+    </div>`;
 }
-
 function ticketRows(list){
   return list.map(t=>'<button class="ticket" data-act="detail:'+esc(t.id)+'"><div class="details">'+ticketMeta(t)+'<strong>'+esc(t.title)+'</strong></div>'+icon('chev')+
     '</button>').join('')||'<div class="box sub">No matching tickets.</div>'}
@@ -367,7 +367,7 @@ const previous=new Map(old.tickets.map(t=>[t.id,t])),incoming=new Set(x.list.map
     return merged});
   for(const t of old.tickets)if(!incoming.has(t.id))rows.push({...t,absent:x.complete||!!t.absent});
   state.local={...old,tickets:rows,account:x.account,owner:x.owner,complete:x.complete,exported:x.exported,imported:new Date().toISOString()};
-  spotlightIndex=0;
+  
   state.mode='local';
   page='Today';
   persist();
@@ -395,15 +395,6 @@ document.addEventListener('click',async e=>{
   if(!hit)return;
   const [a,arg]=hit.dataset.act.split(':');
   switch(a){
-case 'spot': {
-    const index = Number(arg);
-    if (Number.isInteger(index) && index >= 0 && index < plan().ids.length) {
-      spotlightIndex = index;
-      render();
-      document.querySelector('.focus-step.selected')?.focus({preventScroll:true});
-    }
-    break;
-  }
 case 'page':page=arg;
     search='';
     render();
@@ -426,7 +417,7 @@ case 'promote':work().notes[activeId]=$('#note').value;
 case 'saveplan':{const ids=[0,1,2].map(i=>$('#slot'+i).value).filter(Boolean);
       if(new Set(ids).size!==ids.length){
         $('#err').textContent='Choose each ticket only once.';
-        break}spotlightIndex=0;
+        break}
       plan().ids=ids;
       plan().accepted=true;
       close();
@@ -450,7 +441,7 @@ case 'savenote':case 'next':case 'skip':{if(a!=='skip')work().notes[activeId]=$(
       if(reviewPos<reviewList.length)detail(reviewList[reviewPos],true);
       else openDialog('Review complete','<p>You reached the end of the ticket list. Your saved next actions are available in ticket details.</p>'+actions(button('Done','close','btn primary')));
       break}
-case 'waiting':openDialog('Waiting for',ticketRows(current().filter(t=>/wait/i.test(t.status))));
+case 'waitingoutside':openDialog('Waiting for',ticketRows(current().filter(t=>/wait/i.test(t.status) && !plan().ids.includes(t.id))));
     break;
 case 'msg':msg(arg);
     break;
@@ -486,7 +477,7 @@ case 'copy':{const t=$('#copytext');
         if($('#manualcopy')){
           $('#manualcopy').value=t.value;
           $('#manualcopy').select()}}break}
-case 'sample':case 'local':spotlightIndex=0;
+case 'sample':case 'local':
       state.mode=a;
     page='Today';
     persist();
