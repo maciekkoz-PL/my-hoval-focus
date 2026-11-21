@@ -1,7 +1,7 @@
 # Current state — 2026-11-20
 
 ## Laptop-only checkpoint · 2026-11-21
-The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. Browser policy on the actual device and appropriate authorized authentication remain open. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
+The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. The owner ran the probe in managed Edge and reported the expected 401. Authenticated read and write remain untested. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
 
 ## Current workflow requirement · 2026-11-21
 The owner requires the ticket assistant inside the website. The local calendar works, but file handoff and starting PowerShell are unsuitable for daily use. A hosted connection for read and confirmed write is proposed. Corporate hosting and live app authorization remain unknown.
