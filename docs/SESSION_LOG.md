@@ -39,3 +39,8 @@ The owner gave the explicit visual build signal. Branch `prototype/today-offline
 
 ## 2026-11-20 — Second Today design
 The owner confirmed the first prototype opens and requested a stronger visual direction. HTML commit `ab6f907` updates the navigation, typography, featured ticket, plan and inbox. The self-contained JPEG was generated for this project and contains no corporate data. Existing workspace schema, persistence key, import and review flow are retained. Run `node tests/today-offline.cjs` and `node tests/today-spotlight.cjs`. Both logic checks passed locally, and the embedded image decoded. The revised layout awaits visual review on the managed laptop.
+
+## 2026-11-21 — One daily plan
+The owner identified duplicate ticket titles in the cover and Top 3. The third design puts all three priorities into a single ordered list, moves contextual photography to the day heading, and reserves the lower section for incoming requests, other waiting tickets and the time draft. Planning and triage patterns were reviewed on the official Sunsama product page and the Linear Inbox guide/redesign article. The new layout is an original design. CSS provides laptop, tablet and mobile layouts. Data and hourly totals are local.
+
+App commit `62177c4`. Offline regressions and updated structural checks passed, including promoted waiting tickets, saved next steps and empty states. The desktop composition study is illustrative. Actual Edge rendering of this version has not been verified. Next action is owner feedback on the delivered HTML.
