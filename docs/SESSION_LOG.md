@@ -56,3 +56,7 @@ Unsigned Focus-Sync.ps1 failed before execution on the owner’s laptop. Added p
 
 ## 2026-11-21 — Single website requirement
 The owner rejected starting any additional program or moving JSON files. The daily workflow must run entirely through Focus. Reviewed the documented Xurrent authorization-code flow and its mandatory client secret and registered callback. Deployment host, app registration and a live read remain unverified. The portable prototype has not gained a live connection in this checkpoint.
+
+## Laptop-only checkpoint · 2026-11-21
+The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. Browser policy on the actual device and appropriate authorized authentication remain open. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
+
