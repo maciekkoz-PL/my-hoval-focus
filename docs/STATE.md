@@ -1,6 +1,9 @@
 # Current state — 2026-11-20
 
-## Latest checkpoint · 2026-11-21
+## Current calendar checkpoint · 2026-11-21
+Today includes a direct-manipulation week/month calendar. Imported request deadlines use desired_completion_at; project milestones are personal and stored with the backup. Drag or choose a date, review drafts and send with the companion in prototype/Focus-Sync.ps1. The existing assistant supplies Token.ps1. Tests used synthetic data; first live Windows/Xurrent verification is pending. App commit 75bc5d8.
+
+## Prior visual checkpoint · 2026-11-21
 [The portable Today dashboard](../prototype/My-Hoval-Focus.html) now has a dark workspace with embedded official Hoval branding. The first priority occupies the alpine card. The other two appear alongside it. A read-only local week strip, message inbox, support/change queue breakdown, Toggl draft and outstanding waits provide context. Queue counts come from the current snapshot. The offline contract and saved state key remain compatible. App commit `11b5eae`.
 
 The offline regression and layout-structure tests passed on synthetic data. Browser preview at desktop and phone widths verified the Today layout, ticket navigation and detail dialog. Direct acceptance on the managed Hoval laptop remains with the owner.
