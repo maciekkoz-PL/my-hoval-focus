@@ -53,3 +53,6 @@ The owner confirmed moving a ticket changes its desired completion. Week and Mon
 
 ## 2026-11-21 — Managed-laptop fallback
 Unsigned Focus-Sync.ps1 failed before execution on the owner’s laptop. Added pure JSON package download accepted by the existing 1.5 schema. The assistant performs its normal confirmation and writes one internal note with each deadline change. Package download keeps drafts until refreshed source data confirms the requested date. No tenant write or execution-policy change. Offline, planner, package-contract and simulated companion tests passed.
+
+## 2026-11-21 — Single website requirement
+The owner rejected starting any additional program or moving JSON files. The daily workflow must run entirely through Focus. Reviewed the documented Xurrent authorization-code flow and its mandatory client secret and registered callback. Deployment host, app registration and a live read remain unverified. The portable prototype has not gained a live connection in this checkpoint.
