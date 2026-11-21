@@ -3,7 +3,7 @@
 Personal work dashboard for projects, tasks and selected information sources.
 Application copy is English; collaboration with the owner is in Polish.
 
-**2026-11-20 · Portable Today prototype.** Download [My-Hoval-Focus.html](prototype/My-Hoval-Focus.html) and open it locally. All styles, sample data and interactions are included.
+**2026-11-21 · Portable Today dashboard.** Download [My-Hoval-Focus.html](prototype/My-Hoval-Focus.html) and open it locally. All styles, sample data and interactions are included.
 
 The Excel importer created 41 tasks and a second run updated them without confirmed duplicates. The owner reports that the Projects screen renders, but dislikes its visual quality and scaling. Further Power Apps screen work is paused while we assess an internal web front end.
 
@@ -14,7 +14,7 @@ The Excel importer created 41 tasks and a second run updated them without confir
 3. Read [architecture](docs/ARCHITECTURE.md) and [handoff procedure](docs/HANDOFF.md).
 4. Run `node tests/today-offline.cjs` to check the local prototype's logic.
 
-**Current checkpoint.** The first visual prototype is ready for a managed Edge acceptance test. The Sources screen supports manual Xurrent file import. Live integrations and AI remain future work.
+**Current checkpoint.** The dark Hoval dashboard has been previewed at desktop and phone widths and is ready for managed Edge acceptance. The Sources screen supports manual Xurrent file import. Live integrations and AI remain future work.
 
 ## Contents
 
