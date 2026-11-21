@@ -15,16 +15,18 @@ const context = vm.createContext({document, localStorage:{getItem(){}, setItem()
 const run = code => vm.runInContext(code,context);
 run(html.split('<script>')[1].split('</script>')[0]);
 const view = () => run('today()');
+// Calendar entries repeat their titles on their scheduled dates, independently of the daily plan.
+const dailyOnly = () => view().replace(/<section class="planner"[\s\S]+?(?=<section class="watchlist">)/, '');
 const occurrences = (text,token) => text.split(token).length - 1;
 for (const id of run('plan().ids')) {
   const title=run('find('+JSON.stringify(id)+').title');
-  assert.equal(occurrences(view(),title),1);
+  assert.equal(occurrences(dailyOnly(),title),1);
   assert.match(view(),new RegExp('data-act="detail:'+id+'"'));
 }
 assert.equal(occurrences(view(), 'class="priority-tile'),3);
 assert(!view().includes('focus-step'));
 run("plan().ids[0]='8200105';work().notes['8200105']='Confirm & reply';");
-assert.equal(occurrences(view(),'Review the delivery layout'),1);
+assert.equal(occurrences(dailyOnly(),'Review the delivery layout'),1);
 assert(view().includes('Confirm &amp; reply'));
 run("plan().ids=[];");
 assert(view().includes('Your plan is open.'));
@@ -47,3 +49,22 @@ assert.match(view(), /<dt>Support<\/dt><dd>3<\/dd>/);
 assert.match(view(), /<dt>Change<\/dt><dd>1<\/dd>/);
 assert(html.includes('data:image/svg+xml;base64,'));
 console.log('PASS: local week across year boundary, current date, offline logo, empty queue and current snapshot ticket mix.');
+
+run("state=fresh();anchor='2026-12-31';horizon='week'");
+assert.match(run('calendar()'), /data-drop="2027-01-03"/);
+run("horizon='month';anchor='2028-02-01'");
+assert.match(run('calendar()'), /data-drop="2028-02-29"/);
+run("state.mode='local';work().tickets=demo().tickets;var testTicket=find('8200101');testTicket.desired='2026-11-20T15:00:00Z';");
+assert(run("changeDue('8200101','2026-12-02')"));
+assert.equal(run("dateKey(new Date(work().dates['8200101'].to))"),'2026-12-02');
+assert.equal(run("work().dates['8200101'].from"),'2026-11-20T15:00:00Z');
+assert(run("changeDue('8200101','2026-12-03')"));
+assert.equal(run("Object.keys(work().dates).length"),1);
+assert(run('valid(JSON.parse(JSON.stringify(state)))'));
+assert(run("changeDue('8200101',dateKey(new Date(testTicket.desired)))"));
+assert.equal(run("Object.keys(work().dates).length"),0);
+assert(!run("changeDue('8200101','2026-02-31')"));
+run("changeDue('8200101','2026-12-02');testTicket.desired='2026-11-24T15:00:00Z'");
+assert.match(run("syncIssue('8200101',work().dates['8200101'])"),/changed/);
+assert(run("plannerData().milestones.length===0"));
+console.log('PASS: calendar boundaries, leap year, date moves, draft coalescing, persistence validation, undo and conflicting source dates.');
