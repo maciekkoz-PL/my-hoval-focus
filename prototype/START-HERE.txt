@@ -1,5 +1,7 @@
 My Hoval Focus | Calendar and Xurrent deadlines
 
+For a laptop that blocks the unsigned companion, use the existing Ticket Asystent 1.5. In Focus choose Sync with Xurrent > Download change package. Save the JSON beside the assistant, run its usual launcher, choose option 2, select the package, and review current and proposed dates. The package includes one internal scheduling note for each request. After execution import a fresh ticket export into Focus. Exporting a package keeps drafts pending. Use the original downloaded file if retrying the identical batch.
+
 1. Open My-Hoval-Focus.html in desktop Edge. Explore the sample Week and Month calendars.
 2. For real data, use Sources > Import tickets and select a recent JSON export from Ticket Asystent with request details, desired_completion_at, account and user.id.
 3. Drag a ticket to a day, or click it to choose a date. The change is a local draft. Existing deadlines keep their local time. New deadlines use 16:00 local time. Project milestones are personal and can be added and edited below the calendar.
