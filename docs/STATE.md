@@ -1,5 +1,8 @@
 # Current state — 2026-11-20
 
+## Current workflow requirement · 2026-11-21
+The owner requires the ticket assistant inside the website. The local calendar works, but file handoff and starting PowerShell are unsuitable for daily use. A hosted connection for read and confirmed write is proposed. Corporate hosting and live app authorization remain unknown.
+
 ## Managed-laptop checkpoint
 The owner reported that Windows refused to load the unsigned calendar companion. The primary real-data action now downloads a JSON package for the existing Ticket Asystent 1.5. Package structure and regressions tested with synthetic data. Tenant execution of this workflow remains unverified.
 
