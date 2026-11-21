@@ -34,3 +34,16 @@ assert.match(view(),/data-act="import"/);
 assert(html.includes('data:image/jpeg;base64,/9j/'));
 assert(!html.includes('spotlightIndex'));
 console.log('PASS: every selected ticket has one title and a working detail target; waiting overlap, saved step, empty plan and offline art covered.');
+
+const week = run('weekStrip(new Date(2026,0,1,9))');
+assert.equal(occurrences(week, '<time '), 7);
+assert.equal(occurrences(week, 'aria-current="date"'), 1);
+assert(week.includes('datetime="2025-12-29"') && week.includes('datetime="2026-01-04"'));
+assert.match(week, /datetime="2026-01-01"[^>]+aria-current="date"/);
+assert.match(view(), /<dt>Support<\/dt><dd>0<\/dd>/);
+assert.match(view(), /<dt>Change<\/dt><dd>0<\/dd>/);
+run("state=fresh();work().tickets[0].absent=true;");
+assert.match(view(), /<dt>Support<\/dt><dd>3<\/dd>/);
+assert.match(view(), /<dt>Change<\/dt><dd>1<\/dd>/);
+assert(html.includes('data:image/svg+xml;base64,'));
+console.log('PASS: local week across year boundary, current date, offline logo, empty queue and current snapshot ticket mix.');
