@@ -1,5 +1,7 @@
 # Session log
 
+**2026-11-21 · Remember connection.** Implemented in 22a04eb on the prototype branch after the owner confirmed anonymous 401. Runtime enrollment, encrypted local storage, explicit read-only refresh and forget were added. Local Node regression and synthetic restart tests passed. Actual managed Edge restart and authorized Xurrent data retrieval await the owner. No tenant data or credential was used in testing.
+
 **2026-11-20 · Owner clarification.** Xurrent is the primary source of daily work. Before building, compare native Xurrent My Inbox and Microsoft Planner My Day with the owner's daily review. Excel Projects remains a technical pilot. Assess the approved Xurrent read path and freshness before promising a combined Today view. Implementation awaits the owner's signal.
 
 ## 2026-11-17 — Repository bootstrap
