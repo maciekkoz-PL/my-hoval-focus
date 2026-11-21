@@ -101,6 +101,19 @@ input:not([type=file]),select,textarea{background:#19191e;border:1px solid #6861
 @media(max-width:650px){:root{--rail:0px}.shell{position:static;width:100%;height:auto;border-right:0;border-bottom:1px solid var(--line)}.mast{flex-direction:row;justify-content:space-between;padding:6px 14px;gap:12px}.brand{border:0;height:auto;width:auto}.navset{display:flex;gap:3px;padding:0;width:auto}.nav{min-height:42px;flex-direction:row;gap:5px;padding:6px 8px;font-size:13px;border-radius:9px}.nav .ico{width:16px;height:16px}.nav.active:before{display:none}main{padding-inline:14px}.topline{min-height:43px}.wordmark{font-size:15px}.day-head{align-items:flex-start;flex-direction:column;gap:14px;padding:18px 0 13px}.day-date{font-size:13px}.week{width:100%;justify-content:space-between;gap:1px}.week time{min-width:0;flex:1;padding:3px}.week strong{font-size:16px}.plan-bar{flex-wrap:wrap;margin-top:3px}.btn{padding:7px 9px;font-size:13px}.heading-group{gap:6px}.plan-actions{gap:4px}.priority-board,.brief-lower{grid-template-columns:1fr}.lead-tile{grid-row:auto;min-height:268px}.compact-tile{padding:16px}.tile-main h3{max-width:100%}.lead-tile h3{max-width:17ch}.brief-lower{gap:10px}.watchlist .waiting-line{display:grid;grid-template-columns:auto 1fr auto;gap:3px 9px}.waiting-line strong,.waiting-line small{grid-column:2;margin:0}.waiting-line>.ico{grid-column:3;grid-row:1/4}.brief-panel{padding:17px}.panel-title h2{font-size:20px}.day-head h1,.pagehead h1{font-size:47px}.pagehead{flex-wrap:wrap}.dialog{padding:19px}}
 @media(max-width:365px){.brand img{width:48px}.mast{padding-inline:9px}.nav{padding-inline:5px}.nav .ico{display:none}.plan-state{font-size:11px}}
 @media(prefers-reduced-motion:no-preference){button{transition:background-color .15s,color .15s}.open-detail:hover .ico{transform:rotate(-36deg) translateX(1px)}}
+.planner{margin-top:22px;padding:clamp(14px,1.8vw,28px);background:linear-gradient(130deg,#2a282f,#201f26);border:1px solid var(--line);border-radius:19px}
+.planner-head,.planner-foot,.project-line,.cal-controls,.seg{display:flex;align-items:center;gap:8px}.planner-head,.planner-foot,.project-line{justify-content:space-between;flex-wrap:wrap;gap:12px}
+.planner-head h2{font-size:clamp(24px,2.2vw,34px);letter-spacing:-.055em}.planner-head p{font-size:14px;color:var(--muted);margin-top:4px}
+.cal-controls{flex-wrap:wrap}.cal-controls button{min-height:34px;padding:4px 9px;border:1px solid var(--line);border-radius:8px;font-size:14px}.seg{padding:2px;background:#19191e;border-radius:10px;gap:0}.seg button{border:0}.seg [aria-pressed=true]{background:#50313b;color:#ffe1e4}
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:1px;background:#454047;border:1px solid #514a52;border-radius:12px;overflow:hidden;margin-top:15px}
+.cal-day{min-width:0;background:#26252b;padding:7px;min-height:100px}.weekview .cal-day{min-height:145px}.cal-day.outside{background:#211f25}.cal-day.is-today{background:#35252d}.cal-day.drop-target{box-shadow:inset 0 0 0 2px #ff9cab}
+.cal-day time{display:flex;align-items:center;gap:6px;color:#d5cdd6;margin-bottom:8px}.cal-day small{font-size:12px}.cal-day time b{font-size:15px}.cal-day.is-today time b{color:white;background:#b0001a;border-radius:6px;padding:0 4px}
+.cal-chip{width:100%;text-align:left;background:#422b36;border-left:3px solid #f48c9c;border-radius:5px;color:#fff0f2;padding:6px 7px;display:grid;gap:3px;cursor:grab;margin:3px 0}.cal-chip span{font-size:11px;color:#ffc2ce;overflow-wrap:anywhere}.cal-chip strong{font-size:13px;line-height:1.25;font-weight:580}.cal-chip.milestone{color:#f3efff;background:#373145;border-color:#b6a5df}.cal-chip.milestone span{color:#d7c8f2}
+.planner-foot{margin:12px 0}.planner-foot>span{font-size:13px;color:#c9c2cc}.legend-dot{display:inline-block;width:8px;height:8px;border-radius:2px;background:#f48c9c;margin-right:4px}.legend-dot.project{background:#b6a5df;margin-left:9px}
+.undated{padding:10px 0;border-block:1px solid var(--line)}.undated summary{cursor:pointer;color:#d8d1d9;font-size:14px}.undated>div{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:4px}
+.project-line{margin:17px 0 7px}.project-line h3{font-size:18px}.milestone-row{display:grid;grid-template-columns:minmax(100px,.65fr) 1fr auto;gap:12px;align-items:center;text-align:left;width:100%;padding:9px 0;border-bottom:1px solid var(--line)}.milestone-row span,.milestone-row time{color:#d4c4e5;font-size:13px}.milestone-row strong{font-weight:570;font-size:14px}
+.sync-row{padding:10px 0;border-bottom:1px solid var(--line)}.sync-row p,.sync-row small{color:var(--muted)}.sync-row button{display:block}
+@media(max-width:850px){.cal-grid{overflow-x:auto;grid-template-columns:repeat(7,minmax(104px,1fr))}.planner-head{align-items:flex-start}.milestone-row{grid-template-columns:1fr auto}.milestone-row span{grid-column:1/-1}.cal-controls{gap:4px}}
 </style></head>
 <body><noscript>My Hoval Focus needs JavaScript to display your workspace.</noscript><a class="skip-link" href="#view">Skip to content</a><header class="shell"><div class="mast">
   <div class="brand"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgNTQiPjxkZWZzPjxzdHlsZT4KCQkJCQkuY2xzLTEgewoJCQkJCQlmaWxsOiAjZTIwMDFhOwoJCQkJCX0KCQkKCQkJCQkuY2xzLTIsCgkJCQkJLmNscy0zIHsKCQkJCQkJZmlsbDogI2ZmZjsKCQkJCQl9CgkJCgkJCQkJLmNscy0zIHsKCQkJCQkJZmlsbC1ydWxlOiBldmVub2RkOwoJCQkJCX0KCQkJCTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTS41LjVoMTUydjUzSC41eiIgLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNTIgMXY1MkgxVjFoMTUxbTEtMUgwdjU0aDE1M1YweiIgLz48cGF0aCBjbGFzcz0iY2xzLTMiCgkJCQlkPSJNMzUuOCAxOC40NmMtMi4zOC0uMDctMy44NSAyLjQ1LTMuODUgNS4xNnMxLjQ3IDUgMy44NSA1IDMuODUtMi4yOSAzLjg1LTUtMS40Ny01LjIzLTMuODUtNS4xNnptMC0zLjM0YzUtLjA5IDguMDYgMy44MyA4LjA2IDguNDhTNDAuNzUgMzIgMzUuOCAzMnMtOC4wNi0zLjc2LTguMDYtOC40MSAzLjExLTguNTkgOC4wNi04LjV6bTI3LjMgOS42NGMtMS4zOC4xOS0yLjEuOTEtMi4xIDEuOTRhMiAyIDAgMCAwIDIgMS45NGMyLjE3LjA5IDMuNTMtMS4zOCAzLjU1LTIuNjFWMjRzLTMuMDguNjgtMy41Ljc1em0xLjQyLTMuMzZjMi0uNDIgMi0uNjEgMi4wOC0xLjQycy0uODQtMS41Mi0yLjI0LTEuNTItMi44LjIzLTIuNzYgMi41MmgtNC4wNlM1Ny4xOSAxNSA2NCAxNS4xNGMzLjU3IDAgNi43NS44OSA2LjUxIDUuOTF2MTAuNDRoLTQuMDN2LS43NWE2IDYgMCAwIDEtNCAxLjI4Yy0zLjEzIDAtNS43LTIuMjYtNS43LTUuMDcgMC0yLjUyIDEuMjQtNC40NiA0LjgxLTUgMS4yNi0uMjMgMi4xOS0uNCAyLjktLjU0ek03Ni42MSA5aC00LjE2djIyLjQ5aDQuMTZWOXpNNTAuNDQgMjUuNTNsMy4xMS05Ljg4aDQuMThsLTUuNTEgMTUuODRoLTQuMTZsLTQuNTUtMTUuODNoNC4zbDIuNjQgOS44OHpNOSA5djIyLjQ5aDQuNTF2LTkuNmg4LjM0djkuNmg0LjUzVjloLTQuNTR2OWgtOC4zM1Y5SDl6IiAvPjwvc3ZnPg==" alt="Hoval" width="68" height="24"></div>
@@ -129,6 +142,7 @@ function demo(){
 ['8200104','Check pricing rounding on returns','Support','Reproduce the rounding difference on a credit memo.','Ready to review','Assigned'],
 ['8200105','Review the delivery layout','Support','Waiting for a sample delivery from the requester.','Waiting for sample','Waiting for customer']
 ].map(([id,title,tag,reason,signal,status])=>({id,title,tag,reason,signal,status,latest:'',category:id.startsWith('C')?'change':'',target:'',urgent:false,impact:'',partial:false}));
+  w.tickets.forEach((t,i)=>{const d=shift(atNoon(day()),[0,2,1,5,0][i]);d.setHours(16,0,0,0);t.desired=i===4?'':d.toISOString();t.desiredKnown=true;});
   return w}
 const messages=[{id:'warehouse',src:'Teams',title:'Can you check the warehouse label?',who:'Alex Morgan',context:'“The new label is on the test printer. Can you confirm the barcode scans before the afternoon shift?”',match:'8200103'},{id:'cutover',src:'Outlook',title:'Cutover checklist ready for review',who:'Robin Ellis',context:'“The revised checklist is ready. Could you confirm who owns rollback validation?”',match:'C8200102'}];
 function fresh(){
@@ -142,6 +156,8 @@ function valid(snapshot) {
     if (!w.tickets.every(t => record(t) && /^(?:C)?\d+$/i.test(t.id) && typeof t.id === 'string' && typeof t.title === 'string')) return false;
     const ids = new Set(w.tickets.map(t => t.id));
     if (ids.size !== w.tickets.length || !Object.values(w.notes).every(n => typeof n === 'string')) return false;
+    if(w.dates!==undefined&&(!record(w.dates)||!Object.entries(w.dates).every(([id,d])=>ids.has(id)&&record(d)&&(d.from===''||stamp(d.from))&&stamp(d.to))))return false;
+    if(w.milestones!==undefined&&(!Array.isArray(w.milestones)||!w.milestones.every(m=>record(m)&&typeof m.id==='string'&&/^[a-zA-Z0-9-]+$/.test(m.id)&&typeof m.title==='string'&&typeof m.project==='string'&&validDay(m.date)&&typeof m.done==='boolean')||new Set(w.milestones.map(m=>m.id)).size!==w.milestones.length))return false;
     return Object.values(w.days).every(d => record(d) && Array.isArray(d.ids) &&
       d.ids.length <= 3 && new Set(d.ids).size === d.ids.length && d.ids.every(id => ids.has(id)) &&
       typeof d.accepted === 'boolean' && (!d.hours || (record(d.hours) && Object.values(d.hours).every(h => Number.isFinite(h) && h >= 0 && h <= 24))));
@@ -209,6 +225,153 @@ function inboxRow(m) {
     <span class="signal-text"><strong>${esc(m.title)}</strong><small>${esc(m.who)}<i>·</i>${esc(m.src)}</small></span>
     ${icon('chev')}</button>`;
 }
+function dateKey(d) {
+  return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+}
+function atNoon(s) { return new Date(s+'T12:00:00'); }
+function validDay(s) { return typeof s==='string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && dateKey(atNoon(s))===s; }
+function shift(d,n) { const copy=new Date(d);copy.setDate(copy.getDate()+n);return copy; }
+function monday(d) {return shift(d,-((d.getDay()+6)%7));}
+function stamp(s) {return typeof s==='string' && /^\d{4}-\d{2}-\d{2}T/.test(s) && Number.isFinite(Date.parse(s));}
+function sameInstant(a,b) {return a===b || (stamp(a)&&stamp(b)&&Date.parse(a)===Date.parse(b));}
+function formatDue(s) {return stamp(s)?new Date(s).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'}):'No date';}
+function sampleMilestones() {
+  const now=atNoon(day());
+  return [['cutover','ERP upgrade','Approve rehearsal checklist',0],['integration','Order integration','Review pilot results',3],['rollout','ERP upgrade','Confirm rollout readiness',9]].map(([id,project,title,offset])=>({id,project,title,date:dateKey(shift(now,offset)),done:false}));
+}
+let horizon='week', anchor=day(), dragKey='', bridgeFolder=null, sending=false;
+function plannerData(){
+  const w=work();w.dates??={};w.milestones??=sample()?sampleMilestones():[];return w;
+}
+function plannedEvents(){
+  const w=plannerData();
+  const tickets=current().map(t=>{
+    const draft=w.dates[t.id],due=draft?.to||t.desired||'';
+    return {key:'t'+t.id,type:'ticket',label:'#'+t.id,title:t.title,date:stamp(due)?dateKey(new Date(due)):'',pending:!!draft};
+  });
+  return tickets.concat(w.milestones.filter(m=>!m.done).map(m=>({key:'m'+m.id,type:'milestone',label:m.project,title:m.title,date:m.date})));
+}
+function eventChip(e){
+  return `<button class="cal-chip ${e.type}" draggable="true" data-key="${esc(e.key)}" data-act="calitem:${esc(e.key)}"><span>${esc(e.label)}${e.pending?' · Draft':''}</span><strong>${esc(e.title)}</strong></button>`;
+}
+function calendar(){
+  const w=plannerData(),a=atNoon(anchor),monthly=horizon==='month';
+  const first=monthly?new Date(a.getFullYear(),a.getMonth(),1,12):monday(a);
+  const start=monday(first),last=monthly?new Date(a.getFullYear(),a.getMonth()+1,0,12):shift(start,6);
+  const end=shift(monday(last),6), events=plannedEvents(),byDay=new Map();
+  for(const e of events){if(!byDay.has(e.date))byDay.set(e.date,[]);byDay.get(e.date).push(e);}
+  const fmt=(d,opt)=>d.toLocaleDateString('en-GB',opt);
+  const range=monthly?fmt(first,{month:'long',year:'numeric'}):fmt(start,{day:'numeric',month:'short'})+' – '+fmt(end,{day:'numeric',month:'short',year:'numeric'});
+  const thisPeriod=monthly?a.getFullYear()===new Date().getFullYear()&&a.getMonth()===new Date().getMonth():dateKey(monday(new Date()))===dateKey(start);
+  let cells='';
+  for(let d=start;d<=end;d=shift(d,1)){
+    const key=dateKey(d);
+    cells+=`<section class="cal-day ${key===day()?'is-today':''} ${monthly&&d.getMonth()!==a.getMonth()?'outside':''}" data-drop="${key}" aria-label="${fmt(d,{dateStyle:'full'})}"><time datetime="${key}"><small>${fmt(d,{weekday:'short'})}</small><b>${d.getDate()}</b></time>${(byDay.get(key)||[]).map(eventChip).join('')}</section>`;
+  }
+  const noDate=byDay.get('')||[], amount=Object.keys(w.dates).length, projects=w.milestones.filter(m=>!m.done).sort((x,y)=>x.date.localeCompare(y.date));
+  return `<div class="planner-head"><div><h2>${thisPeriod?'This '+horizon:monthly?'Month planner':'Week planner'}</h2><p>${range}</p></div>
+   <div class="cal-controls"><div class="seg">${['week','month'].map(k=>`<button data-act="period:${k}" aria-pressed="${horizon===k}">${k==='week'?'Week':'Month'}</button>`).join('')}</div>
+   <button data-act="shift:prev" aria-label="Previous ${horizon}">‹</button><button data-act="calnow">Today</button><button data-act="shift:next" aria-label="Next ${horizon}">›</button></div></div>
+   <div class="cal-grid ${horizon}view">${cells}</div>
+   <div class="planner-foot"><span><i class="legend-dot"></i>Ticket deadline <i class="legend-dot project"></i>Project milestone</span>
+   ${button('Sync with Xurrent'+(amount?' · '+amount:''),'syncdates','btn '+(amount?'primary':'subtle'))}</div>
+   <details class="undated"><summary>Unscheduled tickets · ${noDate.length}</summary><div>${noDate.map(eventChip).join('')||'All current tickets have a date.'}</div></details>
+   <div class="project-line"><h3>Project milestones</h3>${button('Add milestone','newmile','btn subtle')}</div>
+   ${projects.length?projects.map(m=>`<button class="milestone-row" data-act="calitem:m${esc(m.id)}"><span>${esc(m.project)}</span><strong>${esc(m.title)}</strong><time>${fmt(atNoon(m.date),{day:'numeric',month:'short',year:'numeric'})}</time></button>`).join(''):'<p class="empty">Add the next step of a project you want to keep in view.</p>'}`;
+}
+function refreshPlanner(focusAction){
+  $('#planner').innerHTML=calendar();
+  if(focusAction)document.querySelector('#planner [data-act="'+focusAction+'"]')?.focus();
+}
+function changeDue(id,ds){
+  const w=plannerData(),t=find(id);
+  if(!t||t.absent||!validDay(ds))return false;
+  if(!sample()&&(!t.desiredKnown||t.partial)){notify('Import fresh ticket details before changing this deadline.');return false;}
+  const baseline=t.desired||'',old=w.dates[id], oldTime=old?.to||baseline;
+  if(stamp(oldTime)&&dateKey(new Date(oldTime))===ds)return true;
+  const time=stamp(oldTime)?new Date(oldTime):null,d=atNoon(ds);
+  d.setHours(time?time.getHours():16,time?time.getMinutes():0,time?time.getSeconds():0,time?time.getMilliseconds():0);
+  if(sameInstant(baseline,d.toISOString()))delete w.dates[id];
+  else w.dates[id]={from:baseline,to:d.toISOString()};
+  return true;
+}
+function moveEvent(key,ds){
+  if(!validDay(ds))return;
+  if(key[0]==='t'){if(!changeDue(key.slice(1),ds))return;}
+  else{const m=plannerData().milestones.find(m=>m.id===key.slice(1));if(!m)return;m.date=ds;}
+  close();persist();notify(key[0]==='t'?'Deadline draft saved on this device.':'Project milestone rescheduled.');
+}
+function calendarItem(key){
+  const id=key.slice(1),w=plannerData();
+  if(key[0]==='m'){
+    const m=w.milestones.find(m=>m.id===id);
+    openDialog(m?'Edit project milestone':'Add project milestone',`<label class="field">Project<input id="projName" maxlength="120" value="${esc(m?.project||'')}"></label><label class="field">Next milestone<input id="mileName" maxlength="240" value="${esc(m?.title||'')}"></label><label class="field">Planned date<input id="calDate" type="date" value="${m?.date||anchor}"></label><p role="alert" id="err"></p>`+actions(button('Save milestone','savemile:'+id,'btn primary'),m?button('Mark complete','donemile:'+id):''));
+    return;
+  }
+  const t=find(id);if(!t)return;
+  const due=w.dates[id]?.to||t.desired;
+  openDialog(t.title,'<p class="sub">#'+esc(id)+' · Xurrent desired completion</p><label class="field">Completion date<input type="date" id="calDate" value="'+(stamp(due)?dateKey(new Date(due)):day())+'"></label><p class="sub">Local time · '+(stamp(due)?new Date(due).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'16:00 for a new deadline')+'</p>'+actions(button('Save date','movedate:'+key,'btn primary'),button('Ticket details','detail:'+id),w.dates[id]?button('Discard draft','revertdue:'+id):''));
+}
+function reviewSync(){
+  if(sending){openDialog('Sync with Xurrent','<p>A batch is awaiting verification.</p>');return;}
+  const w=plannerData(),entries=Object.entries(w.dates);
+  const rows=entries.map(([id,p])=>`<div class="sync-row"><strong>#${esc(id)} · ${esc(find(id)?.title)}</strong><p>${esc(formatDue(p.from))} → ${esc(formatDue(p.to))}</p>${syncIssue(id,p)?'<small>'+esc(syncIssue(id,p))+'</small>':''}${button('Discard draft','revertdue:'+id,'text-btn')}</div>`).join('');
+  const ready=entries.filter(([id,p])=>!syncIssue(id,p)).length;
+  openDialog('Sync with Xurrent',entries.length?'<p class="sub">Only the listed desired completion dates will change. Xurrent may notify the requester and adjust the SLA target.</p>'+rows+
+    (sample()?'<p class="notice">Sample workspace. Try the workflow with fictional tickets.</p>':'<p class="sub">Start Focus-Sync.ps1 beside Ticket Asystent. Select that folder when prompted.</p>')+
+    actions(ready?button(sample()?'Apply to sample':'Send '+ready+' deadline change'+(ready===1?'':'s'),'senddates','btn primary'):'',button('Close','close')):'<p>No deadline changes to send.</p>');
+}
+function syncIssue(id,p){
+  const t=find(id);
+  if(!t||t.absent)return 'Outside the current export';
+  if(!sample()&&(!/^[1-9]\d{0,14}$/.test(id)||!t.desiredKnown||t.partial))return 'Requires complete details and a numeric Xurrent request ID';
+  if(!sameInstant(t.desired||'',p.from))return 'Source deadline changed. Discard the draft and review the new date.';
+  return '';
+}
+async function readBridgeFile(folder,name){
+  return JSON.parse(await (await (await folder.getFileHandle(name)).getFile()).text());
+}
+async function sendDates(){
+  if(sending)return;
+  const w=plannerData(), entries=Object.entries(w.dates).filter(([id,p])=>!syncIssue(id,p));
+  if(!entries.length)return;
+  if(sample()){
+    for(const [id,p] of entries){find(id).desired=p.to;delete w.dates[id];}
+    close();persist();notify('Sample deadlines updated.');return;
+  }
+  sending=true;
+  try{
+    if(!window.showDirectoryPicker)throw Error('This browser does not provide folder access. Open the file in desktop Edge.');
+    bridgeFolder??=await window.showDirectoryPicker({mode:'readwrite'});
+    const ready=await readBridgeFile(bridgeFolder,'focus-calendar-ready.json');
+    if(!ready.session||ready.account!==w.account||String(ready.owner)!==String(w.owner))throw Error('The assistant folder does not match the imported Xurrent account and user.');
+    const batch=crypto.randomUUID(), prefix='focus-calendar-'+batch;
+    const changes=entries.map(([id,p])=>({id,subject:find(id).title,from:p.from,to:p.to}));
+    const file=await bridgeFolder.getFileHandle(prefix+'.request.json',{create:true});
+    const writer=await file.createWritable();
+    await writer.write(JSON.stringify({version:1,session:ready.session,batch,created:new Date().toISOString(),changes}));await writer.close();
+    openDialog('Sync with Xurrent','<p role="status">Waiting for Ticket Asystent to verify the changes…</p>');
+    let receipt;
+    for(let attempt=0;attempt<90&&!receipt;attempt++){
+      await new Promise(resolve=>setTimeout(resolve,1000));
+      try{receipt=await readBridgeFile(bridgeFolder,prefix+'.result.json');}
+      catch(err){if(err.name!=='NotFoundError')throw err;}
+    }
+    if(!receipt||receipt.batch!==batch||receipt.session!==ready.session||!Array.isArray(receipt.results))
+      throw Error('No verified result yet. Import a fresh snapshot before retrying. Drafts have been kept.');
+    let verified=0;const problems=[];
+    for(const c of changes){
+      const result=receipt.results.find(r=>String(r.id)===c.id);
+      if(result?.status!=='verified'||!sameInstant(result.to,c.to)){problems.push('#'+esc(c.id)+' · '+esc(result?.message||'No confirmation'));continue;}
+      const t=w.tickets.find(t=>t.id===c.id);t.desired=c.to;t.desiredKnown=true;
+      if(w.dates[c.id]?.to===c.to)delete w.dates[c.id];else if(w.dates[c.id])w.dates[c.id].from=c.to;
+      verified++;
+    }
+    persist();openDialog('Sync results','<p>'+verified+' of '+changes.length+' verified in Xurrent.</p>'+problems.map(x=>'<p>'+x+'</p>').join('')+actions(button('Done','close','btn primary')));
+  }catch(err){bridgeFolder=null;if(err.name!=='AbortError')openDialog('Sync not verified','<p>'+esc(err.message)+'</p><p>Deadline drafts are saved locally.</p>');}
+  finally{sending=false;}
+}
+
 function weekStrip(now) {
   const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - (now.getDay()+6)%7, 12);
   const weekday = new Intl.DateTimeFormat('en-GB',{weekday:'short'});
@@ -254,6 +417,7 @@ function today() {
         ${button(amount?'Review entries':'Prepare entries','wrap','panel-link','clock')}
       </section>
     </div>
+    <section class="planner" aria-label="Planning calendar" id="planner">${calendar()}</section>
     <section class="watchlist"><div class="panel-title"><h2>Waiting for</h2><span class="tally">${waiting.length}</span></div>
       ${waiting.slice(0,2).map(t=>`<button class="waiting-line" data-act="detail:${esc(t.id)}"><i aria-hidden="true"></i><span class="reference">#${esc(t.id)}</span><strong>${esc(t.title)}</strong><small>${esc(t.status)}</small>${icon('chev')}</button>`).join('')||'<p class="empty">No additional tickets waiting for a reply.</p>'}
       ${waiting.length>2?button('See all','waitingoutside','text-btn'):''}</section>`;
@@ -274,14 +438,14 @@ function sources(){
   return '<div class="pagehead"><div><h1>Sources</h1><p class="sub">Your files and workspace on this device.</p></div></div><section class="panel"><div class="box"><h3>Xurrent ticket export</h3><p class="sub">Select a JSON export from Ticket Asystent. Your plan and personal notes follow each ticket when you import it again.</p>'+(w.imported?'<p class="tiny">Exported '+esc(w.exported||'at an unknown time')+' · Imported '+esc(w.imported)+
     '</p>':'')+'<div class="actiongroup">'+button('Import tickets','import','btn primary','download')+button('Download sample JSON','fixture')+
     '</div></div><div class="box"><h3>Workspace backup</h3><p class="sub">Back up your tickets, notes and decisions to a JSON file you keep on this device.</p><div class="actiongroup">'+button('Export backup','backup')+button('Restore backup','restore')+
-    '</div></div><div class="box"><h3>Sample workspace</h3><p class="sub">Explore the morning plan with fictional tickets and messages.</p><div class="actiongroup">'+button(sample()?'Open sample Today':'Switch to sample','sample')+(w.imported?button('Open imported workspace','local'):'')+
+    '</div></div><div class="box"><h3>Sample workspace</h3><p class="sub">Explore the morning plan with fictional tickets and messages.</p><div class="actiongroup">'+button(sample()?'Open sample Today':'Switch to sample','sample')+button('Open my workspace','local')+
     '</div></div></section>'}
 function render(){
   const views={Today:today,Tickets:tickets,Sources:sources};
   $('#nav').innerHTML=Object.keys(views).map((v,i)=>'<button class="nav '+(page===v?'active':'')+'" '+(page===v?'aria-current="page"':'')+' data-act="page:'+v+'">'+icon(['today','tickets','sources'][i])+v+(v==='Tickets'?'<em>'+current().length+
     '</em>':'')+'</button>').join('');
   document.title=page+' · My Hoval Focus';
-  $('#mode').textContent=sample()?'Sample workspace':'Local import';
+  $('#mode').textContent=sample()?'Sample workspace':'My workspace';
   $('#view').innerHTML=(!storageOK?'<p class="notice">Session only. Use Sources → Export backup before closing.</p>':'')+(!sample()&&!work().complete?'<p class="notice">Partial source export. Earlier tickets and available notes have been retained.</p>':'')+views[page]()}
 function openDialog(title,body){
   const el=$('#modal');
@@ -347,7 +511,7 @@ function normalize(o){
     seen.add(id);
     if(!row||!d||typeof d.subject!=='string'||!d.subject.trim())throw Error('An exported ticket is missing its subject.');
     const ordered=(Array.isArray(row.notes)?row.notes:[]).filter(n=>n&&typeof n.text==='string').slice().sort((a,b)=>String(b.created_at||'').localeCompare(String(a.created_at||'')));
-    return {id,title:d.subject,status:String(d.status||''),category:String(d.category||''),impact:String(d.impact||''),target:String(d.next_target_at||''),urgent:d.urgent===true,latest:ordered[0]?.text||'',partial:row.details_read===false||row.notes_read===false,notesRead:row.notes_read!==false,detailsRead:row.details_read!==false}});
+    return {id,title:d.subject,desired:stamp(d.desired_completion_at)?d.desired_completion_at:'',desiredKnown:Object.hasOwn(d,'desired_completion_at')&&(d.desired_completion_at==null||stamp(d.desired_completion_at)),status:String(d.status||''),category:String(d.category||''),impact:String(d.impact||''),target:String(d.next_target_at||''),urgent:d.urgent===true,latest:ordered[0]?.text||'',partial:row.details_read===false||row.notes_read===false,notesRead:row.notes_read!==false,detailsRead:row.details_read!==false}});
   return {list,complete:o.complete,exported:String(o.exported_at||''),account:String(o.account||''),owner:String(o.user?.id||'')}}
 function importFile(o){
   const x=normalize(o),old=state.local;
@@ -359,12 +523,17 @@ const previous=new Map(old.tickets.map(t=>[t.id,t])),incoming=new Set(x.list.map
     if(!prev)return t;
     const merged={...t};
     if(!t.notesRead&&!t.latest)merged.latest=prev.latest;
+    if(!t.desiredKnown)merged.desired=prev.desired||'';
     if(!t.detailsRead&&!t.urgent)merged.urgent=prev.urgent;
     if(!t.detailsRead)for(const k of ['target','impact','category','status'])if(!merged[k])merged[k]=prev[k];
     return merged});
   for(const t of old.tickets)if(!incoming.has(t.id))rows.push({...t,absent:x.complete||!!t.absent});
   state.local={...old,tickets:rows,account:x.account,owner:x.owner,complete:x.complete,exported:x.exported,imported:new Date().toISOString()};
   
+  for(const [id,pending] of Object.entries(state.local.dates||{})){
+    const incomingTicket=x.list.find(t=>t.id===id);
+    if(incomingTicket?.desiredKnown&&!incomingTicket.partial&&sameInstant(incomingTicket.desired,pending.to))delete state.local.dates[id];
+  }
   state.mode='local';
   page='Today';
   persist();
@@ -383,6 +552,11 @@ $('#picker').addEventListener('change',async e=>{
       openDialog('Restore workspace?','<p>This replaces the current sample and imported workspace with the selected backup.</p>'+actions(button('Restore workspace','confirmrestore','btn primary'),button('Cancel','close')))}else importFile(o)}catch(err){
     openDialog('File could not be loaded','<p>'+esc(err instanceof SyntaxError?'The selected file does not contain valid JSON.':err.message)+
       '</p>')}});
+document.addEventListener('dragstart',e=>{const chip=e.target.closest('.cal-chip');if(!chip)return;dragKey=chip.dataset.key;e.dataTransfer.setData('text/plain',dragKey);e.dataTransfer.effectAllowed='move';});
+document.addEventListener('dragover',e=>{const cell=e.target.closest('[data-drop]');if(cell&&dragKey){e.preventDefault();cell.classList.add('drop-target');}});
+document.addEventListener('dragleave',e=>{const cell=e.target.closest('[data-drop]');if(cell&&!cell.contains(e.relatedTarget))cell.classList.remove('drop-target');});
+document.addEventListener('dragend',()=>{dragKey='';document.querySelectorAll('.drop-target').forEach(el=>el.classList.remove('drop-target'));});
+document.addEventListener('drop',e=>{const cell=e.target.closest('[data-drop]');if(!cell||!dragKey)return;e.preventDefault();cell.classList.remove('drop-target');const key=dragKey;dragKey='';moveEvent(key,cell.dataset.drop);});
 document.addEventListener('input',e=>{
   if(e.target.id==='search'){
     search=e.target.value;
@@ -392,6 +566,25 @@ document.addEventListener('click',async e=>{
   if(!hit)return;
   const [a,arg]=hit.dataset.act.split(':');
   switch(a){
+case 'period':horizon=arg;refreshPlanner('period:'+arg);break;
+case 'calnow':anchor=day();refreshPlanner('calnow');break;
+case 'shift':{
+  const d=atNoon(anchor),direction=arg==='prev'?-1:1;
+  anchor=dateKey(horizon==='month'?new Date(d.getFullYear(),d.getMonth()+direction,1,12):shift(d,direction*7));
+  refreshPlanner('shift:'+arg);break;}
+case 'calitem':calendarItem(arg);break;
+case 'newmile':calendarItem('m');break;
+case 'savemile':{
+  const project=$('#projName').value.trim(),title=$('#mileName').value.trim(),date=$('#calDate').value;
+  if(!project||!title||!validDay(date)){$('#err').textContent='Enter a project, a milestone and a valid date.';break;}
+  const w=plannerData(),existing=w.milestones.find(m=>m.id===arg);
+  if(existing)Object.assign(existing,{project,title,date});else w.milestones.push({id:crypto.randomUUID(),project,title,date,done:false});
+  close();persist();break;}
+case 'donemile':{const m=plannerData().milestones.find(m=>m.id===arg);if(m)m.done=true;close();persist();break;}
+case 'movedate':moveEvent(arg,$('#calDate').value);break;
+case 'revertdue':delete plannerData().dates[arg];close();persist();break;
+case 'syncdates':reviewSync();break;
+case 'senddates':await sendDates();break;
 case 'page':page=arg;
     search='';
     render();
