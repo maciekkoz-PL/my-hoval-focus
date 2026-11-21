@@ -14,7 +14,7 @@ The Excel importer created 41 tasks and a second run updated them without confir
 3. Read [architecture](docs/ARCHITECTURE.md) and [handoff procedure](docs/HANDOFF.md).
 4. Run `node tests/today-offline.cjs` to check the local prototype's logic.
 
-**Current checkpoint.** The dark Hoval dashboard has been previewed at desktop and phone widths and is ready for managed Edge acceptance. The Sources screen supports manual Xurrent file import. Week and Month show project milestones and request completion dates. To send reviewed deadline changes, use the [calendar companion instructions](prototype/START-HERE.txt). Live integrations and AI remain future work.
+**Current checkpoint.** The dark Hoval dashboard has been previewed at desktop and phone widths and is ready for managed Edge acceptance. In the downloaded file use Sources → Connect to Xurrent → Remember & refresh. Open the same file in the same browser profile for later refreshes. Forget connection clears the stored credential. Manual JSON import is also available. Week and Month show project milestones and request completion dates. To send reviewed deadline changes, use the [calendar companion instructions](prototype/START-HERE.txt). Managed Edge authenticated acceptance, direct deadline writes and AI remain pending.
 
 ## Contents
 
