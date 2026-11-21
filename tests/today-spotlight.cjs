@@ -1,31 +1,36 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const path = process.argv[2] || require('node:path').join(__dirname, '../prototype/My-Hoval-Focus.html');
-const html = fs.readFileSync(path, 'utf8');
-const code = html.split('<script>')[1].split('</script>')[0];
+const input = process.argv[2] || require('node:path').join(__dirname, '../prototype/My-Hoval-Focus.html');
+const html = fs.readFileSync(input, 'utf8');
 const nodes = new Map();
-const listeners = {};
 const document = {
   querySelector(selector) {
-    if (!nodes.has(selector)) nodes.set(selector, {addEventListener() {}, focus() {}});
+    if (!nodes.has(selector)) nodes.set(selector, {addEventListener() {}});
     return nodes.get(selector);
   },
-  addEventListener(type, handler) {listeners[type] = handler;}
+  addEventListener() {}
 };
-const ctx = vm.createContext({document, localStorage:{getItem() {},setItem() {},removeItem() {}}, clearTimeout() {},setTimeout() {}});
-vm.runInContext(code, ctx);
-const view = () => document.querySelector('#view').innerHTML;
-const press = action => listeners.click({target:{closest:()=>({dataset:{act:action}})}});
-(async () => {
-  assert.match(html, /data:image\/jpeg;base64,\/9j\//);
-  assert.match(view(), /<h2>Release blocked invoice batch<\/h2>/);
-  await press('spot:1');
-  assert.match(view(), /<h2>Validate the SAP test cutover<\/h2>/);
-  assert.match(view(), /class="hero-btn" data-act="detail:C8200102"/);
-  assert.match(view(), /Priority 2 of 3/);
-  assert.equal(vm.runInContext('plan().ids[0]',ctx), '8200101');
-  vm.runInContext("work().tickets=[];work().days={};render()",ctx);
-  assert.match(view(), /Your plan is open/);
-  console.log('PASS: embedded image, selectable featured priority, correct detail action, unchanged ranking, empty state.');
-})().catch(e=>{console.error(e);process.exitCode=1});
+const context = vm.createContext({document, localStorage:{getItem(){}, setItem(){}, removeItem(){}}});
+const run = code => vm.runInContext(code,context);
+run(html.split('<script>')[1].split('</script>')[0]);
+const view = () => run('today()');
+const occurrences = (text,token) => text.split(token).length - 1;
+for (const id of run('plan().ids')) {
+  const title=run('find('+JSON.stringify(id)+').title');
+  assert.equal(occurrences(view(),title),1);
+  assert.match(view(),new RegExp('data-act="detail:'+id+'"'));
+}
+assert.equal(occurrences(view(), 'class="priority-tile'),3);
+assert(!view().includes('focus-step'));
+run("plan().ids[0]='8200105';work().notes['8200105']='Confirm & reply';");
+assert.equal(occurrences(view(),'Review the delivery layout'),1);
+assert(view().includes('Confirm &amp; reply'));
+run("plan().ids=[];");
+assert(view().includes('Your plan is open.'));
+assert.equal(occurrences(view(),'class="priority-tile'),0);
+run("work().tickets=[];");
+assert.match(view(),/data-act="import"/);
+assert(html.includes('data:image/jpeg;base64,/9j/'));
+assert(!html.includes('spotlightIndex'));
+console.log('PASS: every selected ticket has one title and a working detail target; waiting overlap, saved step, empty plan and offline art covered.');
