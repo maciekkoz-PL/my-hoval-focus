@@ -3,12 +3,12 @@
 Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
 ## Next session
-The owner has no internal host. The owner reported the expected anonymous 401 in managed Edge. Establish an authorized authentication mechanism for the single-laptop experience. Network reachability alone is not authorization; do not assume the corporate token may enter the frontend.
+In the downloaded file, connect once with the owner’s account ID and token. Close Edge, reopen the same file from the same folder in the same profile, click Refresh tickets and compare the IDs with Xurrent. Only report status/counts. If Edge storage fails, record the displayed error. Run node tests/xurrent-remember.cjs alongside the existing regression suite.
 1. Review the dark dashboard on managed Edge at 100% zoom. Check the alpine first priority, the two adjacent tickets, keyboard focus and long imported subjects. Compare the snapshot breakdown with the Tickets page. Test both an empty plan and a saved personal action.
 2. Select Edit under My top 3, replace one ticket and save. Close and reopen the same file from the same folder. Confirm the revised plan persists. If local storage is unavailable, try the JSON backup and restore controls.
 3. In Sources, download the synthetic example, import it, save a next action, and reimport it. Verify the personal action survives. Test a real export locally only after the sample works. Keep real data outside Git.
 4. Collect feedback on the Today layout before extending Projects, AI, ticket ingestion or scheduling. Run `node tests/today-offline.cjs` after changes. The Node test exercises app logic with in-memory browser objects. It does not test layout, file-picker permissions or tenant connectivity.
-5. Preserve existing flows and lists. A permitted live refresh path, AI provider and actual Toggl submission remain future work.
+5. Preserve existing flows and lists. Verify the read-only live path on the laptop before extending it to writes, AI or Toggl.
 
 ## Existing technical backlog
 Obtain recoverable Power Apps/flow exports when practical. Harden source-count/schema/Step validation, concurrency, stable project-task identity, stale-row handling and completed-run publication before scheduling the Excel importer. Sources.Enabled remains configuration only. Source deletion is deferred.
