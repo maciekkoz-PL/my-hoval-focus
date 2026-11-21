@@ -3,7 +3,7 @@
 Read docs/PRODUCT-SPEC.md first. This replaces the old SPFx-first / Projects-first plan.
 
 ## Next session
-Validate one agreed request with option 2 of the existing Ticket Asystent 1.5 and a Focus change package, then reimport a fresh snapshot. The managed laptop refused to start the unsigned companion.
+Determine which approved internal host can serve the Focus site and its Xurrent connection. For user-delegated OAuth, establish the HTTPS callback, app registration and server-side secret. Prove the signed-in identity and read-only assigned ticket list first. Validate a reviewed desired-completion update separately. Do not send the owner through a local helper or file exchange as a daily workflow.
 1. Review the dark dashboard on managed Edge at 100% zoom. Check the alpine first priority, the two adjacent tickets, keyboard focus and long imported subjects. Compare the snapshot breakdown with the Tickets page. Test both an empty plan and a saved personal action.
 2. Select Edit under My top 3, replace one ticket and save. Close and reopen the same file from the same folder. Confirm the revised plan persists. If local storage is unavailable, try the JSON backup and restore controls.
 3. In Sources, download the synthetic example, import it, save a next action, and reimport it. Verify the personal action survives. Test a real export locally only after the sample works. Keep real data outside Git.
