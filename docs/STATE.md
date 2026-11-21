@@ -1,10 +1,27 @@
 # Current state — 2026-11-20
 
-## Latest checkpoint
-The owner requested a complete repository handoff before doing more. New work in this checkpoint is documentation only. Read [PRODUCT-SPEC.md](PRODUCT-SPEC.md) for the latest complete requirements. Web building remains paused pending the owner's signal after his requested model switch.
+## Remembered Xurrent connection · 2026-11-21
+The owner authorized local token persistence. The downloaded HTML reads the identity and open tickets assigned to it. Sources and Tickets offer refresh on demand. An AES-GCM key and encrypted token are stored in IndexedDB for this file path. The nonextractable key is stored in the same browser profile. Backups omit credentials. No automatic refresh or direct authenticated writes. Synthetic two-session tests use real Web Crypto with a structured-clone database double. Actual storage across managed Edge restarts and authenticated tenant reads await owner verification.
+
+## Earlier laptop-only checkpoint · 2026-11-21
+The owner has no available internal host. The site must start from the corporate laptop. Sources now offers a user-initiated, anonymous browser reachability check restricted to the fixed Xurrent /v1/me URL, with credentials omitted. A neutral external preflight advertised support for Origin null and the API headers. An unauthenticated GET returned 401 with an Xurrent request ID. The owner ran the probe in managed Edge and reported the expected 401. Authenticated read and write remain untested. Do not assume access to the existing Windows-protected token from the HTML. The check sends no corporate data and performs no writes.
+
+## Current workflow requirement · 2026-11-21
+The owner requires the ticket assistant inside the website. The local calendar works, but file handoff and starting PowerShell are unsuitable for daily use. A hosted connection for read and confirmed write is proposed. Corporate hosting and live app authorization remain unknown.
+
+## Managed-laptop checkpoint
+The owner reported that Windows refused to load the unsigned calendar companion. The primary real-data action now downloads a JSON package for the existing Ticket Asystent 1.5. Package structure and regressions tested with synthetic data. Tenant execution of this workflow remains unverified.
+
+## Current calendar checkpoint · 2026-11-21
+Today includes a direct-manipulation week/month calendar. Imported request deadlines use desired_completion_at; project milestones are personal and stored with the backup. Drag or choose a date, review drafts and send with the companion in prototype/Focus-Sync.ps1. The existing assistant supplies Token.ps1. Tests used synthetic data; first live Windows/Xurrent verification is pending. App commit 75bc5d8.
+
+## Prior visual checkpoint · 2026-11-21
+[The portable Today dashboard](../prototype/My-Hoval-Focus.html) now has a dark workspace with embedded official Hoval branding. The first priority occupies the alpine card. The other two appear alongside it. A read-only local week strip, message inbox, support/change queue breakdown, Toggl draft and outstanding waits provide context. Queue counts come from the current snapshot. The offline contract and saved state key remain compatible. App commit `11b5eae`.
+
+The offline regression and layout-structure tests passed on synthetic data. Browser preview at desktop and phone widths verified the Today layout, ticket navigation and detail dialog. Direct acceptance on the managed Hoval laptop remains with the owner.
 
 ## Current direction
-Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. No local app has been built or verified. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
+Xurrent is the main work source. The proposed first app is a portable local web app on the corporate laptop, initially using a ticket file from the existing PowerShell process. The first local prototype has passed logic tests with synthetic tickets. Browser rendering and managed-device policy still need a real-device check. Preserve the working Excel/Power Automate/SharePoint pilot. The owner prefers minimal IT dependency and has declined private-device registration.
 
 Today should help select My top 3, explain priorities and collect Needs your action from messages. Review tickets should support one-at-a-time AI discussion, durable drafts and explicit external-write approval. Coarse Toggl allocation is now a confirmed requirement, using ticket reference/title and Support hours or Change hours, approximately eight hours for a full day. First generate entries for copying; API sending is later.
 

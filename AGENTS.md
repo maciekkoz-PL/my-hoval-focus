@@ -7,7 +7,7 @@ Read README.md, docs/STATE.md, docs/PRODUCT-SPEC.md, docs/NEXT_STEPS.md, docs/KN
 - Project: My Hoval Focus, a personal workplace dashboard. App UI must be English. Speak Polish to the owner, Maciek.
 - The owner wants premium visual quality and real responsiveness, minimal manual clicking, and precise short steps when his UI actions are necessary.
 - Latest direction: Xurrent-first portable local web app with initial file import. Preserve Power Automate + SharePoint. SPFx/Power Pages are not prerequisites for the local pilot. Follow docs/PRODUCT-SPEC.md.
-- Build remains paused until the owner gives his start signal. Documentation handoff was the latest authorized action.
+- The owner authorized the portable Today visual prototype. The ongoing acceptance test is opening the same HTML on the managed laptop and checking visual quality and local persistence.
 - Toggl uses coarse owner-approved allocations, about eight hours for a full day; a timer is optional. Preserve exact ticket reference/title and support/change category.
 - GitHub metadata last reported public despite the private-repository intent. Keep stakeholder identity mappings, corporate payloads and credentials outside Git.
 - Corporate laptop cannot freely install software. No corporate policy, browser authentication, license or network bypasses.
@@ -29,4 +29,4 @@ Read README.md, docs/STATE.md, docs/PRODUCT-SPEC.md, docs/NEXT_STEPS.md, docs/KN
 - Read current HEAD and dirty state before edits; preserve others' work. Stop to resolve overlapping work rather than overwriting it.
 - Only run checks meaningful for the change. Do not claim tenant validation from local mock tests.
 - End each work session with docs/STATE.md and docs/NEXT_STEPS.md updated, dated handoff notes in docs/SESSION_LOG.md, tests and commit information. Push the work when authorized and access is available; otherwise state the blocker.
-- Never put an access token into prompts, README, browser JavaScript, app frontend or commits.
+- Never embed credentials in code, prompts, docs, exports or commits. The owner authorized entering a token at runtime into the downloaded local HTML and remembering it there. Keep the encrypted record outside workspace backups, with a nonextractable browser-generated key, an explicit Forget action, and an exact Xurrent API destination.

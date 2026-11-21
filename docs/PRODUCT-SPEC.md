@@ -2,6 +2,9 @@
 
 This document captures the latest planning conversation. It supersedes earlier Projects-first/SPFx-first product priorities. No new web implementation was authorized in that conversation. The owner asked to discuss the design, then save the project so another AI can continue.
 
+## Current acceptance criterion · 2026-11-21
+From a normal morning start the owner opens only the Focus website. Refresh reads the owner's assigned open Xurrent requests. The calendar retains draft desired-completion changes until the owner selects Sync with Xurrent. The same page then lists verified writes and unresolved results per request. Ticket review and planning stay in Focus. Manually starting a helper, exchanging files and manually importing results fail this acceptance criterion. The previous portable prototype remains a design reference. Hosting and corporate authorization for a live service are unconfirmed.
+
 ## Purpose and owner preferences
 
 My Hoval Focus is a personal work dashboard with English UI and Polish collaboration with the owner. Xurrent is the primary source of tasks. Excel projects, Outlook, Teams and Toggl support the daily workflow. The owner wants a polished, responsive application worth showing to colleagues and management, with minimal manual setup and clicking. He prefers to avoid requesting IT assistance and cannot freely install software on the corporate laptop. He declined registering his private phone with the company. Access from such a phone remains unverified.
