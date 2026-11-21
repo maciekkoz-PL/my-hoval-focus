@@ -317,10 +317,31 @@ function reviewSync(){
   const w=plannerData(),entries=Object.entries(w.dates);
   const rows=entries.map(([id,p])=>`<div class="sync-row"><strong>#${esc(id)} · ${esc(find(id)?.title)}</strong><p>${esc(formatDue(p.from))} → ${esc(formatDue(p.to))}</p>${syncIssue(id,p)?'<small>'+esc(syncIssue(id,p))+'</small>':''}${button('Discard draft','revertdue:'+id,'text-btn')}</div>`).join('');
   const ready=entries.filter(([id,p])=>!syncIssue(id,p)).length;
-  openDialog('Sync with Xurrent',entries.length?'<p class="sub">Only the listed desired completion dates will change. Xurrent may notify the requester and adjust the SLA target.</p>'+rows+
-    (sample()?'<p class="notice">Sample workspace. Try the workflow with fictional tickets.</p>':'<p class="sub">Start Focus-Sync.ps1 beside Ticket Asystent. Select that folder when prompted.</p>')+
-    actions(ready?button(sample()?'Apply to sample':'Send '+ready+' deadline change'+(ready===1?'':'s'),'senddates','btn primary'):'',button('Close','close')):'<p>No deadline changes to send.</p>');
+  const packageButtons=Array.from({length:Math.ceil(ready/100)},(_,i)=>button('Download change package'+(ready>100?' '+(i+1):''),'exportdates:'+i,'btn primary')).join('');
+  const realActions=(w.account?packageButtons:'')+(ready?button('Send with running helper','senddates','btn subtle'):'');
+  openDialog('Sync with Xurrent',entries.length?'<p class="sub">Review the deadlines. Xurrent may notify the requester and adjust the SLA target.</p>'+rows+
+    (sample()?'<p class="notice">Sample workspace. Try the workflow with fictional tickets.</p>':'<p class="sub">Ticket Asystent 1.5 can apply a JSON change package using option 2. Each request gets one internal note recording its new deadline.</p>')+
+    actions(sample()?(ready?button('Apply to sample','senddates','btn primary'):''):realActions,button('Close','close')):'<p>No deadline changes to send.</p>');
 }
+function packageForAssistant(entries){
+  if(sample()||!work().account||!entries.length||entries.length>100)throw Error('Select between 1 and 100 imported request drafts.');
+  return {version:1,account:work().account,changes:entries.map(([id,p])=>{
+    if(syncIssue(id,p))throw Error('Refresh the ticket export before preparing this package.');
+    const due=new Date(p.to).toISOString().replace(/\.\d{3}Z$/,'Z');
+    return {id:Number(id),subject:find(id).title,complete:false,desired_completion_at:due,
+      internal_note:'Desired completion rescheduled to '+due+' in My Hoval Focus.'};
+  })};
+}
+function exportDeadlines(chunk){
+  const entries=Object.entries(plannerData().dates).filter(([id,p])=>!syncIssue(id,p)).slice(chunk*100,(chunk+1)*100);
+  if(sending||sample()||!entries.length)return;
+  const pkg=packageForAssistant(entries);
+  download('Focus-deadlines-'+day()+'-'+(chunk+1)+'.json',pkg);
+  for(const [i,entry] of entries.entries())entry[1].to=pkg.changes[i].desired_completion_at;
+  persist();
+  openDialog('Package downloaded','<p>Save the JSON file beside your existing Ticket Asystent. In version 1.5 choose option 2 and review the deadlines. Check the current date shown by the assistant before confirming.</p><p class="sub">Import a fresh ticket export afterwards. Matching deadlines will clear from your drafts.</p>'+actions(button('Back to changes','syncdates','btn primary'),button('Close','close')));
+}
+
 function syncIssue(id,p){
   const t=find(id);
   if(!t||t.absent)return 'Outside the current export';
@@ -585,6 +606,7 @@ case 'movedate':moveEvent(arg,$('#calDate').value);break;
 case 'revertdue':delete plannerData().dates[arg];close();persist();break;
 case 'syncdates':reviewSync();break;
 case 'senddates':await sendDates();break;
+case 'exportdates':exportDeadlines(Number(arg));break;
 case 'page':page=arg;
     search='';
     render();
