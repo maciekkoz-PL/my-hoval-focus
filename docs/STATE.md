@@ -1,5 +1,8 @@
 # Current state — 2026-11-20
 
+## Managed-laptop checkpoint
+The owner reported that Windows refused to load the unsigned calendar companion. The primary real-data action now downloads a JSON package for the existing Ticket Asystent 1.5. Package structure and regressions tested with synthetic data. Tenant execution of this workflow remains unverified.
+
 ## Current calendar checkpoint · 2026-11-21
 Today includes a direct-manipulation week/month calendar. Imported request deadlines use desired_completion_at; project milestones are personal and stored with the backup. Drag or choose a date, review drafts and send with the companion in prototype/Focus-Sync.ps1. The existing assistant supplies Token.ps1. Tests used synthetic data; first live Windows/Xurrent verification is pending. App commit 75bc5d8.
 
